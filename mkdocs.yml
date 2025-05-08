@@ -1,11 +1,27 @@
 site_name: 日拱一卒
 site_url: https://abotw.github.io/
+copyright: Copyright &copy; 2025 ABOTW
 theme:
   name: material
   language: zh
+  palette:
+    primary: teal
+  font:
+    text: Noto Serif SC
+    code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - navigation.footer
     - search.highlight
     - search.suggest
+  custom_dir: overrides
+plugins:
+  - search
+
     
