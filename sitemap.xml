@@ -3,76 +3,153 @@
     <url>
          <loc>https://abotw.github.io/notebook/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/408/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/4081-CL/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/NULL/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/size_t/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/sizeof/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/compile/gcc-compile-standards/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4082-DS/4082-DS/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4083-AG/4083-AG/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/4084-CO/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/CISC/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/CPI/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/CU/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/Endianness/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/FLOPS/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/IR/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/ISA/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/Microinstruction/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/SP/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/TLB/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/instruction-cycle/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/objdump/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E4%B8%BB%E9%A2%91/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E9%9B%86/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%80/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97-vs-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/cards/%E9%97%B4%E5%9D%80%E5%91%A8%E6%9C%9F/</loc>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/4085-OS/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4086-CN/4086-CN/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/IPC/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/logic-gates/</loc>
+         <lastmod>2025-05-08</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/vivado/</loc>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/misc/git/gitignore/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/misc/latex/%E5%A4%9A%E8%A1%8C%E7%AD%89%E5%BC%8F/</loc>
+         <lastmod>2025-05-08</lastmod>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/misc/mkdocs/mkdocs/</loc>
          <lastmod>2025-05-08</lastmod>
-         <changefreq>daily</changefreq>
     </url>
 </urlset>
