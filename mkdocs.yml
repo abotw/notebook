@@ -1,0 +1,11 @@
+site_name: 日拱一卒
+site_url: https://abotw.github.io/
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.highlight
+    - search.suggest
+    
