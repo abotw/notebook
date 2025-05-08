@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/misc/mkdocs/mkdocs/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/408/4081-CL/compile/gcc-compile-standards/">
       
       
-        <link rel="prev" href="../../git/gitignore/">
+        <link rel="prev" href="../../sizeof/">
       
       
+        <link rel="next" href="../../macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
     
     
       
-        <title>Welcome to MkDocs - 日拱一卒</title>
+        <title>GCC 编译标准速查 - 日拱一卒</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#gcc" class="md-skip">
           跳转至
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../../../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              GCC 编译标准速查
             
           </span>
         </div>
@@ -171,7 +173,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -186,11 +188,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../408/408/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../408/" class="md-tabs__link">
           
   
   408
@@ -204,21 +208,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../git/gitignore/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../../misc/git/gitignore/" class="md-tabs__link">
           
   
   Misc
@@ -260,7 +260,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../../../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -278,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,23 +295,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -322,7 +327,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             408
@@ -336,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/408/" class="md-nav__link">
+      <a href="../../../408/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -354,6 +359,8 @@
                 
   
   
+    
+  
   
   
     
@@ -363,11 +370,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -381,7 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             4081 CL
@@ -395,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4081-CL/4081-CL/" class="md-nav__link">
+      <a href="../../4081-CL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -416,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4081-CL/NULL/" class="md-nav__link">
+      <a href="../../NULL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -437,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4081-CL/size_t/" class="md-nav__link">
+      <a href="../../size_t/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -458,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4081-CL/sizeof/" class="md-nav__link">
+      <a href="../../sizeof/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,6 +483,8 @@
                 
   
   
+    
+  
   
   
     
@@ -485,11 +494,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
@@ -503,7 +512,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_5">
             <span class="md-nav__icon md-icon"></span>
             Compile
@@ -514,10 +523,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../408/4081-CL/compile/gcc-compile-standards/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GCC 编译标准速查
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -526,6 +555,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 基本语法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 常用标准选项说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 强制标准（禁用 GNU 扩展）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 示例测试代码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 检查当前默认标准
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -584,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
+      <a href="../../macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -659,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4082-DS/4082-DS/" class="md-nav__link">
+      <a href="../../../4082-DS/4082-DS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4083-AG/4083-AG/" class="md-nav__link">
+      <a href="../../../4083-AG/4083-AG/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -793,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4084-CO/4084-CO/" class="md-nav__link">
+      <a href="../../../4084-CO/4084-CO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4085-OS/4085-OS/" class="md-nav__link">
+      <a href="../../../4085-OS/4085-OS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -927,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../408/4086-CN/4086-CN/" class="md-nav__link">
+      <a href="../../../4086-CN/4086-CN/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,28 +1054,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -992,7 +1081,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Misc
@@ -1044,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../git/gitignore/" class="md-nav__link">
+      <a href="../../../../misc/git/gitignore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,8 +1159,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1081,11 +1168,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -1099,7 +1186,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Mkdocs
@@ -1110,30 +1197,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Welcome to MkDocs
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../misc/mkdocs/mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,44 +1209,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1227,18 +1256,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      📌 基本语法
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      📚 常用标准选项说明
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gnu" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 强制标准（禁用 GNU 扩展）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 示例测试代码
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 检查当前默认标准
     </span>
   </a>
   
@@ -1259,21 +1315,105 @@
                   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h1 id="gcc">GCC 编译标准速查</h1>
+<h2 id="_1">📌 基本语法</h2>
+<pre><code class="language-bash">gcc -std=&lt;标准&gt; your_file.c -o output
 </code></pre>
+<p>例如：</p>
+<pre><code class="language-bash">gcc -std=c99 main.c -o main
+</code></pre>
+<hr />
+<h2 id="_2">📚 常用标准选项说明</h2>
+<table>
+<thead>
+<tr>
+<th>标准名称</th>
+<th>编写形式</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C89</td>
+<td><code>-std=c89</code> 或 <code>-std=iso9899:1990</code></td>
+<td>ANSI C，早期标准，有限支持现代特性</td>
+</tr>
+<tr>
+<td>C90</td>
+<td><code>-std=c90</code>（等同于 c89）</td>
+<td>ISO 采纳 C89 标准，几乎相同</td>
+</tr>
+<tr>
+<td>GNU89</td>
+<td><code>-std=gnu89</code></td>
+<td>C89 + GNU 扩展（GCC 默认的旧标准）</td>
+</tr>
+<tr>
+<td>C99</td>
+<td><code>-std=c99</code></td>
+<td>引入 <code>//</code> 注释、<code>inline</code>、<code>stdint.h</code> 等</td>
+</tr>
+<tr>
+<td>GNU99</td>
+<td><code>-std=gnu99</code></td>
+<td>C99 + GNU 扩展</td>
+</tr>
+<tr>
+<td>C11</td>
+<td><code>-std=c11</code></td>
+<td>增加 <code>_Generic</code>、多线程、<code>static_assert</code> 等</td>
+</tr>
+<tr>
+<td>GNU11</td>
+<td><code>-std=gnu11</code></td>
+<td>C11 + GNU 扩展</td>
+</tr>
+<tr>
+<td>C17（C18）</td>
+<td><code>-std=c17</code> 或 <code>-std=c18</code></td>
+<td>C11 bug 修正版本，内容基本相同</td>
+</tr>
+<tr>
+<td>C23</td>
+<td><code>-std=c2x</code>（或 <code>-std=c23</code>，GCC 13+）</td>
+<td>最新标准，尚未广泛支持</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="gnu">⚙️ 强制标准（禁用 GNU 扩展）</h2>
+<p>如需完全按照标准（不含 GNU 扩展）编译：</p>
+<pre><code class="language-bash">gcc -std=c99 -pedantic -Wall -Wextra your_file.c
+</code></pre>
+<p>说明：</p>
+<ul>
+<li>
+<p><code>-pedantic</code>：严格遵循标准</p>
+</li>
+<li>
+<p><code>-Wall</code>：开启大多数警告</p>
+</li>
+<li>
+<p><code>-Wextra</code>：开启更多警告</p>
+</li>
+</ul>
+<hr />
+<h2 id="_3">🧪 示例测试代码</h2>
+<pre><code class="language-c">// test.c
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    printf(&quot;Hello, C standard!\n&quot;);
+    return 0;
+}
+</code></pre>
+<pre><code class="language-bash">gcc -std=c11 test.c -o test
+</code></pre>
+<hr />
+<h2 id="_4">🧩 检查当前默认标准</h2>
+<pre><code class="language-bash">echo | gcc -dM -E -x c - | grep __STDC_VERSION__
+</code></pre>
+<p>或使用 <code>gcc -v</code> 查看版本信息。</p>
 
 
 
@@ -1309,7 +1449,7 @@ docs/
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../git/gitignore/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Gitignore">
+          <a href="../../sizeof/" class="md-footer__link md-footer__link--prev" aria-label="上一页: sizeof">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1319,11 +1459,27 @@ docs/
                 上一页
               </span>
               <div class="md-ellipsis">
-                Gitignore
+                sizeof
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../../macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-footer__link md-footer__link--next" aria-label="下一页: 内存对齐宏 ALIGN(size)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                内存对齐宏 ALIGN(size)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
@@ -1356,10 +1512,10 @@ docs/
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
     
   </body>
