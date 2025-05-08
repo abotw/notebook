@@ -20,16 +20,20 @@ theme:
     - navigation.footer
     - search.highlight
     - search.suggest
+    - content.code.copy
+    - content.code.select
   custom_dir: overrides
 plugins:
   - search
-
 markdown_extensions:
   - admonition
+  - codehilite
   - pymdownx.arithmatex:  # 用于数学公式
       generic: true
   - pymdownx.superfences  # 支持更复杂的代码块嵌套
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
   - pymdownx.betterem
   - pymdownx.tilde
 
