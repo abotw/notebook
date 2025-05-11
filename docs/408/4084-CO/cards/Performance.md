@@ -1,30 +1,68 @@
+# Performance, 计算机性能指标
 
-## Clock Frequency, 主频
+- **Response Time / Execution Time** 从程序开始到结束的时间
+- **Throughput / Bandwidth** 单位时间内完成的任务数量
 
-- 表示每秒钟的时钟周期数。
-- 单位：$f$（Hz）。
+## CPU Clock Cycles, 时钟周期数
 
-## T, 时钟周期时间
+- C = cycles
 
+	- 总时钟周期数：$\text{C} = \text{cycles} = \text{CPU Time}\times{f}$
+
+$$
+\begin{aligned}
+    \text{CPU clock cycles} &= \text{Instructions count} \times \text{Average cycles per instruction}
+\end{aligned}
+$$
+
+## CPU Clock Frequency/Rate, 时钟主频
+
+- $f$（单位：Hz）。
+- CPU clock cycles per second, 每秒钟的时钟周期数。
+
+$$
+f=\frac{1\text{s}}{T}
+$$
+
+## CPU Clock Cycle Time, 时钟周期时间
+
+- $\text{T}$ （单位：秒）。
 - 每个时钟周期持续的时间。
-- $T = \dfrac{1}{f}$（单位：秒）
+
+$$
+T = \dfrac{1\text{s}}{f}
+$$
 
 ## CPI, Cycles Per Instruction, 每条指令平均消耗的时钟周期数
 
 $$
-\text{CPI}=\frac{\text{cycles}}{\text{instructions}}
+\text{CPI}
+=\frac{\text{C}}{\text{I}}
+=\frac{\text{cycles}}{\text{inst.}}
+=\frac{\text{CPU Time}\times{f}}{\text{inst.}}
 $$
 
-## CPU Time
+- I = inst. = instruction(s)
+
+## CPU (execution) Time, CPU 执行时间
+
+- 单位：秒
 
 $$
 \begin{aligned}
 \text{CPU Time}
 &= \text{cycles} \times \text{T} \\
-&= \text{instructions} \times \frac{\text{cycles}}{\text{instructions}} \times \text{T} \\
-&= \text{instructions} \times \text{CPI} \times \text{T} \\
-&= \frac{\text{instructions} \times \text{CPI}}{f}
+&= \text{inst.} \times \frac{\text{cycles}}{\text{inst.}} \times \text{T} \\
+&= \text{inst.} \times \text{CPI} \times \text{T} \\
+&= \frac{\text{inst.} \times \text{CPI}}{f}
 \end{aligned} \\
+$$
+
+$$
+\begin{aligned}
+    \text{CPU execution time} &= \text{CPU clock cycles} \times \text{Clock cycle time} \\
+    &= \frac{\text{CPU clock cycles}}{\text{Clock rate}}
+\end{aligned}
 $$
 
 ## MIPS, Million Instructions Per Second, 每秒百万条指令
@@ -34,13 +72,14 @@ $$
 $$
 \begin{aligned}
 \text{MIPS} 
-&= \frac{\text{instructions}}{\text{CPU time}\times 10^{6}} \\
-&= \frac{\text{instructions}}{\frac{\text{instructions} \times \text{CPI}}{f}\times 10^{6}} \\
+&= \frac{\text{inst.}}{\text{CPU time}\times 10^{6}} \\
+&= \frac{\text{inst.}}{\frac{\text{inst.} \times \text{CPI}}{f}\times 10^{6}} \\
 &= \frac{f}{\text{CPI} \times 10^6} \\
 \end{aligned}
 $$
 
-说明：MIPS 与主频成正比、与 CPI 成反比。
+- M = $10^6$ = 百万
+- MIPS 与 $f$ 成正比、与 CPI 成反比。
 
 ---
 
