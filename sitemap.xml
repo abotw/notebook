@@ -206,7 +206,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/fsm-finite-state-machine/</loc>
+         <lastmod>2025-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/logic-gates/</loc>
+         <lastmod>2025-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/moore-vs-mealy-state-machine/</loc>
+         <lastmod>2025-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/primitive-state-diagram/</loc>
+         <lastmod>2025-05-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/synchronous-vs-asynchronous-sequential-circuits/</loc>
          <lastmod>2025-05-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
