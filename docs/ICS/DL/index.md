@@ -1,2 +1,3 @@
-# Digital Logic
+# Digital Logic | 数字逻辑
+
 
