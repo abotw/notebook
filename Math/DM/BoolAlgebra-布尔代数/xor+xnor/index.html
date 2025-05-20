@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/xor%2Bxnor/">
       
       
-        <link rel="prev" href="../../../%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/">
+        <link rel="prev" href="../logic-function-simplification/">
       
       
-        <link rel="next" href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/">
+        <link rel="next" href="../psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>布尔代数 - 日拱一卒</title>
+        <title>异或与同或（XOR & XNOR） - 日拱一卒</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#xor-xnor" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              布尔代数
+              异或与同或（XOR &amp; XNOR）
             
           </span>
         </div>
@@ -4457,26 +4462,18 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../BA-vs-LA/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    布尔代数
+    Boolean Algebra vs. Logic Algebra
   </span>
   
 
       </a>
-      
     </li>
   
 
@@ -4489,15 +4486,359 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-nav__link">
+      <a href="../drafts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    逻辑函数
+    Drafts
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../law%40bool-algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Law@bool algebra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logic-function-simplification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逻辑函数及其化简
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    异或与同或（XOR &amp; XNOR）
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    异或与同或（XOR &amp; XNOR）
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-xorexclusive-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 异或（XOR：Exclusive OR）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-xnorexclusive-nor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 同或（XNOR：Exclusive NOR）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、性质总结
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、性质总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 异或性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 同或性质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、在数字逻辑电路中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、在数字逻辑电路中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 常见用途
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 组合逻辑简化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、经典例题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、经典例题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      例题：构建 1 位奇偶校验器
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、相关领域联系
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、相关领域联系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-408" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 计算机组成原理（408）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cryptography" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 密码学（Cryptography）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 程序设计与算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、速记技巧
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_1_6" id="__nav_5_2_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Psets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_2_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Psets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    逻辑表达式等价证明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -5610,6 +5951,190 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-xorexclusive-or" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 异或（XOR：Exclusive OR）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-xnorexclusive-nor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 同或（XNOR：Exclusive NOR）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、性质总结
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、性质总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 异或性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 同或性质
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、在数字逻辑电路中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、在数字逻辑电路中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 常见用途
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 组合逻辑简化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、经典例题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、经典例题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      例题：构建 1 位奇偶校验器
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、相关领域联系
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、相关领域联系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-408" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 计算机组成原理（408）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cryptography" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 密码学（Cryptography）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 程序设计与算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、速记技巧
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -5624,15 +6149,198 @@
                   
 
 
-  <h1>布尔代数</h1>
-
+<h1 id="xor-xnor">异或与同或（XOR &amp; XNOR）</h1>
+<h2 id="_1">一、基本概念</h2>
+<h3 id="1-xorexclusive-or">1. 异或（XOR：Exclusive OR）</h3>
 <ul>
-<li><strong>布尔代数定律</strong>：研究<strong>逻辑运算</strong>的代数性质。<ul>
-<li>交换律</li>
-<li>结合律</li>
-<li>分配律</li>
-<li>德摩根定律</li>
+<li>
+<p><strong>符号</strong>：<code>⊕</code> 或 <code>^</code>（在编程中常用）</p>
+</li>
+<li>
+<p><strong>定义</strong>：当两个输入<strong>不同</strong>时，输出为 1；相同时输出为 0。</p>
+</li>
+<li>
+<p><strong>逻辑表达式</strong>：</p>
+<p><span class="arithmatex">\(A \oplus B = \overline{A}B + A\overline{B}\)</span>
+- <strong>真值表</strong>：</p>
+</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A⊕B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-xnorexclusive-nor">2. 同或（XNOR：Exclusive NOR）</h3>
+<ul>
+<li>
+<p><strong>符号</strong>：<code>≡</code> 或 <code>⊙</code></p>
+</li>
+<li>
+<p><strong>定义</strong>：当两个输入<strong>相同</strong>时，输出为 1；不同则输出为 0。</p>
+</li>
+<li>
+<p><strong>逻辑表达式</strong>：</p>
+<p><span class="arithmatex">\(A \odot B = AB + \overline{A}\,\overline{B} = \overline{A \oplus B}\)</span>
+- <strong>真值表</strong>：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A≡B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">二、性质总结</h2>
+<h3 id="1">1. 异或性质</h3>
+<ul>
+<li>
+<p>自反性：A⊕A=0A \oplus A = 0</p>
+</li>
+<li>
+<p>零元：A⊕0=AA \oplus 0 = A</p>
+</li>
+<li>
+<p>交换律：A⊕B=B⊕AA \oplus B = B \oplus A</p>
+</li>
+<li>
+<p>结合律：<span class="arithmatex">\(A \oplus (B \oplus C) = (A \oplus B) \oplus C\)</span></p>
+</li>
+</ul>
+<h3 id="2">2. 同或性质</h3>
+<ul>
+<li>
+<p>A⊙A=1A \odot A = 1</p>
+</li>
+<li>
+<p>A⊙0=A‾A \odot 0 = \overline{A}</p>
+</li>
+<li>
+<p>A⊙1=AA \odot 1 = A</p>
+</li>
+</ul>
+<hr />
+<h2 id="_3">三、在数字逻辑电路中的应用</h2>
+<h3 id="1_1">1. 常见用途</h3>
+<ul>
+<li>
+<p><strong>异或门</strong>用于<strong>奇偶校验（Parity Check）</strong>电路：用于检测数据传输或存储中是否发生了错误。</p>
+</li>
+<li>
+<p><strong>全加器（Full Adder）</strong>中求<strong>和（Sum）</strong>信号时常用异或：</p>
+<p>S=A⊕B⊕CinS = A \oplus B \oplus C_{\text{in}}
+- <strong>同或门</strong>常用于<strong>比较器（Comparator）</strong>中，判断两个输入是否相等。</p>
+</li>
+</ul>
+<h3 id="2_1">2. 组合逻辑简化</h3>
+<p>异或/同或能简化多项逻辑表达式，例如：</p>
+<p>F=AB‾+A‾B=A⊕BF = A \overline{B} + \overline{A}B = A \oplus B</p>
+<hr />
+<h2 id="_4">四、经典例题</h2>
+<h3 id="1_2">例题：构建 1 位奇偶校验器</h3>
+<blockquote>
+<p><strong>题目</strong>：设计一个电路，对 4 位数据 D3-D0 进行<strong>偶校验</strong>输出 P。</p>
+</blockquote>
+<p><strong>解题思路</strong>：偶校验要求整体的 1 的个数为偶数。</p>
+<p><strong>电路输出</strong>：</p>
+<p>P=D3⊕D2⊕D1⊕D0P = D3 \oplus D2 \oplus D1 \oplus D0</p>
+<hr />
+<h2 id="_5">五、相关领域联系</h2>
+<h3 id="1-408">1. 计算机组成原理（408）</h3>
+<ul>
+<li>
+<p><strong>ALU（Arithmetic Logic Unit）</strong> 中，异或常用于实现减法或逻辑比较。</p>
+</li>
+<li>
+<p><strong>条件控制</strong>：在 CPU 控制单元中，条件跳转往往与比较结果有关，使用异或/同或实现等值检测较为高效。</p>
+</li>
+</ul>
+<h3 id="2-cryptography">2. 密码学（Cryptography）</h3>
+<ul>
+<li>
+<p><strong>异或</strong>为流密码中的核心运算，例如：</p>
+<p>密文=明文⊕密钥流\text{密文} = \text{明文} \oplus \text{密钥流}</p>
+</li>
+</ul>
+<h3 id="3">3. 程序设计与算法</h3>
+<ul>
+<li>
+<p>异或用于：</p>
+<ul>
+<li>
+<p><strong>交换变量</strong>：不使用临时变量交换两个数：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p><strong>找单一元素</strong>：一组中其他元素都成对出现，只有一个出现一次，用异或快速找出。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="_6">六、速记技巧</h2>
+<ul>
+<li>
+<p>异或：<strong>不同为 1，相同为 0</strong> → “异”即不同。</p>
+</li>
+<li>
+<p>同或：<strong>相同为 1，不同为 0</strong> → “同”即一致。</p>
 </li>
 </ul>
 
@@ -5670,7 +6378,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../../%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 欧几里得演算法">
+          <a href="../logic-function-simplification/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 逻辑函数及其化简">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -5680,20 +6388,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                欧几里得演算法
+                逻辑函数及其化简
               </div>
             </div>
           </a>
         
         
           
-          <a href="../%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0/" class="md-footer__link md-footer__link--next" aria-label="下一页: 逻辑函数">
+          <a href="../psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-footer__link md-footer__link--next" aria-label="下一页: 逻辑表达式等价证明">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                逻辑函数
+                逻辑表达式等价证明
               </div>
             </div>
             <div class="md-footer__button md-icon">
