@@ -349,6 +349,10 @@
          <lastmod>2025-05-20</lastmod>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/p4-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/</loc>
+         <lastmod>2025-05-20</lastmod>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/2-CC-Combinational-Logic/CC/</loc>
          <lastmod>2025-05-20</lastmod>
     </url>
@@ -493,15 +497,11 @@
          <lastmod>2025-05-20</lastmod>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p2-SSLC%E5%88%86%E6%9E%90/</loc>
          <lastmod>2025-05-20</lastmod>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/</loc>
-         <lastmod>2025-05-20</lastmod>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p4-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/</loc>
          <lastmod>2025-05-20</lastmod>
     </url>
     <url>
@@ -510,6 +510,10 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/4-Misc/combinational-vs-sequential-logic/</loc>
+         <lastmod>2025-05-20</lastmod>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/Refs/</loc>
          <lastmod>2025-05-20</lastmod>
     </url>
     <url>
