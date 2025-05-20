@@ -386,7 +386,57 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/DUT/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/IPC/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/RTL/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/XDC/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/vivado/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/2-CC-CombinationalCircuit/CC/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CC-CombinationalCircuit/%E7%AB%9E%E4%BA%89%E9%99%A9%E8%B1%A1/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -421,6 +471,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CC-CombinationalCircuit/lgs/logic-gates/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/2-CC-CombinationalCircuit/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
@@ -446,37 +501,107 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FF-FlipFlop/flip-flop/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/latch-vs-flipflop/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FF-FlipFlop/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/sequential-circuit/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch/1rs-latch/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/timing-diagram/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch/3D%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch/4JK%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch/latch/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/1rs-latch/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/moore-mealy/1/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/moore-mealy/mealy-vs-moore/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/moore-mealy/moore-vs-mealy-state-machine/</loc>
+         <lastmod>2025-05-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SC-SequentialCircuit/moore-mealy/moore-vs-mealy/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -496,132 +621,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/DUT/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/IPC/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/RTL/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/XDC/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/cards/bistable-circuit-basics/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/cards/combinational-vs-sequential-logic/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/excitation-output-nextstate-equation/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/fsm-finite-state-machine/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/latch-vs-flipflop/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/primitive-state-diagram/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/sequential-circuit/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/synchronous-vs-asynchronous-sequential-circuits/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/tff/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/timing-diagram/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/vivado/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/%E7%AB%9E%E4%BA%89%E9%99%A9%E8%B1%A1/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/lgs/logic-gates/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/moore-mealy/1/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/moore-mealy/mealy-vs-moore/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/moore-mealy/moore-vs-mealy-state-machine/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/cards/moore-mealy/moore-vs-mealy/</loc>
-         <lastmod>2025-05-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/final-cjn/%E5%A4%8D%E4%B9%A0%E6%8F%90%E7%BA%B2/</loc>
          <lastmod>2025-05-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
