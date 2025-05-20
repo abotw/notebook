@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p10-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p10-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/3-SC-Sequential-Logic/psets/p1-FFs/p1-FFs/">
       
       
-        <link rel="prev" href="../../p09-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/">
+        <link rel="prev" href="../../../moore-mealy/moore-vs-mealy/">
       
       
-        <link rel="next" href="../../../../4-Misc/bistable-circuit-basics/">
+        <link rel="next" href="../../p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/">
       
       
       <link rel="icon" href="../../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>P10 原始状态图 - 日拱一卒</title>
+        <title>P1 FFs - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#p1-ffs" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              P10 原始状态图
+              P1 FFs
             
           </span>
         </div>
@@ -5548,6 +5548,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5557,28 +5559,28 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_1" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1_4_9_1" id="__nav_4_1_4_9_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    P08 同步时序电路分析
+    p1 FFs
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1_4_9_1">
             <span class="md-nav__icon md-icon"></span>
-            P08 同步时序电路分析
+            p1 FFs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5586,18 +5588,76 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../p08-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p08-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    P1 FFs
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    P08 同步时序电路分析
+    P1 FFs
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ex-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ex. 1 画出输出波形图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ex-2-verilog-hdl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ex. 2 Verilog HDL 实现
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5635,7 +5695,7 @@
             
   
   <span class="md-ellipsis">
-    P09 4位同步计数器
+    P2 同步时序电路分析
   </span>
   
 
@@ -5645,7 +5705,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_4_9_2">
             <span class="md-nav__icon md-icon"></span>
-            P09 4位同步计数器
+            P2 同步时序电路分析
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5656,11 +5716,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../p09-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/" class="md-nav__link">
+      <a href="../../p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    P10 4位同步计数器
+    同步时序电路分析
   </span>
   
 
@@ -5682,8 +5742,6 @@
                 
   
   
-    
-  
   
   
     
@@ -5693,28 +5751,28 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_3" >
         
           
           <label class="md-nav__link" for="__nav_4_1_4_9_3" id="__nav_4_1_4_9_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    P10 原始状态图
+    P3 原始状态图
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_4_9_3">
             <span class="md-nav__icon md-icon"></span>
-            P10 原始状态图
+            P3 原始状态图
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5722,105 +5780,85 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    P10 原始状态图
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    P10 原始状态图
+    原始状态图
   </span>
   
 
       </a>
-      
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+              
+            
+          </ul>
+        </nav>
       
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      ✅ 偶数判定规则：
-    </span>
-  </a>
+    </li>
   
-</li>
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
       
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 状态图设计思路：
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 状态图说明（原始状态图）：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 状态图说明（原始状态图）：">
-      <ul class="md-nav__list">
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔁 状态转移图（仅画出状态和转移逻辑）：
-    </span>
-  </a>
-  
-</li>
         
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔚 总结：
-    </span>
-  </a>
-  
-</li>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_4" >
         
-      </ul>
-    </nav>
+          
+          <label class="md-nav__link" for="__nav_4_1_4_9_4" id="__nav_4_1_4_9_4_label" tabindex="0">
+            
   
-</li>
-      
-    </ul>
+  <span class="md-ellipsis">
+    P4 4位同步计数器
+  </span>
   
-</nav>
-      
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_9_4">
+            <span class="md-nav__icon md-icon"></span>
+            P4 4位同步计数器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../p4-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4位同步计数器
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -7501,6 +7539,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -7509,53 +7549,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#ex-1" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 偶数判定规则：
+      Ex. 1 画出输出波形图
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#ex-2-verilog-hdl" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 状态图设计思路：
+      Ex. 2 Verilog HDL 实现
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      🎯 状态图说明（原始状态图）：
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 状态图说明（原始状态图）：">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔁 状态转移图（仅画出状态和转移逻辑）：
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔚 总结：
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -7574,99 +7581,80 @@
                   
 
 
-  <h1>P10 原始状态图</h1>
-
+<h1 id="p1-ffs">P1 FFs</h1>
+<h2 id="ex-1">Ex. 1 画出输出波形图</h2>
 <blockquote>
-<p>[!NOTE]
-设计一个电路，用于检测串行输入的 8421 BCD 码是否表示一个偶数。输入按高位到低位（MSB → LSB）的顺序依次进入。电路在每组完整的4位输入之后判断该8421码表示的十进制数是否为偶数：若是偶数，输出为1；否则输出为0。<br />
-仅需画出原始状态图（不考虑状态最小化或编码）。</p>
+<p>给定一个<strong>初始状态为 0</strong> 的<strong>下降沿触发 J-K 触发器</strong>，根据所提供的输入信号，绘制其输出 Q 的时序波形图。</p>
 </blockquote>
-<p>![[attachments/ChatGPT Image 2025年5月7日 22_50_00.png]]</p>
-<p>我们可以从<strong>8421 BCD 码的偶数判定</strong>这个问题的核心出发：</p>
-<h3 id="_1">✅ <strong>偶数判定规则</strong>：</h3>
-<p>对于一个 4 位 BCD 数，最低有效位（LSB）表示的就是这个十进制数的<strong>最末位二进制位</strong>。所以：</p>
-<ul>
-<li>
-<p>如果 <strong>LSB = 0</strong>，则该十进制数是偶数 → 输出 1</p>
-</li>
-<li>
-<p>如果 <strong>LSB = 1</strong>，则该十进制数是奇数 → 输出 0</p>
-</li>
-</ul>
-<hr />
-<h2 id="_2">🔧 状态图设计思路：</h2>
-<p><strong>输入为 1 位串行输入（MSB → LSB），共 4 位一组（即每 4 个输入为一个 BCD 数）</strong></p>
-<ul>
-<li>
-<p>所以电路必须记录前面已经输入了几位（用状态追踪输入位数）</p>
-</li>
-<li>
-<p>并在输入第 4 位（LSB）时判断其值，输出结果</p>
-</li>
-</ul>
-<hr />
-<h2 id="_3">🎯 状态图说明（原始状态图）：</h2>
-<p>我们需要 5 个状态：</p>
-<ul>
-<li>
-<p><code>S0</code>: 等待第 1 位（最高位 MSB）</p>
-</li>
-<li>
-<p><code>S1</code>: 等待第 2 位</p>
-</li>
-<li>
-<p><code>S2</code>: 等待第 3 位</p>
-</li>
-<li>
-<p><code>S3</code>: 等待第 4 位（最低位 LSB）</p>
-</li>
-<li>
-<p><code>S4</code>: 输出状态（输出 1 或 0，根据 LSB）→ 然后返回 <code>S0</code> 等待下一组</p>
-</li>
-</ul>
-<hr />
-<h3 id="_4">🔁 状态转移图（仅画出状态和转移逻辑）：</h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>(输入位)            状态名       动作
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>---------           -------       -----------------------------
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>开始                  S0          等待第1位输入 → 输入0/1都转S1
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>S0 --0/1--&gt;          S1          等待第2位输入 → 输入0/1都转S2
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>S1 --0/1--&gt;          S2          等待第3位输入 → 输入0/1都转S3
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>S2 --0/1--&gt;          S3          等待第4位（LSB） → 输入决定奇偶
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>S3 --0--&gt;            S4(偶数)    输出=1 → 回到S0
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>S3 --1--&gt;            S4(奇数)    输出=0 → 回到S0
+<h2 id="ex-2-verilog-hdl">Ex. 2 Verilog HDL 实现</h2>
+<blockquote>
+<p>使用 Verilog HDL 语言，描述一个<strong>在时钟下降沿触发的 J-K 触发器</strong>模块，并给出完整的代码实现。</p>
+</blockquote>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Module: JK_FF</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">// Description: Negative edge-triggered JK flip-flop</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">module</span><span class="w"> </span><span class="n">JK_FF</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">clk</span><span class="p">,</span><span class="w">      </span><span class="c1">// Clock signal</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">rst_n</span><span class="p">,</span><span class="w">    </span><span class="c1">// Asynchronous active-low reset</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">J</span><span class="p">,</span><span class="w">        </span><span class="c1">// J input</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">K</span><span class="p">,</span><span class="w">        </span><span class="c1">// K input</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">Q</span><span class="p">,</span><span class="w">        </span><span class="c1">// Output Q</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">Q_n</span><span class="w">       </span><span class="c1">// Output Q_n</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">);</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="c1">// Asynchronous reset, negative edge triggered JK flip-flop</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">negedge</span><span class="w"> </span><span class="n">clk</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">negedge</span><span class="w"> </span><span class="n">rst_n</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">rst_n</span><span class="p">)</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">            </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span><span class="w">                      </span><span class="c1">// Reset Q to 0</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">begin</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">({</span><span class="n">J</span><span class="p">,</span><span class="w"> </span><span class="n">K</span><span class="p">})</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Q</span><span class="p">;</span><span class="w">              </span><span class="c1">// No change</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b01</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span><span class="w">           </span><span class="c1">// Reset</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b10</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span><span class="w">           </span><span class="c1">// Set</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b11</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="o">~</span><span class="n">Q</span><span class="p">;</span><span class="w">             </span><span class="c1">// Toggle</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">                </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Q</span><span class="p">;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">            </span><span class="k">endcase</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">        </span><span class="k">end</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="k">endmodule</span>
 </code></pre></div></td></tr></table></div>
-<p>你可以画成如下这种圆圈状态图：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span>
-<span class="normal"><a href="#__codelineno-1-6">6</a></span>
-<span class="normal"><a href="#__codelineno-1-7">7</a></span>
-<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>[S0] --0/1--&gt; [S1] --0/1--&gt; [S2] --0/1--&gt; [S3]
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>                                         |     \
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>                                       0 |       \ 1
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>                                         v         v
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>                                  [S4 (输出1)]  [S4 (输出0)]
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>                                        \         /
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>                                         \       /
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>                                          &lt;- S0 &lt;-
-</code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="_5">🔚 总结：</h3>
 <ul>
 <li>
-<p>状态图仅需关注 <strong>位数统计</strong> 和 <strong>最后一位（LSB）的值</strong></p>
+<p>使用 <code>negedge clk</code> 实现<strong>下降沿触发</strong>。</p>
 </li>
 <li>
-<p>实质上是一个<strong>4 位移位寄存器 + 检查第 4 位的值</strong></p>
+<p>包含异步低电平复位（<code>rst_n</code>），方便仿真与实际电路中初始化。</p>
+</li>
+<li>
+<p>采用 <code>case</code> 结构清晰表达 J-K 触发器的逻辑功能。</p>
 </li>
 </ul>
 
@@ -7675,9 +7663,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -7707,7 +7692,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../p09-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/" class="md-footer__link md-footer__link--prev" aria-label="上一页: P10 4位同步计数器">
+          <a href="../../../moore-mealy/moore-vs-mealy/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Moore vs mealy">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -7717,20 +7702,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                P10 4位同步计数器
+                Moore vs mealy
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../../4-Misc/bistable-circuit-basics/" class="md-footer__link md-footer__link--next" aria-label="下一页: 双稳态电路（Bistable Circuit）">
+          <a href="../../p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/p2-%E5%90%8C%E6%AD%A5%E6%97%B6%E5%BA%8F%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="md-footer__link md-footer__link--next" aria-label="下一页: 同步时序电路分析">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                双稳态电路（Bistable Circuit）
+                同步时序电路分析
               </div>
             </div>
             <div class="md-footer__button md-icon">
