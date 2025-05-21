@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p1-JKFF/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/">
       
       
-        <link rel="prev" href="../../%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/">
+        <link rel="prev" href="../../subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/">
       
       
-        <link rel="next" href="../p2-counter4/">
+        <link rel="next" href="../../../3-SL-Sequential-Logic/implication-table/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>J-K FF - 日拱一卒</title>
+        <title>竞争+险象 - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#j-k-ff" class="md-skip">
+        <a href="#racehazard" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              J-K FF
+              竞争+险象
             
           </span>
         </div>
@@ -3716,8 +3716,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3727,11 +3725,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
         
           
           <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
@@ -3745,7 +3743,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_2">
             <span class="md-nav__icon md-icon"></span>
             1 Verilog HDL
@@ -3759,7 +3757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../../../1-Verilog-HDL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3780,318 +3778,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DUT/" class="md-nav__link">
+      <a href="../../../1-Verilog-HDL/verilog-cht/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    DUT
+    Verilog Cheatsheet
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../IPC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    IP核
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../RTL/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RTL
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../XDC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XDC
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Reg+非阻塞型赋值
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../vivado/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Vivado
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    七段数码管
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    模块实例化
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_10" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_1_2_10" id="__nav_4_1_2_10_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Psets
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_1_2_10">
-            <span class="md-nav__icon md-icon"></span>
-            Psets
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    J-K FF
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    J-K FF
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sol" class="md-nav__link">
-    <span class="md-ellipsis">
-      sol
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sol-cjn" class="md-nav__link">
-    <span class="md-ellipsis">
-      sol-cjn
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../p2-counter4/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4-bit Sync Counter
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -4114,7 +3809,231 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_2_3" id="__nav_4_1_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cards
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/DUT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DUT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/IPC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IP核
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/RTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/XDC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XDC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reg+非阻塞型赋值
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/vivado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vivado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    七段数码管
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模块实例化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1_3" id="__nav_4_1_3_label" tabindex="0">
@@ -4128,7 +4047,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1_3">
             <span class="md-nav__icon md-icon"></span>
             2 CL Combinational Logic
@@ -4142,7 +4061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/combinational-logic-circuits/" class="md-nav__link">
+      <a href="../../combinational-logic-circuits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4162,16 +4081,62 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_3_2" id="__nav_4_1_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DEMUX demultiplexer 分配器
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            DEMUX demultiplexer 分配器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%E9%99%A9%E8%B1%A1/" class="md-nav__link">
+      <a href="../../DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    竞争险象
+     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -4201,7 +4166,7 @@
             
   
   <span class="md-ellipsis">
-    DEMUX demultiplexer 分配器
+    MUX multiplexer 选择器
   </span>
   
 
@@ -4211,7 +4176,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_3">
             <span class="md-nav__icon md-icon"></span>
-            DEMUX demultiplexer 分配器
+            MUX multiplexer 选择器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4222,7 +4187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
+      <a href="../../MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/-/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4268,7 +4233,7 @@
             
   
   <span class="md-ellipsis">
-    MUX multiplexer 选择器
+    Adder 加法器
   </span>
   
 
@@ -4278,7 +4243,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_4">
             <span class="md-nav__icon md-icon"></span>
-            MUX multiplexer 选择器
+            Adder 加法器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4289,11 +4254,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/-/" class="md-nav__link">
+      <a href="../../adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-     
+    Adder 加法器
   </span>
   
 
@@ -4335,7 +4300,7 @@
             
   
   <span class="md-ellipsis">
-    Adder 加法器
+    Comparator 比较器
   </span>
   
 
@@ -4345,7 +4310,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_5">
             <span class="md-nav__icon md-icon"></span>
-            Adder 加法器
+            Comparator 比较器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4356,11 +4321,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
+      <a href="../../comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Adder 加法器
+    Untitled
   </span>
   
 
@@ -4402,7 +4367,7 @@
             
   
   <span class="md-ellipsis">
-    Comparator 比较器
+    Decoder 译码器
   </span>
   
 
@@ -4412,7 +4377,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_6">
             <span class="md-nav__icon md-icon"></span>
-            Comparator 比较器
+            Decoder 译码器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4423,7 +4388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4469,7 +4434,7 @@
             
   
   <span class="md-ellipsis">
-    Decoder 译码器
+    Encoder 编码器
   </span>
   
 
@@ -4479,7 +4444,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_7">
             <span class="md-nav__icon md-icon"></span>
-            Decoder 译码器
+            Encoder 编码器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4490,7 +4455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4536,7 +4501,7 @@
             
   
   <span class="md-ellipsis">
-    Encoder 编码器
+    Lgs
   </span>
   
 
@@ -4546,7 +4511,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_8">
             <span class="md-nav__icon md-icon"></span>
-            Encoder 编码器
+            Lgs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4557,11 +4522,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../lgs/logic-gates/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Untitled
+    Logic Gates
   </span>
   
 
@@ -4603,7 +4568,7 @@
             
   
   <span class="md-ellipsis">
-    Lgs
+    Parity 奇偶校验器
   </span>
   
 
@@ -4613,7 +4578,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_9">
             <span class="md-nav__icon md-icon"></span>
-            Lgs
+            Parity 奇偶校验器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4624,11 +4589,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/lgs/logic-gates/" class="md-nav__link">
+      <a href="../../parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Logic Gates
+    Parity 奇偶校验
   </span>
   
 
@@ -4670,7 +4635,7 @@
             
   
   <span class="md-ellipsis">
-    Parity 奇偶校验器
+    Psets
   </span>
   
 
@@ -4680,7 +4645,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_10">
             <span class="md-nav__icon md-icon"></span>
-            Parity 奇偶校验器
+            Psets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4691,11 +4656,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
+      <a href="../../psets/p1-CLC-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Parity 奇偶校验
+    分析：组合逻辑电路
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../psets/p2-CLC-design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基于余3码的合数判断组合逻辑电路设计
   </span>
   
 
@@ -4737,7 +4723,7 @@
             
   
   <span class="md-ellipsis">
-    Psets
+    Subtractor 减法器
   </span>
   
 
@@ -4747,7 +4733,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_3_11">
             <span class="md-nav__icon md-icon"></span>
-            Psets
+            Subtractor 减法器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4758,32 +4744,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/psets/p1-CLC-analysis/" class="md-nav__link">
+      <a href="../../subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    分析：组合逻辑电路
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/psets/p2-CLC-design/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    基于余3码的合数判断组合逻辑电路设计
+    Untitled
   </span>
   
 
@@ -4805,6 +4770,8 @@
                 
   
   
+    
+  
   
   
     
@@ -4814,28 +4781,28 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_12" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1_3_12" id="__nav_4_1_3_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Subtractor 减法器
+    竞争+险象
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1_3_12">
             <span class="md-nav__icon md-icon"></span>
-            Subtractor 减法器
+            竞争+险象
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4843,18 +4810,108 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    竞争+险象
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Untitled
+    竞争+险象
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#racehazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 竞争（Race）与险象（Hazard）简述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-race" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 1. 竞争（Race）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 2. 险象（Hazard）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 产生原因
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 消除方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 各类险象一句话概述：
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5025,6 +5082,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../3-SL-Sequential-Logic/verilog-counter4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verilog: 4-bit Sync Counter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -5036,10 +5114,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_6" id="__nav_4_1_4_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_7" id="__nav_4_1_4_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5050,8 +5128,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_7">
             <span class="md-nav__icon md-icon"></span>
             FF FlipFlop 触发器
           </label>
@@ -5069,6 +5147,27 @@
   
   <span class="md-ellipsis">
     Flip flop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    J-K FF Verilog
   </span>
   
 
@@ -5124,10 +5223,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_7" id="__nav_4_1_4_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_8" id="__nav_4_1_4_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5138,8 +5237,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_8">
             <span class="md-nav__icon md-icon"></span>
             FSM FiniteStateMachine 有限状态机
           </label>
@@ -5254,10 +5353,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_8" id="__nav_4_1_4_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_9" id="__nav_4_1_4_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5268,8 +5367,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_8">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_9">
             <span class="md-nav__icon md-icon"></span>
             Latch 锁存器
           </label>
@@ -5397,10 +5496,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_8_6" id="__nav_4_1_4_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_9_6" id="__nav_4_1_4_9_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5411,8 +5510,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_8_6">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_9_6">
             <span class="md-nav__icon md-icon"></span>
             T触发器
           </label>
@@ -5472,10 +5571,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_9" id="__nav_4_1_4_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_10" id="__nav_4_1_4_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5486,8 +5585,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_9">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_10">
             <span class="md-nav__icon md-icon"></span>
             Sync Async
           </label>
@@ -5560,10 +5659,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_10" id="__nav_4_1_4_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_11" id="__nav_4_1_4_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5574,8 +5673,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_10">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_11">
             <span class="md-nav__icon md-icon"></span>
             Moore mealy
           </label>
@@ -5690,10 +5789,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11" id="__nav_4_1_4_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12" id="__nav_4_1_4_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5704,8 +5803,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12">
             <span class="md-nav__icon md-icon"></span>
             Psets
           </label>
@@ -5728,10 +5827,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_1" id="__nav_4_1_4_11_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_1" id="__nav_4_1_4_12_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5742,8 +5841,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_1">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_1">
             <span class="md-nav__icon md-icon"></span>
             p1 FFs TimingDiagram
           </label>
@@ -5795,10 +5894,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_2" id="__nav_4_1_4_11_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_2" id="__nav_4_1_4_12_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5809,8 +5908,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_2">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_2">
             <span class="md-nav__icon md-icon"></span>
             p2 SSLC Analysis
           </label>
@@ -5862,10 +5961,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_3" id="__nav_4_1_4_11_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_3" id="__nav_4_1_4_12_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5876,8 +5975,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_3">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_3">
             <span class="md-nav__icon md-icon"></span>
             P3 原始状态图
           </label>
@@ -5929,10 +6028,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_4" id="__nav_4_1_4_11_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_4" id="__nav_4_1_4_12_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5943,8 +6042,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_4">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_4">
             <span class="md-nav__icon md-icon"></span>
             P4 隐含表
           </label>
@@ -7713,8 +7812,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -7723,18 +7820,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sol" class="md-nav__link">
+  <a href="#racehazard" class="md-nav__link">
     <span class="md-ellipsis">
-      sol
+      🔹 竞争（Race）与险象（Hazard）简述
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sol-cjn" class="md-nav__link">
+  <a href="#1-race" class="md-nav__link">
     <span class="md-ellipsis">
-      sol-cjn
+      🔸 1. 竞争（Race）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hazard" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 2. 险象（Hazard）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 产生原因
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 消除方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 各类险象一句话概述：
     </span>
   </a>
   
@@ -7755,107 +7888,119 @@
                   
 
 
-<h1 id="j-k-ff">J-K FF</h1>
-<blockquote>
-<p>使用 Verilog HDL 语言，描述一个<strong>在时钟下降沿触发的 J-K 触发器</strong>模块，并给出完整的代码实现。</p>
-</blockquote>
-<h2 id="sol">sol</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// Module: JK_FF</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">// Description: Negative edge-triggered JK flip-flop</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">module</span><span class="w"> </span><span class="n">JK_FF</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">clk</span><span class="p">,</span><span class="w">      </span><span class="c1">// Clock signal</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">rst_n</span><span class="p">,</span><span class="w">    </span><span class="c1">// Asynchronous active-low reset</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">J</span><span class="p">,</span><span class="w">        </span><span class="c1">// J input</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">K</span><span class="p">,</span><span class="w">        </span><span class="c1">// K input</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">Q</span><span class="p">,</span><span class="w">        </span><span class="c1">// Output Q</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="n">Q_n</span><span class="w">       </span><span class="c1">// Output Q_n</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">);</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">    </span><span class="c1">// Asynchronous reset, negative edge triggered JK flip-flop</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">negedge</span><span class="w"> </span><span class="n">clk</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="k">negedge</span><span class="w"> </span><span class="n">rst_n</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">rst_n</span><span class="p">)</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">            </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span><span class="w">                      </span><span class="c1">// Reset Q to 0</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">begin</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="p">({</span><span class="n">J</span><span class="p">,</span><span class="w"> </span><span class="n">K</span><span class="p">})</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Q</span><span class="p">;</span><span class="w">              </span><span class="c1">// No change</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b01</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b0</span><span class="p">;</span><span class="w">           </span><span class="c1">// Reset</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b10</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span><span class="w">           </span><span class="c1">// Set</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">                </span><span class="mh">2</span><span class="mb">&#39;b11</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="o">~</span><span class="n">Q</span><span class="p">;</span><span class="w">             </span><span class="c1">// Toggle</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">                </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="n">Q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Q</span><span class="p">;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">            </span><span class="k">endcase</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">        </span><span class="k">end</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">    </span><span class="k">end</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="k">endmodule</span>
-</code></pre></div></td></tr></table></div>
+  <h1>竞争+险象</h1>
+
+<p>信号在电路传输过程中的时延
+信号无法同时到达的问题
+很高的时钟频率
+错误的瞬时值
+短暂时间里的错误，如何发现和规避
+考虑更现实的问题</p>
+<p>无法同步
+无法预测时延</p>
+<hr />
+<h3 id="racehazard">🔹 <strong>竞争（Race）与险象（Hazard）简述</strong></h3>
+<p>在组合逻辑电路中，由于信号传播延迟不同，可能会导致<strong>临时性错误输出</strong>，这类问题被称为<strong>竞争（Race）</strong>和<strong>险象（Hazard）</strong>。</p>
+<hr />
+<h3 id="1-race">🔸 <strong>1. 竞争（Race）</strong></h3>
+<p><strong>定义</strong>：<br />
+当两个或多个信号<strong>几乎同时</strong>影响输出，但它们之间有<strong>不同的传播路径和延迟</strong>，导致输出可能短暂进入<strong>错误状态</strong>。</p>
+<p><strong>结果</strong>：</p>
 <ul>
 <li>
-<p>使用 <code>negedge clk</code> 实现<strong>下降沿触发</strong>。</p>
+<p>输出可能不稳定</p>
 </li>
 <li>
-<p>包含异步低电平复位（<code>rst_n</code>），方便仿真与实际电路中初始化。</p>
-</li>
-<li>
-<p>采用 <code>case</code> 结构清晰表达 J-K 触发器的逻辑功能。</p>
+<p>若设计不当，可能导致逻辑错误</p>
 </li>
 </ul>
-<h2 id="sol-cjn">sol-cjn</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">module</span><span class="w"> </span><span class="n">JKff_2</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">n_q</span><span class="p">);</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="n">clk</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">n_q</span><span class="p">;</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="kt">reg</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">n_q</span><span class="p">;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">always</span><span class="w"> </span><span class="p">@</span><span class="w"> </span><span class="p">(</span><span class="k">negedge</span><span class="w"> </span><span class="n">clk</span><span class="p">)</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="p">({</span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">})</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">            </span><span class="mh">2</span><span class="mb">&#39;b00</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">            </span><span class="mh">2</span><span class="mb">&#39;b01</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">0</span><span class="p">;</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">            </span><span class="mh">2</span><span class="mb">&#39;b10</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">1</span><span class="p">;</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">            </span><span class="mh">2</span><span class="mb">&#39;b11</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="o">~</span><span class="n">q</span><span class="p">;</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">            </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="n">q</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="k">endcase</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="k">endmodule</span>
-</code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="2-hazard">🔸 <strong>2. 险象（Hazard）</strong></h3>
+<p><strong>定义</strong>：<br />
+险象是由于<strong>门电路延迟</strong>导致的<strong>暂时性错误输出</strong>，即使逻辑上输入已经稳定，输出仍可能出现<strong>短时间的错误跳变</strong>。</p>
+<p><strong>分类</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>静态 1 险象</strong></td>
+<td>输出应为恒 1，但暂时跳变为 0 再恢复为 1</td>
+</tr>
+<tr>
+<td><strong>静态 0 险象</strong></td>
+<td>输出应为恒 0，但暂时跳变为 1 再恢复为 0</td>
+</tr>
+<tr>
+<td><strong>动态险象</strong></td>
+<td>输出应从 0 变到 1（或 1 到 0），但在中途出现多次跳变</td>
+</tr>
+</tbody>
+</table>
+<p>短暂的
+瞬态的现象
+暂时破坏正常逻辑关系</p>
+<hr />
+<h3 id="_1">🔸 <strong>产生原因</strong></h3>
+<ul>
+<li>
+<p>多条路径传播延迟不同</p>
+</li>
+<li>
+<p>电路未优化（如未使用适当的冗余项）</p>
+</li>
+<li>
+<p>电路设计没有考虑输入变化的时序影响</p>
+</li>
+</ul>
+<hr />
+<h3 id="_2">🔸 <strong>消除方法</strong></h3>
+<ul>
+<li>
+<p>添加<strong>冗余逻辑项</strong>（如使用卡诺图法消除险象）</p>
+</li>
+<li>
+<p>使用同步电路（加入时钟控制）</p>
+</li>
+<li>
+<p>采用等延迟设计或匹配路径延迟</p>
+</li>
+</ul>
+<hr />
+<p>非临界竞争
+临界竞争</p>
+<p>毛刺</p>
+<p>组合电路和时序电路在一起，险象可能造成严重错误。</p>
+<hr />
+<p>功能险象（多个信号同时变化）
+逻辑险象（同一个信号变化，由于不同路径的时延）</p>
+<hr />
+<h3 id="_3">🔹 各类险象一句话概述：</h3>
+<ol>
+<li><strong>静态险象（Static Hazard）</strong>：<br />
+     当输出应保持稳定（恒为1或恒为0）时，因路径延迟导致输出短暂跳变。</li>
+<li><strong>动态险象（Dynamic Hazard）</strong>：<br />
+     输出应由0变成1（或1变成0），但由于多路径延迟差异，输出发生多次跳变。</li>
+<li><strong>功能险象（Functional Hazard）</strong>：<br />
+     因多个输入<strong>同时变化</strong>引发输出错误，即使每个输入单独变化都不会出错。</li>
+<li><strong>逻辑险象（Logical Hazard）</strong>：<br />
+     电路<strong>逻辑表达式本身不完善</strong>或未加冗余项，导致输出在输入变化时出现跳变。</li>
+</ol>
+<hr />
+<p>$$
+F=xx'
+$$
+存在静0逻辑险象 (0-&gt;1)</p>
+<hr />
+<div class="arithmatex">\[
+F=x+x'
+\]</div>
+<p>存在静1逻辑险象 (1-&gt;0)</p>
+<hr />
 
 
 
@@ -7891,7 +8036,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 模块实例化">
+          <a href="../../subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Untitled">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -7901,20 +8046,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                模块实例化
+                Untitled
               </div>
             </div>
           </a>
         
         
           
-          <a href="../p2-counter4/" class="md-footer__link md-footer__link--next" aria-label="下一页: 4-bit Sync Counter">
+          <a href="../../../3-SL-Sequential-Logic/implication-table/" class="md-footer__link md-footer__link--next" aria-label="下一页: 隐含表（Implication Table）在状态最小化中的应用">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                4-bit Sync Counter
+                隐含表（Implication Table）在状态最小化中的应用
               </div>
             </div>
             <div class="md-footer__button md-icon">

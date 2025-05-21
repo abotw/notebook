@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/IPC/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/3-SL-Sequential-Logic/verilog-counter4/">
       
       
-        <link rel="prev" href="../DUT/">
+        <link rel="prev" href="../timing-diagram/">
       
       
-        <link rel="next" href="../RTL/">
+        <link rel="next" href="../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>IP核 - 日拱一卒</title>
+        <title>Verilog: 4-bit Sync Counter - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ip" class="md-skip">
+        <a href="#verilog-4-bit-sync-counter" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IP核
+              Verilog: 4-bit Sync Counter
             
           </span>
         </div>
@@ -3716,8 +3716,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3727,11 +3725,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" >
         
           
           <label class="md-nav__link" for="__nav_4_1_2" id="__nav_4_1_2_label" tabindex="0">
@@ -3745,7 +3743,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_2">
             <span class="md-nav__icon md-icon"></span>
             1 Verilog HDL
@@ -3759,7 +3757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../1-Verilog-HDL/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3780,216 +3778,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../DUT/" class="md-nav__link">
+      <a href="../../1-Verilog-HDL/verilog-cht/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    DUT
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    IP核
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    IP核
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ip_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      IP核的常见类型
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ip_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用IP核的场景
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../RTL/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    RTL
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../XDC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    XDC
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Reg+非阻塞型赋值
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../vivado/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Vivado
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    七段数码管
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    模块实例化
+    Verilog Cheatsheet
   </span>
   
 
@@ -4016,24 +3809,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_2_10" id="__nav_4_1_2_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_2_3" id="__nav_4_1_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Psets
+    Cards
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_2_10">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2_3">
             <span class="md-nav__icon md-icon"></span>
-            Psets
+            Cards
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4044,11 +3837,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../psets/p1-JKFF/" class="md-nav__link">
+      <a href="../../1-Verilog-HDL/cards/DUT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    J-K FF
+    DUT
   </span>
   
 
@@ -4065,11 +3858,137 @@
   
   
     <li class="md-nav__item">
-      <a href="../psets/p2-counter4/" class="md-nav__link">
+      <a href="../../1-Verilog-HDL/cards/IPC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    4-bit Sync Counter
+    IP核
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/RTL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RTL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/XDC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XDC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reg+非阻塞型赋值
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/vivado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vivado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    七段数码管
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模块实例化
   </span>
   
 
@@ -4160,27 +4079,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%E9%99%A9%E8%B1%A1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    竞争险象
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
     
@@ -4192,10 +4090,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_3" id="__nav_4_1_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_2" id="__nav_4_1_3_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4206,8 +4104,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_3">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_2">
             <span class="md-nav__icon md-icon"></span>
             DEMUX demultiplexer 分配器
           </label>
@@ -4259,10 +4157,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_4" id="__nav_4_1_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_3" id="__nav_4_1_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4273,8 +4171,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_4">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_3">
             <span class="md-nav__icon md-icon"></span>
             MUX multiplexer 选择器
           </label>
@@ -4326,10 +4224,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_5" id="__nav_4_1_3_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_4" id="__nav_4_1_3_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4340,8 +4238,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_5">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_4">
             <span class="md-nav__icon md-icon"></span>
             Adder 加法器
           </label>
@@ -4393,10 +4291,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_6" id="__nav_4_1_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_5" id="__nav_4_1_3_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4407,8 +4305,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_5">
             <span class="md-nav__icon md-icon"></span>
             Comparator 比较器
           </label>
@@ -4460,10 +4358,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_7" id="__nav_4_1_3_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_6" id="__nav_4_1_3_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4474,8 +4372,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_6">
             <span class="md-nav__icon md-icon"></span>
             Decoder 译码器
           </label>
@@ -4527,10 +4425,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_8" id="__nav_4_1_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_7" id="__nav_4_1_3_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4541,8 +4439,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_8">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_7">
             <span class="md-nav__icon md-icon"></span>
             Encoder 编码器
           </label>
@@ -4594,10 +4492,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_9" id="__nav_4_1_3_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_8" id="__nav_4_1_3_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4608,8 +4506,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_9">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_8">
             <span class="md-nav__icon md-icon"></span>
             Lgs
           </label>
@@ -4661,10 +4559,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_9" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_10" id="__nav_4_1_3_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_9" id="__nav_4_1_3_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4675,8 +4573,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_10">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_9">
             <span class="md-nav__icon md-icon"></span>
             Parity 奇偶校验器
           </label>
@@ -4728,10 +4626,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_11" id="__nav_4_1_3_11_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_10" id="__nav_4_1_3_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4742,8 +4640,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_11">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_10">
             <span class="md-nav__icon md-icon"></span>
             Psets
           </label>
@@ -4816,10 +4714,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_11" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_3_12" id="__nav_4_1_3_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_3_11" id="__nav_4_1_3_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4830,8 +4728,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_3_12">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_11">
             <span class="md-nav__icon md-icon"></span>
             Subtractor 减法器
           </label>
@@ -4866,14 +4764,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
               
                 
   
@@ -4891,7 +4781,84 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_3_12" id="__nav_4_1_3_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    竞争+险象
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            竞争+险象
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    竞争+险象
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
@@ -4905,7 +4872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_1_4">
             <span class="md-nav__icon md-icon"></span>
             3 SL Sequential Logic
@@ -4919,7 +4886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/implication-table/" class="md-nav__link">
+      <a href="../implication-table/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4940,7 +4907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/latch-vs-flip-flop/" class="md-nav__link">
+      <a href="../latch-vs-flip-flop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4961,7 +4928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/primitive-state-diagram/" class="md-nav__link">
+      <a href="../primitive-state-diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4982,7 +4949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/sequential-logic-circuit/" class="md-nav__link">
+      <a href="../sequential-logic-circuit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5003,7 +4970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/timing-diagram/" class="md-nav__link">
+      <a href="../timing-diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5021,84 +4988,66 @@
                 
   
   
+    
   
   
-    
-    
-    
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
+        
       
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_6" >
-        
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           
-          <label class="md-nav__link" for="__nav_4_1_4_6" id="__nav_4_1_4_6_label" tabindex="0">
-            
   
   <span class="md-ellipsis">
-    FF FlipFlop 触发器
+    Verilog: 4-bit Sync Counter
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_6">
-            <span class="md-nav__icon md-icon"></span>
-            FF FlipFlop 触发器
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Flip flop
+    Verilog: 4-bit Sync Counter
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+      
         
-  
-  <span class="md-ellipsis">
-    触发条件
-  </span>
-  
 
-      </a>
-    </li>
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
-
-              
-            
-          </ul>
-        </nav>
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sol" class="md-nav__link">
+    <span class="md-ellipsis">
+      sol
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5129,7 +5078,7 @@
             
   
   <span class="md-ellipsis">
-    FSM FiniteStateMachine 有限状态机
+    FF FlipFlop 触发器
   </span>
   
 
@@ -5139,7 +5088,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_4_7">
             <span class="md-nav__icon md-icon"></span>
-            FSM FiniteStateMachine 有限状态机
+            FF FlipFlop 触发器
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5150,11 +5099,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
+      <a href="../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    FSM
+    Flip flop
   </span>
   
 
@@ -5171,11 +5120,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
+      <a href="../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Excitation, Output, and Next-State Equation（数字电路）
+    J-K FF Verilog
   </span>
   
 
@@ -5192,32 +5141,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
+      <a href="../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    有限状态机 FSM（Finite State Machine）
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    原始状态图
+    触发条件
   </span>
   
 
@@ -5259,7 +5187,7 @@
             
   
   <span class="md-ellipsis">
-    Latch 锁存器
+    FSM FiniteStateMachine 有限状态机
   </span>
   
 
@@ -5268,6 +5196,136 @@
         
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            FSM FiniteStateMachine 有限状态机
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FSM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Excitation, Output, and Next-State Equation（数字电路）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    有限状态机 FSM（Finite State Machine）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    原始状态图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4_9" id="__nav_4_1_4_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Latch 锁存器
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_9">
             <span class="md-nav__icon md-icon"></span>
             Latch 锁存器
           </label>
@@ -5280,7 +5338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/1rs-latch/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/1rs-latch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5301,7 +5359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5322,7 +5380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5343,7 +5401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5364,7 +5422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5395,10 +5453,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_8_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9_6" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_8_6" id="__nav_4_1_4_8_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_9_6" id="__nav_4_1_4_9_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5409,8 +5467,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_8_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_8_6">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_9_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_9_6">
             <span class="md-nav__icon md-icon"></span>
             T触发器
           </label>
@@ -5423,7 +5481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
+      <a href="../Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5470,10 +5528,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_10" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_9" id="__nav_4_1_4_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_10" id="__nav_4_1_4_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5484,8 +5542,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_9">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_10">
             <span class="md-nav__icon md-icon"></span>
             Sync Async
           </label>
@@ -5498,7 +5556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
+      <a href="../Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5519,141 +5577,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
+      <a href="../Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     同步 vs 异步
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_10" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_1_4_10" id="__nav_4_1_4_10_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Moore mealy
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_10">
-            <span class="md-nav__icon md-icon"></span>
-            Moore mealy
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/moore-mealy/1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/moore-mealy/mealy-vs-moore/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mealy vs moore
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy-state-machine/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moore vs Mealy 状态机
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Moore vs mealy
   </span>
   
 
@@ -5695,7 +5623,7 @@
             
   
   <span class="md-ellipsis">
-    Psets
+    Moore mealy
   </span>
   
 
@@ -5704,6 +5632,136 @@
         
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            Moore mealy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moore-mealy/1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moore-mealy/mealy-vs-moore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mealy vs moore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moore-mealy/moore-vs-mealy-state-machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moore vs Mealy 状态机
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moore-mealy/moore-vs-mealy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moore vs mealy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4_12" id="__nav_4_1_4_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Psets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12">
             <span class="md-nav__icon md-icon"></span>
             Psets
           </label>
@@ -5726,10 +5784,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_1" id="__nav_4_1_4_11_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_1" id="__nav_4_1_4_12_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5740,8 +5798,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_1">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_1">
             <span class="md-nav__icon md-icon"></span>
             p1 FFs TimingDiagram
           </label>
@@ -5754,7 +5812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
+      <a href="../psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5793,10 +5851,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_2" id="__nav_4_1_4_11_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_2" id="__nav_4_1_4_12_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5807,8 +5865,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_2">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_2">
             <span class="md-nav__icon md-icon"></span>
             p2 SSLC Analysis
           </label>
@@ -5821,7 +5879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
+      <a href="../psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5860,10 +5918,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_3" id="__nav_4_1_4_11_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_3" id="__nav_4_1_4_12_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5874,8 +5932,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_3">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_3">
             <span class="md-nav__icon md-icon"></span>
             P3 原始状态图
           </label>
@@ -5888,7 +5946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
+      <a href="../psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -5927,10 +5985,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_11_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4_12_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_1_4_11_4" id="__nav_4_1_4_11_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_1_4_12_4" id="__nav_4_1_4_12_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5941,8 +5999,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_11_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_4_11_4">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_4_1_4_12_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4_12_4">
             <span class="md-nav__icon md-icon"></span>
             P4 隐含表
           </label>
@@ -5955,7 +6013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-SL-Sequential-Logic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
+      <a href="../psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -7721,18 +7779,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ip_1" class="md-nav__link">
+  <a href="#sol" class="md-nav__link">
     <span class="md-ellipsis">
-      IP核的常见类型
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ip_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用IP核的场景
+      sol
     </span>
   </a>
   
@@ -7753,66 +7802,46 @@
                   
 
 
-<h1 id="ip">IP核</h1>
-<p><strong>“IP核”是“Intellectual Property Core”（知识产权核）的简称</strong>，在数字集成电路设计和FPGA/ASIC开发中非常常见。简单来说，<strong>IP核是一段可以重复使用的模块化设计单元</strong>，通常由某种硬件描述语言（如 Verilog 或 VHDL）编写。它实现了某种功能，比如加法器、FIFO、UART控制器、以太网控制器，甚至完整的CPU核心。</p>
-<hr />
-<h2 id="ip_1">IP核的常见类型</h2>
+<h1 id="verilog-4-bit-sync-counter">Verilog: 4-bit Sync Counter</h1>
+<blockquote>
+<p>设计一个<strong>4位二进制同步计数器</strong>的 Verilog HDL 模型。<br />
+要求如下：</p>
 <ol>
-<li>
-<p><strong>软核（Soft IP Core）</strong></p>
-<ul>
-<li>
-<p>用 HDL（如 Verilog）编写，可综合。</p>
-</li>
-<li>
-<p>优点：可移植、可定制。</p>
-</li>
-<li>
-<p>示例：一个 Verilog 写的 SPI 控制器模块。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>硬核（Hard IP Core）</strong></p>
-<ul>
-<li>
-<p>已经布图、固定在某种工艺上的电路块。</p>
-</li>
-<li>
-<p>优点：性能高、面积小、功耗低。</p>
-</li>
-<li>
-<p>示例：ARM Cortex-A 核心在某些 SoC 中就是硬核。</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>固核（Firm IP Core）</strong></p>
-<ul>
-<li>介于软核和硬核之间，通常是针对某种特定工艺优化后的 RTL 和布局建议。</li>
-</ul>
-</li>
+<li>模块名： <code>counter</code> </li>
+<li>输入：时钟 <code>CP</code>（上升沿有效）、同步清零信号 <code>clr</code>（高电平有效） </li>
+<li>输出：4 位 <code>dataout</code></li>
+<li>功能：每个时钟上升沿 <code>dataout</code> 加 1；若 <code>clr</code> 为高，则在时钟上升沿清零。     </li>
 </ol>
-<hr />
-<h2 id="ip_2">使用IP核的场景</h2>
-<ul>
-<li>
-<p>在 <strong>FPGA 开发</strong> 中，很多厂商（如 Xilinx、Intel/Altera）提供 IP 核库，可以直接拖拽使用。例如：AXI 总线控制器、PLL、电机驱动器等。</p>
-</li>
-<li>
-<p>在 <strong>ASIC 设计</strong> 中，芯片设计公司会购买第三方提供的 IP 核，比如购买 ARM 核来构建手机 SoC。</p>
-</li>
-</ul>
-<hr />
-<p>假设你正在用 Vivado 开发一个 FPGA 项目，需要实现一个 UART 串口通信模块。你可以：</p>
-<ul>
-<li>
-<p>自己写 Verilog 来实现（比较复杂）</p>
-</li>
-<li>
-<p>或者直接调用 Vivado 的 UART IP核，配置波特率等参数，生成 RTL，然后集成进你的设计中。</p>
-</li>
-</ul>
+</blockquote>
+<h2 id="sol">sol</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">module</span><span class="w"> </span><span class="n">counter</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">CP</span><span class="p">,</span><span class="w">         </span><span class="c1">// 时钟信号（上升沿有效）</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="k">input</span><span class="w"> </span><span class="kt">wire</span><span class="w"> </span><span class="n">clr</span><span class="p">,</span><span class="w">        </span><span class="c1">// 同步清零信号（高电平有效）</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="k">output</span><span class="w"> </span><span class="kt">reg</span><span class="w"> </span><span class="p">[</span><span class="mh">3</span><span class="o">:</span><span class="mh">0</span><span class="p">]</span><span class="w"> </span><span class="n">dataout</span><span class="w">  </span><span class="c1">// 4位输出</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">);</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="k">posedge</span><span class="w"> </span><span class="n">CP</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">clr</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">            </span><span class="n">dataout</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mh">4</span><span class="mb">&#39;b0000</span><span class="p">;</span><span class="w">         </span><span class="c1">// 同步清零</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">        </span><span class="k">else</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">            </span><span class="n">dataout</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">dataout</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mh">1</span><span class="mb">&#39;b1</span><span class="p">;</span><span class="w">  </span><span class="c1">// 加1计数</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">endmodule</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -7851,7 +7880,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../DUT/" class="md-footer__link md-footer__link--prev" aria-label="上一页: DUT">
+          <a href="../timing-diagram/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 时序波形图（Timing Diagram）">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -7861,20 +7890,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                DUT
+                时序波形图（Timing Diagram）
               </div>
             </div>
           </a>
         
         
           
-          <a href="../RTL/" class="md-footer__link md-footer__link--next" aria-label="下一页: RTL">
+          <a href="../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-footer__link md-footer__link--next" aria-label="下一页: Flip flop">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                RTL
+                Flip flop
               </div>
             </div>
             <div class="md-footer__button md-icon">

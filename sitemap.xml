@@ -396,62 +396,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/DUT/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/verilog-cht/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/IPC/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/DUT/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/RTL/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/IPC/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/XDC/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/RTL/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/XDC/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/vivado/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/vivado/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p1-JKFF/</loc>
-         <lastmod>2025-05-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p2-counter4/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/combinational-logic-circuits/</loc>
-         <lastmod>2025-05-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%E9%99%A9%E8%B1%A1/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -511,6 +501,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/%E7%AB%9E%E4%BA%89%2B%E9%99%A9%E8%B1%A1/</loc>
+         <lastmod>2025-05-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/3-SL-Sequential-Logic/implication-table/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
@@ -536,7 +531,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SL-Sequential-Logic/verilog-counter4/</loc>
+         <lastmod>2025-05-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/</loc>
+         <lastmod>2025-05-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
