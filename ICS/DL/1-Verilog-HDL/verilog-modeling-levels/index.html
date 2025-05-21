@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/verilog-modeling-levels/">
       
       
-        <link rel="prev" href="../verilog-cht/">
+        <link rel="prev" href="../verilog-basic-syntax/">
       
       
         <link rel="next" href="../cards/DUT/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Verilog 建模层次对比：数据建模、行为建模与门级建模 - 日拱一卒</title>
+        <title>Verilog 建模 - 日拱一卒</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Verilog 建模层次对比：数据建模、行为建模与门级建模
+              Verilog 建模
             
           </span>
         </div>
@@ -3780,11 +3780,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../verilog-cht/" class="md-nav__link">
+      <a href="../verilog-basic-syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Verilog Cheatsheet
+    Verilog基本语法（Verilog Basic Syntax）
   </span>
   
 
@@ -3814,7 +3814,7 @@
           
   
   <span class="md-ellipsis">
-    Verilog 建模层次对比：数据建模、行为建模与门级建模
+    Verilog 建模
   </span>
   
 
@@ -3825,7 +3825,7 @@
         
   
   <span class="md-ellipsis">
-    Verilog 建模层次对比：数据建模、行为建模与门级建模
+    Verilog 建模
   </span>
   
 
@@ -4139,6 +4139,73 @@
   
   <span class="md-ellipsis">
     模块实例化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_2_5" id="__nav_4_1_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Chts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chts/verilog-cht/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verilog Cheatsheet
   </span>
   
 
@@ -7979,7 +8046,15 @@
                   
 
 
-<h1 id="verilog">Verilog 建模层次对比：数据建模、行为建模与门级建模</h1>
+<h1 id="verilog">Verilog 建模</h1>
+<ul>
+<li>Verilog的三种建模方式<ul>
+<li>门级建模</li>
+<li>数据流建模</li>
+<li>行为建模</li>
+</ul>
+</li>
+</ul>
 <h2 id="_1">一、建模层次概述（三种抽象方式）</h2>
 <p>Verilog 语言支持三种主要的建模方式，对应不同的抽象层级与描述目的，是考研408《计算机组成原理》中常考的硬件设计思想基础。</p>
 <table>
@@ -7995,8 +8070,8 @@
 <tr>
 <td>门级建模（Gate-Level Modeling）</td>
 <td>最低层级</td>
-<td>使用 Verilog 提供的基本门模块（如 <code>and</code>、<code>or</code>、<code>not</code> 等）精确描述逻辑连接关系</td>
-<td>用于还原电路图，适合底层逻辑分析</td>
+<td>使用 Verilog 提供的基本<strong>门模块</strong>（如 <code>and</code>、<code>or</code>、<code>not</code> 等）精确描述逻辑连接关系</td>
+<td>用于<strong>还原电路图</strong>，适合底层逻辑分析</td>
 </tr>
 <tr>
 <td>数据建模（Dataflow Modeling）</td>
@@ -8190,7 +8265,7 @@ D. 以上均可</p>
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../verilog-cht/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Verilog Cheatsheet">
+          <a href="../verilog-basic-syntax/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Verilog基本语法（Verilog Basic Syntax）">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -8200,7 +8275,7 @@ D. 以上均可</p>
                 上一页
               </span>
               <div class="md-ellipsis">
-                Verilog Cheatsheet
+                Verilog基本语法（Verilog Basic Syntax）
               </div>
             </div>
           </a>

@@ -396,7 +396,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/verilog-cht/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/verilog-basic-syntax/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -442,6 +442,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/</loc>
+         <lastmod>2025-05-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/chts/verilog-cht/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
