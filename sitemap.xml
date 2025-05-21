@@ -436,17 +436,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/p4-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p1-JKFF/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p1-FFs-verilog/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/1-Verilog-HDL/psets/p2-counter4/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/CC/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/combinational-logic-circuits/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -496,17 +496,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p1-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p1-CLC-analysis/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p1/</loc>
-         <lastmod>2025-05-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p2-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E8%AE%BE%E8%AE%A1/</loc>
+         <loc>https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p2-CLC-design/</loc>
          <lastmod>2025-05-21</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p1/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/ICS/DL/2-CL-Combinational-Logic/psets/p2-CLC-design/">
       
       
-        <link rel="prev" href="../p1-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90/">
+        <link rel="prev" href="../p1-CLC-analysis/">
       
       
-        <link rel="next" href="../p2-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E8%AE%BE%E8%AE%A1/">
+        <link rel="next" href="../../subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>P1 - 日拱一卒</title>
+        <title>基于余3码的合数判断组合逻辑电路设计 - 日拱一卒</title>
       
     
     
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#3" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              P1
+              基于余3码的合数判断组合逻辑电路设计
             
           </span>
         </div>
@@ -3958,7 +3963,7 @@
             
   
   <span class="md-ellipsis">
-    P4 4位同步计数器
+    Psets
   </span>
   
 
@@ -3967,73 +3972,6 @@
         
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1_2_10">
-            <span class="md-nav__icon md-icon"></span>
-            P4 4位同步计数器
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/p4-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/p10-4%E4%BD%8D%E5%90%8C%E6%AD%A5%E8%AE%A1%E6%95%B0%E5%99%A8/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4位同步计数器
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2_11" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_1_2_11" id="__nav_4_1_2_11_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Psets
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_2_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1_2_11">
             <span class="md-nav__icon md-icon"></span>
             Psets
           </label>
@@ -4046,11 +3984,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/psets/p1-FFs-verilog/" class="md-nav__link">
+      <a href="../../../1-Verilog-HDL/psets/p1-JKFF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    p1 FFs verilog
+    J-K FF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../1-Verilog-HDL/psets/p2-counter4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4-bit Sync Counter
   </span>
   
 
@@ -4123,11 +4082,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CC/" class="md-nav__link">
+      <a href="../../combinational-logic-circuits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    CC
+    Combinational logic circuits
   </span>
   
 
@@ -4741,11 +4700,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../p1-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90/" class="md-nav__link">
+      <a href="../p1-CLC-analysis/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    P1 组合电路的分析
+    分析：组合逻辑电路
   </span>
   
 
@@ -4768,38 +4727,124 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    基于余3码的合数判断组合逻辑电路设计
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    P1
+    基于余3码的合数判断组合逻辑电路设计
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../p2-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    P2 组合电路的设计
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sol" class="md-nav__link">
+    <span class="md-ellipsis">
+      sol
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 真值表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 表达式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 卡诺图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 电路图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verilog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Verilog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sol-cjn" class="md-nav__link">
+    <span class="md-ellipsis">
+      sol-cjn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -7725,6 +7770,91 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sol" class="md-nav__link">
+    <span class="md-ellipsis">
+      sol
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 真值表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 表达式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 卡诺图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 电路图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-verilog" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verilog
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Verilog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sol-cjn" class="md-nav__link">
+    <span class="md-ellipsis">
+      sol-cjn
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -7739,225 +7869,288 @@
                   
 
 
-  <h1>P1</h1>
-
-<p>余三码
-1位十进制数
-是否是合数</p>
-<p>(1) 真值表</p>
+<h1 id="3">基于余3码的合数判断组合逻辑电路设计</h1>
+<p><img alt="" src="../attachments/psets-cjn-11.png" /></p>
+<p><img alt="" src="../attachments/psets-cjn-09.png" /></p>
+<p><img alt="" src="../attachments/psets-cjn-12.png" /></p>
+<blockquote>
+<p>设计一个<strong>组合逻辑电路</strong>，用于判断用<strong>余3码（Excess-3 code）</strong>表示的<strong>1位十进制数</strong>是否为<strong>合数</strong>。  注：合数是指<strong>大于1且除了能被1和自身整除外，还能被其他正整数整除的自然数</strong>。</p>
+</blockquote>
+<p><strong>要求完成以下任务（共20分）：</strong></p>
+<ol>
+<li>
+<p>列出该电路的<strong>真值表</strong>；</p>
+</li>
+<li>
+<p>写出电路的<strong>逻辑表达式</strong>（提示：请判断无关项是否对输出有干扰，并予以合理处理）；</p>
+</li>
+<li>
+<p>判断所设计的电路是否存在<strong>冒险（Hazard）</strong>现象，如存在，请给出<strong>消除方案</strong>；</p>
+</li>
+<li>
+<p>绘制电路的<strong>逻辑图</strong>；</p>
+</li>
+<li>
+<p>编写相应的<strong>Verilog HDL 模块代码</strong>。</p>
+</li>
+</ol>
+<h2 id="sol">sol</h2>
+<p>设四个输出数据分别为 <span class="arithmatex">\(B_3\)</span>，<span class="arithmatex">\(B_2\)</span>，<span class="arithmatex">\(B_1\)</span>，<span class="arithmatex">\(B_0\)</span>，输出为 <span class="arithmatex">\(F\)</span>。</p>
+<h3 id="1">1. 真值表</h3>
 <p>输入：用余3码表示的1位十进制数
 输出：1表示是合数，0表示不是合数</p>
 <table>
 <thead>
 <tr>
-<th>十进制数字符号</th>
-<th>D3</th>
-<th>D2</th>
-<th>D1</th>
-<th>D0</th>
-<th>F</th>
+<th><span class="arithmatex">\(B_3B_2B_1B_0\)</span></th>
+<th><span class="arithmatex">\(F\)</span></th>
+<th>BCD</th>
+<th>编号</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><strong>0000</strong></td>
+<td><strong>d</strong></td>
 <td></td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>d</td>
 </tr>
 <tr>
+<td><strong>0001</strong></td>
+<td><strong>d</strong></td>
 <td></td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>0010</strong></td>
+<td><strong>d</strong></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>0011</td>
 <td>0</td>
 <td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0100</td>
 <td>0</td>
 <td>1</td>
-<td>d</td>
+<td>4</td>
 </tr>
 <tr>
-<td></td>
+<td>0101</td>
 <td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>d</td>
+<td>2</td>
+<td>5</td>
 </tr>
 <tr>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
+<td>0110</td>
 <td>0</td>
+<td>3</td>
+<td>6</td>
 </tr>
 <tr>
+<td><strong>0111</strong></td>
 <td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td>0</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td>0</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td>0</td>
-</tr>
-<tr>
 <td><strong>4</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td>1</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td>0</td>
-</tr>
-<tr>
-<td><strong>6</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td>1</td>
-</tr>
-<tr>
 <td><strong>7</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>1000</td>
 <td>0</td>
+<td>5</td>
+<td>8</td>
 </tr>
 <tr>
-<td><strong>8</strong></td>
+<td><strong>1001</strong></td>
 <td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td>1</td>
-</tr>
-<tr>
+<td><strong>6</strong></td>
 <td><strong>9</strong></td>
-<td><strong>1</strong></td>
-<td><strong>1</strong></td>
-<td><strong>0</strong></td>
-<td><strong>0</strong></td>
-<td>1</td>
 </tr>
 <tr>
-<td></td>
-<td>1</td>
-<td>1</td>
+<td>1010</td>
 <td>0</td>
-<td>1</td>
-<td>d</td>
-</tr>
-<tr>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>d</td>
-</tr>
-<tr>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>d</td>
-</tr>
-</tbody>
-</table>
-<p>(2) 逻辑表达式</p>
-<table>
-<thead>
-<tr>
-<th>D3D2  D1D0</th>
-<th>00</th>
-<th>01</th>
-<th>11</th>
-<th>10</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>00</td>
-<td>d</td>
-<td>d</td>
-<td></td>
-<td>d</td>
-</tr>
-<tr>
-<td>01</td>
-<td></td>
-<td></td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>11</td>
-<td>1</td>
-<td>d</td>
-<td>d</td>
-<td>d</td>
-</tr>
-<tr>
+<td>7</td>
 <td>10</td>
-<td></td>
+</tr>
+<tr>
+<td><strong>1011</strong></td>
 <td><strong>1</strong></td>
+<td><strong>8</strong></td>
+<td><strong>11</strong></td>
+</tr>
+<tr>
+<td><strong>1100</strong></td>
 <td><strong>1</strong></td>
-<td></td>
+<td><strong>9</strong></td>
+<td><strong>12</strong></td>
 </tr>
 <tr>
-<td>$$</td>
+<td><strong>1101</strong></td>
+<td><strong>d</strong></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>13</td>
 </tr>
 <tr>
-<td>F=D_3'D_2D_1D_0+D_3D_2D_1'D_0'+D_3D_2'D_0</td>
+<td><strong>1110</strong></td>
+<td><strong>d</strong></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>14</td>
 </tr>
 <tr>
-<td>$$</td>
+<td><strong>1111</strong></td>
+<td><strong>d</strong></td>
 <td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>15</td>
 </tr>
 </tbody>
 </table>
-<p>(3) 是否会产生险象</p>
-<p>逻辑电路图
-Verilog HDL代码</p>
-<p>![[Pasted image 20250415122133.png]]
-![[Pasted image 20250415122144.png]]
-![[Pasted image 20250415122156.png]]</p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250521094816.png" /></p>
+<h3 id="2">2. 表达式</h3>
+<p><span class="arithmatex">\(F(B_3,B_2,B_1,B_0)=\sum m(7,9,11,12)+\sum d(0,1,2,13,14,15)\)</span></p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250521094827.png" /></p>
+<p>无关项会干扰输出结果，因此表达式化简时不能考虑无关项，因此表达式为：</p>
+<p><span class="arithmatex">\(F(B_3,B_2,B_1,B_0)=B_3'B_2B_1B_0+B_3B_2'B_1'B_0+B_3B_2'B_1B_0+B_3B_2B_1'B_0'\)</span></p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250521094834.png" /></p>
+<h3 id="3_1">3. 卡诺图</h3>
+<p><img alt="" src="../attachments/Pasted%20image%2020250521094843.png" /></p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250520180102.png" /></p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250520180231.png" /></p>
+<p>根据K-Map判断，该设计不会产生险象。</p>
+<p><span class="arithmatex">\(F(B_3,B_2,B_1,B_0)=B_3'B_2B_1B_0+B_3B_2'B_0+B_3B_2B_1'B_0'\)</span></p>
+<h3 id="4">4. 电路图</h3>
+<p><img alt="" src="../attachments/Pasted%20image%2020250521094852.png" /></p>
+<p><img alt="" src="../attachments/Pasted%20image%2020250520181035.png" /></p>
+<h3 id="5-verilog">5. Verilog</h3>
+<h4 id="sol-cjn">sol-cjn</h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kt">reg</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">assign</span><span class="w"> </span><span class="n">F</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">B</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">D</span><span class="p">))</span><span class="o">&amp;</span><span class="p">((</span><span class="n">A</span><span class="p">)</span><span class="o">&amp;</span><span class="n">B</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">C</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">D</span><span class="p">))</span><span class="o">&amp;</span><span class="p">((</span><span class="o">~</span><span class="n">A</span><span class="p">)</span><span class="o">&amp;</span><span class="n">B</span><span class="o">&amp;</span><span class="n">C</span><span class="o">&amp;</span><span class="n">D</span><span class="p">);</span><span class="c1">//数据流描述</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">endmodule</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="kt">reg</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">assign</span><span class="w"> </span><span class="n">F</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">B</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">D</span><span class="p">))</span><span class="o">|</span><span class="p">((</span><span class="n">A</span><span class="p">)</span><span class="o">&amp;</span><span class="n">B</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">C</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="o">~</span><span class="n">D</span><span class="p">))</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">((</span><span class="o">~</span><span class="n">A</span><span class="p">)</span><span class="o">&amp;</span><span class="n">B</span><span class="o">&amp;</span><span class="n">C</span><span class="o">&amp;</span><span class="n">D</span><span class="p">);</span><span class="c1">//数据流描述</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="k">endmodule</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kt">reg</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="n">A</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">D</span><span class="p">)</span><span class="c1">//行为描述</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="k">begin</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">        </span><span class="k">case</span><span class="p">({</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">})</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b0111</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1001</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1011</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1100</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">            </span><span class="k">default</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">0</span><span class="err">；</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="k">endcase</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="k">endmodule</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="kt">reg</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="k">always</span><span class="w"> </span><span class="p">@(</span><span class="n">A</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">B</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">D</span><span class="p">)</span><span class="c1">//行为描述</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">    </span><span class="k">begin</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">        </span><span class="k">case</span><span class="p">({</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">})</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b0111</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1001</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1011</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">            </span><span class="mh">4</span><span class="no">`b1100</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">1</span><span class="p">;</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">            </span><span class="k">default</span><span class="err">：</span><span class="n">F</span><span class="o">=</span><span class="mh">0</span><span class="err">；</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">        </span><span class="k">endcase</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="k">endmodule</span><span class="w"> </span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kt">wire</span><span class="w"> </span><span class="n">w1</span><span class="p">,</span><span class="n">w2</span><span class="p">,</span><span class="n">w3</span><span class="p">;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">        </span><span class="k">and</span><span class="w"> </span><span class="n">u1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="o">~</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">D</span><span class="p">),</span><span class="c1">//例化逻辑门</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">           </span><span class="n">u2</span><span class="p">(</span><span class="n">w2</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="o">~</span><span class="n">C</span><span class="p">,</span><span class="o">~</span><span class="n">D</span><span class="p">),</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">           </span><span class="n">u3</span><span class="p">(</span><span class="n">w3</span><span class="p">,</span><span class="o">~</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">        </span><span class="k">or</span><span class="w">  </span><span class="n">u4</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">w1</span><span class="p">,</span><span class="n">w2</span><span class="p">,</span><span class="n">w3</span><span class="p">);</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="k">endmodule</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="k">module</span><span class="w"> </span><span class="n">heshu</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">,</span><span class="n">F</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="k">input</span><span class="w">  </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="err">；</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="k">output</span><span class="w"> </span><span class="n">F</span><span class="err">；</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="kt">wire</span><span class="w"> </span><span class="n">w1</span><span class="p">,</span><span class="n">w2</span><span class="p">,</span><span class="n">w3</span><span class="p">;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">        </span><span class="k">and</span><span class="w"> </span><span class="n">u1</span><span class="p">(</span><span class="n">w1</span><span class="p">,</span><span class="w"> </span><span class="o">~</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">D</span><span class="p">),</span><span class="c1">//例化逻辑门</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">           </span><span class="n">u2</span><span class="p">(</span><span class="n">w2</span><span class="p">,</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="o">~</span><span class="n">C</span><span class="p">,</span><span class="o">~</span><span class="n">D</span><span class="p">),</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">           </span><span class="n">u3</span><span class="p">(</span><span class="n">w3</span><span class="p">,</span><span class="o">~</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">,</span><span class="n">D</span><span class="p">)</span><span class="err">；</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">        </span><span class="k">or</span><span class="w">  </span><span class="n">u4</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">w1</span><span class="p">,</span><span class="n">w2</span><span class="p">,</span><span class="n">w3</span><span class="p">);</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="k">endmodule</span>
+</code></pre></div></td></tr></table></div>
 
 
 
@@ -7993,7 +8186,7 @@ Verilog HDL代码</p>
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../p1-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E5%88%86%E6%9E%90/" class="md-footer__link md-footer__link--prev" aria-label="上一页: P1 组合电路的分析">
+          <a href="../p1-CLC-analysis/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 分析：组合逻辑电路">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -8003,20 +8196,20 @@ Verilog HDL代码</p>
                 上一页
               </span>
               <div class="md-ellipsis">
-                P1 组合电路的分析
+                分析：组合逻辑电路
               </div>
             </div>
           </a>
         
         
           
-          <a href="../p2-%E7%BB%84%E5%90%88%E7%94%B5%E8%B7%AF%E7%9A%84%E8%AE%BE%E8%AE%A1/" class="md-footer__link md-footer__link--next" aria-label="下一页: P2 组合电路的设计">
+          <a href="../../subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-footer__link md-footer__link--next" aria-label="下一页: Untitled">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                P2 组合电路的设计
+                Untitled
               </div>
             </div>
             <div class="md-footer__button md-icon">
