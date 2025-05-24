@@ -25,3 +25,17 @@
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
    -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
 ```
+
+---
+
+- [ilovepdf](https://www.ilovepdf.com/zh-cn)
+    
+- [pdfjs](https://mozilla.github.io/pdf.js/web/viewer.html)
+    
+- [pdf2png](https://pdf2png.com/)
+    
+- [**PDF Guru Anki**](https://guru.kevin2li.top/)
+    
+- [https://cloudconvert.com/md-to-docx](https://cloudconvert.com/md-to-docx)
+    
+- [https://doc2x.com/](https://doc2x.com/)
