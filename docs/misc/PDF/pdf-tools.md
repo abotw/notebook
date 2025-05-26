@@ -1,6 +1,18 @@
+---
+date: 2025-05-26T09:13:00
+---
+
 # PDF Tools
 
-在 macOS 上，有许多开源且实用的 PDF 处理工具，涵盖查看、注释、合并、拆分、加密、压缩等功能。以下是一些推荐：
+## Web
+
+| 名称            | 官网                                                               |
+| ------------- | ---------------------------------------------------------------- |
+| iLovePDF      | [https://www.ilovepdf.com/zh-cn](https://www.ilovepdf.com/zh-cn) |
+| PDF Guru Anki | [https://guru.kevin2li.top/](https://guru.kevin2li.top/)         |
+| Doc2X         | [https://doc2x.com/](https://doc2x.com/)                         |
+
+## App
 
 |应用名称|简介|支持功能|官网/下载地址|
 |---|---|---|---|
@@ -10,32 +22,8 @@
 |**PDF Arranger**|轻量级的页面操作工具|重排页面、旋转、提取、合并|[github.com/pdfarranger/pdfarranger](https://github.com/pdfarranger/pdfarranger)|
 |**Qoppa PDF Studio（非免费，但跨平台）**|虽不是开源，但比 Acrobat 轻巧|编辑、注释、表单、OCR|[pdfstudio.com](https://www.qoppa.com/pdfstudio/)|
 
-## 补充命令行工具
+## Command Line
 
-| 工具                                     | 简介                 | 安装方法（Homebrew）             |
-| -------------------------------------- | ------------------ | -------------------------- |
-| **Poppler（`pdftotext`、`pdfimages` 等）** | 转换 PDF 为文本、提取图片    | `brew install poppler`     |
-| **Ghostscript**                        | PDF 压缩、转换          | `brew install ghostscript` |
-
----
-
-### 示例：压缩 PDF（命令行）
-
-```bash
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen \
-   -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
-```
-
----
-
-- [ilovepdf](https://www.ilovepdf.com/zh-cn)
-    
-- [pdfjs](https://mozilla.github.io/pdf.js/web/viewer.html)
-    
-- [pdf2png](https://pdf2png.com/)
-    
-- [**PDF Guru Anki**](https://guru.kevin2li.top/)
-    
-- [https://cloudconvert.com/md-to-docx](https://cloudconvert.com/md-to-docx)
-    
-- [https://doc2x.com/](https://doc2x.com/)
+| 工具                                     | 简介              | 安装方法（Homebrew）             |
+| -------------------------------------- | --------------- | -------------------------- |
+| **Ghostscript**                        | PDF 压缩、转换       | `brew install ghostscript` |
