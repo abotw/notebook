@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/misc/PDF/qpdf/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/misc/PDF/poppler-pdftoppm-cht/">
       
       
-        <link rel="prev" href="../pdf-tools/">
+        <link rel="prev" href="../pdfjs/">
       
       
-        <link rel="next" href="../../git/gitignore/">
+        <link rel="next" href="../qpdf-cht/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>qpdf - 日拱一卒</title>
+        <title>Poppler 和 pdftoppm 工具速查笔记 - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#qpdf" class="md-skip">
+        <a href="#poppler-pdftoppm" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              qpdf
+              Poppler 和 pdftoppm 工具速查笔记
             
           </span>
         </div>
@@ -8133,6 +8133,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdfjs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    pdfjs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -8150,7 +8173,7 @@
   
   
   <span class="md-ellipsis">
-    qpdf
+    Poppler 和 pdftoppm 工具速查笔记
     
   </span>
   
@@ -8163,7 +8186,7 @@
   
   
   <span class="md-ellipsis">
-    qpdf
+    Poppler 和 pdftoppm 工具速查笔记
     
   </span>
   
@@ -8186,91 +8209,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cht" class="md-nav__link">
-    <span class="md-ellipsis">
-      cht
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#qpdf_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      qpdf 简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      常用功能与用法
+      一、基本概念
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="常用功能与用法">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、安装方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、安装方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-pdf" class="md-nav__link">
+  <a href="#macos" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 提取页码（拆分 PDF）
+      macOS
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-pdf" class="md-nav__link">
+  <a href="#debianubuntu" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 合并多个 PDF 文件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 加密 PDF
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 解密 PDF
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 优化（线性化）PDF 用于网页快速预览
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 检查 PDF 文件结构是否有效
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. 压缩或解压缩 PDF
+      Debian/Ubuntu
     </span>
   </a>
   
@@ -8282,9 +8251,105 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qpdf_2" class="md-nav__link">
+  <a href="#pdftoppm" class="md-nav__link">
     <span class="md-ellipsis">
-      小结：qpdf 是什么？
+      三、pdftoppm 基本用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、pdftoppm 基本用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ppm" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 转换为 PPM 图像
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-png" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 指定图像格式（如 PNG）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 指定页码范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 指定图像分辨率（DPI）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-stdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 转换单页并输出至 stdout（标准输出）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 设置图像尺寸（缩放）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、常用参数汇总
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、示例应用场景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、相关工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      七、参考链接
     </span>
   </a>
   
@@ -8294,6 +8359,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qpdf-cht/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    qpdf
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -8724,91 +8812,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cht" class="md-nav__link">
-    <span class="md-ellipsis">
-      cht
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#qpdf_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      qpdf 简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      常用功能与用法
+      一、基本概念
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="常用功能与用法">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、安装方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、安装方法">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-pdf" class="md-nav__link">
+  <a href="#macos" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 提取页码（拆分 PDF）
+      macOS
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-pdf" class="md-nav__link">
+  <a href="#debianubuntu" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 合并多个 PDF 文件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 加密 PDF
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 解密 PDF
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 优化（线性化）PDF 用于网页快速预览
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 检查 PDF 文件结构是否有效
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. 压缩或解压缩 PDF
+      Debian/Ubuntu
     </span>
   </a>
   
@@ -8820,9 +8854,105 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qpdf_2" class="md-nav__link">
+  <a href="#pdftoppm" class="md-nav__link">
     <span class="md-ellipsis">
-      小结：qpdf 是什么？
+      三、pdftoppm 基本用法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、pdftoppm 基本用法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ppm" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 转换为 PPM 图像
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-png" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 指定图像格式（如 PNG）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 指定页码范围
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 指定图像分辨率（DPI）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-stdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 转换单页并输出至 stdout（标准输出）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 设置图像尺寸（缩放）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、常用参数汇总
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、示例应用场景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、相关工具
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      七、参考链接
     </span>
   </a>
   
@@ -8844,159 +8974,171 @@
 
 
 
-<h1 id="qpdf">qpdf</h1>
-<p><code>qpdf</code> 是一个功能强大的开源命令行工具，主要用于对 PDF 文件进行<strong>结构性</strong>处理（非内容级编辑）。它适合用来拆分、合并、重排页面、加密/解密、压缩、解压缩等操作，尤其适合脚本自动化场景。</p>
-<h2 id="cht">cht</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>$<span class="w"> </span>curl<span class="w"> </span>cheat.sh/
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="c1"># qpdf</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Versatile PDF transformation software.</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="c1"># More information: &lt;https://github.com/qpdf/qpdf&gt;.</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># Extract pages 1-3, 5 and 6-10 from a PDF file and save them as another one:</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>qpdf<span class="w"> </span>--empty<span class="w"> </span>--pages<span class="w"> </span>input.pdf<span class="w"> </span><span class="m">1</span>-3,5,6-10<span class="w"> </span>--<span class="w"> </span>output.pdf
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="c1"># Merge (concatenate) all the pages of a list of PDF files and save the result as a new PDF:</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>qpdf<span class="w"> </span>--empty<span class="w"> </span>--pages<span class="w"> </span>file1.pdf<span class="w"> </span>file2.pdf<span class="w"> </span>file3.pdf<span class="w"> </span>--<span class="w"> </span>output.pdf
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="c1"># Merge (concatenate) given pages from a list of PDF files and save the result as a new PDF:</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>qpdf<span class="w"> </span>--empty<span class="w"> </span>--pages<span class="w"> </span>file1.pdf<span class="w"> </span><span class="m">1</span>,6-8<span class="w"> </span>file2.pdf<span class="w"> </span><span class="m">3</span>,4,5<span class="w"> </span>--<span class="w"> </span>output.pdf
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="c1"># Write each group of n pages to a separate output file with a given filename pattern:</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a>qpdf<span class="w"> </span>--split-pages<span class="o">=</span>n<span class="w"> </span>input.pdf<span class="w"> </span>out_%d.pdf
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="c1"># Rotate certain pages of a PDF with a given angle:</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>qpdf<span class="w"> </span>--rotate<span class="o">=</span><span class="m">90</span>:2,4,6<span class="w"> </span>--rotate<span class="o">=</span><span class="m">180</span>:7-8<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="c1"># Remove the password from a password-protected file:</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>qpdf<span class="w"> </span>--password<span class="o">=</span>password<span class="w"> </span>--decrypt<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>$
-</code></pre></div></td></tr></table></div>
-<h2 id="qpdf_1">qpdf 简介</h2>
+<h1 id="poppler-pdftoppm">Poppler 和 pdftoppm 工具速查笔记</h1>
+<p>Poppler 是一个用于处理 PDF 文件的开源库，广泛用于各类 Linux 发行版中。<code>pdftoppm</code> 是 Poppler 提供的命令行工具之一，用于将 PDF 页面转换为图像格式（如 PPM、PNG、JPEG）。本笔记简明列出常用命令及参数说明，适合快速查阅与使用。</p>
+<hr />
+<h2 id="_1">一、基本概念</h2>
 <ul>
 <li>
-<p><strong>全名</strong>：QPDF — PDF transformation and inspection tool</p>
+<p><strong>Poppler</strong>：一个基于 Xpdf 的 PDF 渲染库，支持命令行工具如 <code>pdftoppm</code>、<code>pdfinfo</code> 等。</p>
 </li>
 <li>
-<p><strong>用途</strong>：用于结构性修改 PDF 文件（页面级处理，不是内容级编辑）</p>
+<p><strong>pdftoppm</strong>：Poppler 提供的 PDF 转图像工具，可将 PDF 文件的每一页转换为图像格式，适合用于图像识别、预览生成等场景。</p>
 </li>
 <li>
-<p><strong>平台</strong>：跨平台，支持 macOS、Linux、Windows</p>
-</li>
-<li>
-<p><strong>官网</strong>：<a href="https://qpdf.sourceforge.io/">https://qpdf.sourceforge.io</a></p>
-</li>
-<li>
-<p><strong>安装方式（macOS）</strong>：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>brew<span class="w"> </span>install<span class="w"> </span>qpdf
-</code></pre></div></td></tr></table></div>
+<p><strong>PPM（Portable Pixmap Format）</strong>：一种无压缩的图像格式，适用于高保真图像处理。</p>
 </li>
 </ul>
 <hr />
-<h2 id="_1">常用功能与用法</h2>
-<h3 id="1-pdf">1. 提取页码（拆分 PDF）</h3>
-<p>提取第 3-5 页：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>qpdf<span class="w"> </span>input.pdf<span class="w"> </span>--pages<span class="w"> </span>.<span class="w"> </span><span class="m">3</span>-5<span class="w"> </span>--<span class="w"> </span>output.pdf
+<h2 id="_2">二、安装方法</h2>
+<h3 id="macos">macOS</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>poppler
 </code></pre></div></td></tr></table></div>
-<p>提取不连续页码（第 1、3、7 页）：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>qpdf<span class="w"> </span>input.pdf<span class="w"> </span>--pages<span class="w"> </span>.<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">7</span><span class="w"> </span>--<span class="w"> </span>output.pdf
-</code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="2-pdf">2. <strong>合并多个 PDF 文件</strong></h3>
-<p>将 <code>a.pdf</code> 的全部页和 <code>b.pdf</code> 的第 2-4 页合并：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>qpdf<span class="w"> </span>--empty<span class="w"> </span>--pages<span class="w"> </span>a.pdf<span class="w"> </span>b.pdf<span class="w"> </span><span class="m">2</span>-4<span class="w"> </span>--<span class="w"> </span>output.pdf
+<h3 id="debianubuntu">Debian/Ubuntu</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>poppler-utils
 </code></pre></div></td></tr></table></div>
 <hr />
-<h3 id="3-pdf">3. <strong>加密 PDF</strong></h3>
-<p>使用密码加密 PDF 文件：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>qpdf<span class="w"> </span>--encrypt<span class="w"> </span>user-password<span class="w"> </span>owner-password<span class="w"> </span><span class="m">128</span><span class="w"> </span>--<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
+<h2 id="pdftoppm">三、pdftoppm 基本用法</h2>
+<h3 id="1-ppm">1. 转换为 PPM 图像</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>pdftoppm<span class="w"> </span>input.pdf<span class="w"> </span>outputname
 </code></pre></div></td></tr></table></div>
 <blockquote>
-<p>示例：</p>
+<p>会生成类似 <code>outputname-1.ppm</code>, <code>outputname-2.ppm</code> 等图像文件。</p>
 </blockquote>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>qpdf<span class="w"> </span>--encrypt<span class="w"> </span>user123<span class="w"> </span>admin456<span class="w"> </span><span class="m">256</span><span class="w"> </span>--<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
+<h3 id="2-png">2. 指定图像格式（如 PNG）</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># Generate a PNG file instead a PPM file:</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>pdftoppm<span class="w"> </span>-png<span class="w"> </span>path/to/input/file.pdf<span class="w"> </span>output_image_name_prefix
 </code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="4-pdf">4. <strong>解密 PDF</strong></h3>
-<p>解密一个已加密的 PDF（需要拥有密码）：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>qpdf<span class="w"> </span>--password<span class="o">=</span>admin456<span class="w"> </span>--decrypt<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
+<h3 id="3">3. 指定页码范围</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>pdftoppm<span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="w"> </span>-l<span class="w"> </span><span class="m">5</span><span class="w"> </span>-png<span class="w"> </span>input.pdf<span class="w"> </span>outputname
 </code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="5-pdf">5. <strong>优化（线性化）PDF 用于网页快速预览</strong></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>qpdf<span class="w"> </span>--linearize<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
+<ul>
+<li>
+<p><code>-f</code>：起始页（First page）</p>
+</li>
+<li>
+<p><code>-l</code>：结束页（Last page）</p>
+</li>
+</ul>
+<h3 id="4-dpi">4. 指定图像分辨率（DPI）</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1"># 批量提取高分辨率图像</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>pdftoppm<span class="w"> </span>-png<span class="w"> </span>-r<span class="w"> </span><span class="m">300</span><span class="w"> </span>input.pdf<span class="w"> </span>outputname
 </code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="6-pdf">6. <strong>检查 PDF 文件结构是否有效</strong></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>qpdf<span class="w"> </span>--check<span class="w"> </span>input.pdf
+<ul>
+<li><code>-r</code>：分辨率（Resolution），单位为 DPI（Dots Per Inch）</li>
+</ul>
+<h3 id="5-stdout">5. 转换单页并输出至 stdout（标准输出）</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>pdftoppm<span class="w"> </span>-f<span class="w"> </span><span class="m">1</span><span class="w"> </span>-l<span class="w"> </span><span class="m">1</span><span class="w"> </span>-png<span class="w"> </span>input.pdf
 </code></pre></div></td></tr></table></div>
-<hr />
-<h3 id="7-pdf">7. <strong>压缩或解压缩 PDF</strong></h3>
-<p>解压缩 PDF 对象流（调试用）：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>qpdf<span class="w"> </span>--qdf<span class="w"> </span>--object-streams<span class="o">=</span>disable<span class="w"> </span>input.pdf<span class="w"> </span>output.pdf
+<h3 id="6">6. 设置图像尺寸（缩放）</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>pdftoppm<span class="w"> </span>-scale-to<span class="w"> </span><span class="m">1024</span><span class="w"> </span>-png<span class="w"> </span>input.pdf<span class="w"> </span>outputname
 </code></pre></div></td></tr></table></div>
+<ul>
+<li><code>-scale-to</code>：将图像宽度或高度缩放至指定大小，自动保持纵横比。</li>
+</ul>
 <hr />
-<h2 id="qpdf_2">小结：qpdf 是什么？</h2>
+<h2 id="_3">四、常用参数汇总</h2>
 <table>
 <thead>
 <tr>
-<th>特性</th>
+<th>参数</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>操作粒度</td>
-<td>页级（不能编辑文字，但可以重组页面等）</td>
+<td><code>-png</code></td>
+<td>输出为 PNG 格式（默认为 PPM）</td>
 </tr>
 <tr>
-<td>支持合并拆分</td>
-<td>✅</td>
+<td><code>-jpeg</code></td>
+<td>输出为 JPEG 格式</td>
 </tr>
 <tr>
-<td>支持加密解密</td>
-<td>✅（带用户/拥有者密码）</td>
+<td><code>-f</code></td>
+<td>起始页码（First page）</td>
 </tr>
 <tr>
-<td>支持命令行自动化</td>
-<td>✅（适合批处理或脚本使用）</td>
+<td><code>-l</code></td>
+<td>结束页码（Last page）</td>
 </tr>
 <tr>
-<td>内容编辑</td>
-<td>❌（不能修改页面内容或注释）</td>
+<td><code>-r</code></td>
+<td>输出图像分辨率（Resolution, DPI）</td>
+</tr>
+<tr>
+<td><code>-scale-to</code></td>
+<td>指定图像宽或高，保留纵横比</td>
+</tr>
+<tr>
+<td><code>-cropbox</code></td>
+<td>使用 PDF 的裁剪框而非媒体框</td>
+</tr>
+<tr>
+<td><code>-mono</code></td>
+<td>输出单色图像（Monochrome）</td>
+</tr>
+<tr>
+<td><code>-gray</code></td>
+<td>输出灰度图像（Grayscale）</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="_4">五、示例应用场景</h2>
+<ul>
+<li>
+<p><strong>提取封面缩略图</strong>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>pdftoppm<span class="w"> </span>-f<span class="w"> </span><span class="m">1</span><span class="w"> </span>-l<span class="w"> </span><span class="m">1</span><span class="w"> </span>-png<span class="w"> </span>-scale-to<span class="w"> </span><span class="m">400</span><span class="w"> </span>input.pdf<span class="w"> </span>cover
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p><strong>结合 ImageMagick 转为其他格式</strong>：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>pdftoppm<span class="w"> </span>-png<span class="w"> </span>input.pdf<span class="w"> </span>temp<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>convert<span class="w"> </span>temp-1.png<span class="w"> </span>output.webp
+</code></pre></div></td></tr></table></div>
+</li>
+</ul>
+<hr />
+<h2 id="_5">六、相关工具</h2>
+<ul>
+<li>
+<p><code>pdfinfo</code>：查看 PDF 元数据</p>
+</li>
+<li>
+<p><code>pdftotext</code>：提取 PDF 文本内容</p>
+</li>
+<li>
+<p><code>pdfimages</code>：提取 PDF 内嵌图像</p>
+</li>
+<li>
+<p><code>pdfseparate</code> / <code>pdfunite</code>：PDF 拆分与合并</p>
+</li>
+</ul>
+<hr />
+<h2 id="_6">七、参考链接</h2>
+<ul>
+<li>
+<p>Poppler 项目主页：<a href="https://poppler.freedesktop.org/">https://poppler.freedesktop.org/</a></p>
+</li>
+<li>
+<p><code>pdftoppm</code> 手册页：可通过 <code>man pdftoppm</code> 查看详细参数</p>
+</li>
+</ul>
+<hr />
+<p><strong>适用人群</strong>：文档自动化处理、OCR（Optical Character Recognition，光学字符识别）预处理、PDF 封面提取等任务的终端用户和开发者。</p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -9026,7 +9168,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../pdf-tools/" class="md-footer__link md-footer__link--prev" aria-label="上一页: PDF Tools">
+          <a href="../pdfjs/" class="md-footer__link md-footer__link--prev" aria-label="上一页: pdfjs">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -9036,20 +9178,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                PDF Tools
+                pdfjs
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../git/gitignore/" class="md-footer__link md-footer__link--next" aria-label="下一页: Gitignore">
+          <a href="../qpdf-cht/" class="md-footer__link md-footer__link--next" aria-label="下一页: qpdf">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Gitignore
+                qpdf
               </div>
             </div>
             <div class="md-footer__button md-icon">
