@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/moore-mealy/1/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/Tmp/%E9%98%85%E8%AF%BB%E7%BB%83%E4%B9%A0/">
       
       
-        <link rel="prev" href="../../Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/">
+        <link rel="prev" href="../../Math/DM/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/">
       
       
-        <link rel="next" href="../mealy-vs-moore/">
+        <link rel="next" href="../../misc/PDL/">
       
       
-      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>1 - 日拱一卒</title>
+        <title>阅读练习 - 日拱一卒</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#passage-1-1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1
+              阅读练习
             
           </span>
         </div>
@@ -174,7 +179,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -195,7 +200,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../408/408/" class="md-tabs__link">
+        <a href="../../408/408/" class="md-tabs__link">
           
   
   
@@ -211,8 +216,6 @@
   
   
   
-    
-  
   
     
     
@@ -220,13 +223,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Courses/DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-tabs__link">
           
   
   
@@ -249,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../Math/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-tabs__link">
+        <a href="../../Math/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-tabs__link">
           
   
   
@@ -265,11 +266,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../../Tmp/%E9%98%85%E8%AF%BB%E7%BB%83%E4%B9%A0/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -289,7 +292,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../misc/PDL/" class="md-tabs__link">
+        <a href="../../misc/PDL/" class="md-tabs__link">
           
   
   
@@ -329,7 +332,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -347,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -410,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/408/" class="md-nav__link">
+      <a href="../../408/408/" class="md-nav__link">
         
   
   
@@ -474,7 +477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/4081-CL/" class="md-nav__link">
+      <a href="../../408/4081-CL/4081-CL/" class="md-nav__link">
         
   
   
@@ -497,7 +500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/NULL/" class="md-nav__link">
+      <a href="../../408/4081-CL/NULL/" class="md-nav__link">
         
   
   
@@ -520,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/size_t/" class="md-nav__link">
+      <a href="../../408/4081-CL/size_t/" class="md-nav__link">
         
   
   
@@ -543,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/sizeof/" class="md-nav__link">
+      <a href="../../408/4081-CL/sizeof/" class="md-nav__link">
         
   
   
@@ -607,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/compile/gcc-compile-standards/" class="md-nav__link">
+      <a href="../../408/4081-CL/compile/gcc-compile-standards/" class="md-nav__link">
         
   
   
@@ -679,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
+      <a href="../../408/4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
         
   
   
@@ -759,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4082-DS/4082-DS/" class="md-nav__link">
+      <a href="../../408/4082-DS/4082-DS/" class="md-nav__link">
         
   
   
@@ -831,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4083-AG/4083-AG/" class="md-nav__link">
+      <a href="../../408/4083-AG/4083-AG/" class="md-nav__link">
         
   
   
@@ -903,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/4084-CO/" class="md-nav__link">
+      <a href="../../408/4084-CO/4084-CO/" class="md-nav__link">
         
   
   
@@ -926,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/%E8%BF%87%E7%A8%8B%E8%80%832%E5%A4%8D%E4%B9%A0%E6%8F%90%E7%BA%B2/" class="md-nav__link">
+      <a href="../../408/4084-CO/%E8%BF%87%E7%A8%8B%E8%80%832%E5%A4%8D%E4%B9%A0%E6%8F%90%E7%BA%B2/" class="md-nav__link">
         
   
   
@@ -990,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/CISC/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/CISC/" class="md-nav__link">
         
   
   
@@ -1013,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/CPI/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/CPI/" class="md-nav__link">
         
   
   
@@ -1036,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/CU/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/CU/" class="md-nav__link">
         
   
   
@@ -1059,7 +1062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/Endianness/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/Endianness/" class="md-nav__link">
         
   
   
@@ -1082,7 +1085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/FLOPS/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/FLOPS/" class="md-nav__link">
         
   
   
@@ -1105,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/IR/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/IR/" class="md-nav__link">
         
   
   
@@ -1128,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/ISA/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/ISA/" class="md-nav__link">
         
   
   
@@ -1151,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/Microinstruction/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/Microinstruction/" class="md-nav__link">
         
   
   
@@ -1174,7 +1177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/Performance/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/Performance/" class="md-nav__link">
         
   
   
@@ -1197,7 +1200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/SP/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/SP/" class="md-nav__link">
         
   
   
@@ -1220,7 +1223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/TLB/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/TLB/" class="md-nav__link">
         
   
   
@@ -1243,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/flag-register/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/flag-register/" class="md-nav__link">
         
   
   
@@ -1266,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/instruction-cycle/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/instruction-cycle/" class="md-nav__link">
         
   
   
@@ -1289,7 +1292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/objdump/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/objdump/" class="md-nav__link">
         
   
   
@@ -1312,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E4%B8%BB%E9%A2%91/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E4%B8%BB%E9%A2%91/" class="md-nav__link">
         
   
   
@@ -1335,7 +1338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -1358,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E9%9B%86/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E6%8C%87%E4%BB%A4%E9%9B%86/" class="md-nav__link">
         
   
   
@@ -1381,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%80/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%80/" class="md-nav__link">
         
   
   
@@ -1404,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97-vs-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97-vs-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -1427,7 +1430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/cards/%E9%97%B4%E5%9D%80%E5%91%A8%E6%9C%9F/" class="md-nav__link">
+      <a href="../../408/4084-CO/cards/%E9%97%B4%E5%9D%80%E5%91%A8%E6%9C%9F/" class="md-nav__link">
         
   
   
@@ -1540,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/biased-representation-essence/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/biased-representation-essence/" class="md-nav__link">
         
   
   
@@ -1563,7 +1566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/fast-decoding-twos-complement/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/fast-decoding-twos-complement/" class="md-nav__link">
         
   
   
@@ -1586,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/value-range-comparison-codes/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/value-range-comparison-codes/" class="md-nav__link">
         
   
   
@@ -1609,7 +1612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/zero-representation-in-codes/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%8E%9F%E8%A1%A5%E5%8F%8D%E7%A7%BB/zero-representation-in-codes/" class="md-nav__link">
         
   
   
@@ -1681,7 +1684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E4%B9%98/Untitled/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E4%B9%98/Untitled/" class="md-nav__link">
         
   
   
@@ -1704,7 +1707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E4%B9%98/sign-magnitude-one-bit-multiply/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E4%B9%98/sign-magnitude-one-bit-multiply/" class="md-nav__link">
         
   
   
@@ -1817,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E9%99%A4/%E6%81%A2%E5%A4%8D%E4%BD%99%E6%95%B0%E6%B3%95/%E6%81%A2%E5%A4%8D%E4%BD%99%E6%95%B0%E6%B3%95/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E5%AE%9A%E7%82%B9%E5%8E%9F%E7%A0%81%E4%B8%80%E4%BD%8D%E9%99%A4/%E6%81%A2%E5%A4%8D%E4%BD%99%E6%95%B0%E6%B3%95/%E6%81%A2%E5%A4%8D%E4%BD%99%E6%95%B0%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -1897,7 +1900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/floating-point-add-sub-steps/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/floating-point-add-sub-steps/" class="md-nav__link">
         
   
   
@@ -1920,7 +1923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch2-ALU/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/tang3-6.29-p271/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch2-ALU/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/tang3-6.29-p271/" class="md-nav__link">
         
   
   
@@ -2000,7 +2003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/-IS/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/-IS/" class="md-nav__link">
         
   
   
@@ -2023,7 +2026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/CISC/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/CISC/" class="md-nav__link">
         
   
   
@@ -2046,7 +2049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/RISC/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/RISC/" class="md-nav__link">
         
   
   
@@ -2110,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F-AddressingModes/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F-AddressingModes/" class="md-nav__link">
         
   
   
@@ -2215,7 +2218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/4%40%E9%97%B4%E6%8E%A5%E5%AF%BB%E5%9D%80/indirect-addressing/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/4%40%E9%97%B4%E6%8E%A5%E5%AF%BB%E5%9D%80/indirect-addressing/" class="md-nav__link">
         
   
   
@@ -2287,7 +2290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/5%E5%AF%84%E5%AD%98%E5%99%A8%E5%AF%BB%E5%9D%80/register-addressing/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/5%E5%AF%84%E5%AD%98%E5%99%A8%E5%AF%BB%E5%9D%80/register-addressing/" class="md-nav__link">
         
   
   
@@ -2359,7 +2362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/8%E5%8F%98%E5%9D%80%E5%AF%BB%E5%9D%80/indexed-addressing/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/8%E5%8F%98%E5%9D%80%E5%AF%BB%E5%9D%80/indexed-addressing/" class="md-nav__link">
         
   
   
@@ -2447,7 +2450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch4-ISA/%E6%89%A9%E5%B1%95%E6%93%8D%E4%BD%9C%E7%A0%81%E6%8A%80%E6%9C%AF/extended-opcode-technique/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch4-ISA/%E6%89%A9%E5%B1%95%E6%93%8D%E4%BD%9C%E7%A0%81%E6%8A%80%E6%9C%AF/extended-opcode-technique/" class="md-nav__link">
         
   
   
@@ -2527,7 +2530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/-CPU/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/-CPU/" class="md-nav__link">
         
   
   
@@ -2550,7 +2553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/cpu-performace-equation/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/cpu-performace-equation/" class="md-nav__link">
         
   
   
@@ -2614,7 +2617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.2-p368-tang3-CPU%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%BD%A8%E8%BF%B9/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.2-p368-tang3-CPU%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%BD%A8%E8%BF%B9/" class="md-nav__link">
         
   
   
@@ -2637,7 +2640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/interrupt-priority-mask-isr/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/interrupt-priority-mask-isr/" class="md-nav__link">
         
   
   
@@ -2709,7 +2712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/instruction-pipeline/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/instruction-pipeline/" class="md-nav__link">
         
   
   
@@ -2732,7 +2735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/pipeline-performance-metrics/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/pipeline-performance-metrics/" class="md-nav__link">
         
   
   
@@ -2755,7 +2758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/tang3-8.1-p354-%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/tang3-8.1-p354-%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/" class="md-nav__link">
         
   
   
@@ -2835,7 +2838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/-IO/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/-IO/" class="md-nav__link">
         
   
   
@@ -2858,7 +2861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/char-device/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/char-device/" class="md-nav__link">
         
   
   
@@ -2922,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/1-Polling/polling/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/1-Polling/polling/" class="md-nav__link">
         
   
   
@@ -2994,7 +2997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/2-Interrupt/interrupt/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/2-Interrupt/interrupt/" class="md-nav__link">
         
   
   
@@ -3017,7 +3020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/2-Interrupt/%E4%B8%AD%E6%96%AD%E5%B5%8C%E5%A5%97/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/2-Interrupt/%E4%B8%AD%E6%96%AD%E5%B5%8C%E5%A5%97/" class="md-nav__link">
         
   
   
@@ -3089,7 +3092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/3-DMA/5.3-p207-tang3/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/3-DMA/5.3-p207-tang3/" class="md-nav__link">
         
   
   
@@ -3112,7 +3115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/3-DMA/DMA/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/3-DMA/DMA/" class="md-nav__link">
         
   
   
@@ -3135,7 +3138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/3-DMA/dma-cycle-stealing.md/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/3-DMA/dma-cycle-stealing.md/" class="md-nav__link">
         
   
   
@@ -3158,7 +3161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/3-DMA/dma-transfer-process/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/3-DMA/dma-transfer-process/" class="md-nav__link">
         
   
   
@@ -3230,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4084-CO/ch6-IO/4-Polling%2BInterrupt%2BDMA/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/" class="md-nav__link">
+      <a href="../../408/4084-CO/ch6-IO/4-Polling%2BInterrupt%2BDMA/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/" class="md-nav__link">
         
   
   
@@ -3318,7 +3321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/4085-OS/" class="md-nav__link">
+      <a href="../../408/4085-OS/4085-OS/" class="md-nav__link">
         
   
   
@@ -3382,7 +3385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/1-Intro/%E5%A4%9A%E9%81%93%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
+      <a href="../../408/4085-OS/1-Intro/%E5%A4%9A%E9%81%93%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
   
   
@@ -3405,7 +3408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/1-Intro/%E7%B3%BB%E7%BB%9F%E5%90%9E%E5%90%90%E9%87%8F/" class="md-nav__link">
+      <a href="../../408/4085-OS/1-Intro/%E7%B3%BB%E7%BB%9F%E5%90%9E%E5%90%90%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -3428,7 +3431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/1-Intro/%E9%98%BB%E5%A1%9E/" class="md-nav__link">
+      <a href="../../408/4085-OS/1-Intro/%E9%98%BB%E5%A1%9E/" class="md-nav__link">
         
   
   
@@ -3500,7 +3503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/2-PS/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
+      <a href="../../408/4085-OS/2-PS/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -3523,7 +3526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/2-PS/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+      <a href="../../408/4085-OS/2-PS/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -3546,7 +3549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/2-PS/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
+      <a href="../../408/4085-OS/2-PS/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
         
   
   
@@ -3569,7 +3572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4085-OS/2-PS/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../../408/4085-OS/2-PS/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -3649,7 +3652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/4086-CN/4086-CN/" class="md-nav__link">
+      <a href="../../408/4086-CN/4086-CN/" class="md-nav__link">
         
   
   
@@ -3684,29 +3687,24 @@
       
   
   
-    
   
   
-  
     
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -3719,7 +3717,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Courses
@@ -3774,7 +3772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-nav__link">
+      <a href="../../Courses/DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -3802,8 +3800,6 @@
                 
   
   
-    
-  
   
   
     
@@ -3814,11 +3810,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -3834,7 +3830,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             DL
@@ -3848,7 +3844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../" class="md-nav__link">
+      <a href="../../Courses/DL/" class="md-nav__link">
         
   
   
@@ -3912,7 +3908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/verilog-basic-syntax/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/verilog-basic-syntax/" class="md-nav__link">
         
   
   
@@ -3935,7 +3931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/verilog-common-modules/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/verilog-common-modules/" class="md-nav__link">
         
   
   
@@ -3958,7 +3954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/verilog-modeling-levels/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/verilog-modeling-levels/" class="md-nav__link">
         
   
   
@@ -4022,7 +4018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/DUT/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/DUT/" class="md-nav__link">
         
   
   
@@ -4045,7 +4041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/IPC/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/IPC/" class="md-nav__link">
         
   
   
@@ -4068,7 +4064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/RTL/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/RTL/" class="md-nav__link">
         
   
   
@@ -4091,7 +4087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/XDC/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/XDC/" class="md-nav__link">
         
   
   
@@ -4114,7 +4110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
         
   
   
@@ -4137,7 +4133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/vivado/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/vivado/" class="md-nav__link">
         
   
   
@@ -4160,7 +4156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
         
   
   
@@ -4183,7 +4179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
         
   
   
@@ -4255,7 +4251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../1-Verilog-HDL/chts/verilog-cht/" class="md-nav__link">
+      <a href="../../Courses/DL/1-Verilog-HDL/chts/verilog-cht/" class="md-nav__link">
         
   
   
@@ -4335,7 +4331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/combinational-logic-circuits/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/combinational-logic-circuits/" class="md-nav__link">
         
   
   
@@ -4358,7 +4354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/race-hazard/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/race-hazard/" class="md-nav__link">
         
   
   
@@ -4463,7 +4459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
         
   
   
@@ -4535,7 +4531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/" class="md-nav__link">
         
   
   
@@ -4607,7 +4603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -4679,7 +4675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -4751,7 +4747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -4823,7 +4819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -4895,7 +4891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
         
   
   
@@ -4967,7 +4963,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -5047,7 +5043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/lgs-%E9%80%BB%E8%BE%91%E9%97%A8/logic-gates/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/lgs-%E9%80%BB%E8%BE%91%E9%97%A8/logic-gates/" class="md-nav__link">
         
   
   
@@ -5119,7 +5115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/psets/p1-CLC-analysis/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/psets/p1-CLC-analysis/" class="md-nav__link">
         
   
   
@@ -5142,7 +5138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../2-CL-Combinational-Logic/psets/p2-CLC-design/" class="md-nav__link">
+      <a href="../../Courses/DL/2-CL-Combinational-Logic/psets/p2-CLC-design/" class="md-nav__link">
         
   
   
@@ -5178,8 +5174,6 @@
                 
   
   
-    
-  
   
   
     
@@ -5190,11 +5184,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" >
         
           
           <label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
@@ -5210,7 +5204,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2_4">
             <span class="md-nav__icon md-icon"></span>
             3 SL Sequential Logic
@@ -5224,7 +5218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../implication-table/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/implication-table/" class="md-nav__link">
         
   
   
@@ -5247,7 +5241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../latch-vs-flip-flop/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/latch-vs-flip-flop/" class="md-nav__link">
         
   
   
@@ -5270,7 +5264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../primitive-state-diagram/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -5293,7 +5287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sequential-logic-circuit/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/sequential-logic-circuit/" class="md-nav__link">
         
   
   
@@ -5316,7 +5310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../timing-diagram/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/timing-diagram/" class="md-nav__link">
         
   
   
@@ -5339,7 +5333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../verilog-counter4/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/verilog-counter4/" class="md-nav__link">
         
   
   
@@ -5403,7 +5397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
         
   
   
@@ -5426,7 +5420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
         
   
   
@@ -5449,7 +5443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -5521,7 +5515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
         
   
   
@@ -5544,7 +5538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
         
   
   
@@ -5567,7 +5561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
         
   
   
@@ -5590,7 +5584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -5662,7 +5656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -5685,7 +5679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -5708,7 +5702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -5731,7 +5725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
         
   
   
@@ -5795,7 +5789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/" class="md-nav__link">
         
   
   
@@ -5818,7 +5812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/" class="md-nav__link">
         
   
   
@@ -5890,7 +5884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
         
   
   
@@ -5970,7 +5964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
         
   
   
@@ -5993,7 +5987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
         
   
   
@@ -6021,8 +6015,6 @@
                 
   
   
-    
-  
   
   
     
@@ -6033,11 +6025,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4_11" >
         
           
           <label class="md-nav__link" for="__nav_3_2_4_11" id="__nav_3_2_4_11_label" tabindex="0">
@@ -6053,7 +6045,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_4_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_4_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2_4_11">
             <span class="md-nav__icon md-icon"></span>
             Moore mealy
@@ -6064,17 +6056,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/moore-mealy/1/" class="md-nav__link">
         
   
   
@@ -6085,7 +6070,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -6098,7 +6082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mealy-vs-moore/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/moore-mealy/mealy-vs-moore/" class="md-nav__link">
         
   
   
@@ -6121,7 +6105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moore-vs-mealy-state-machine/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy-state-machine/" class="md-nav__link">
         
   
   
@@ -6144,7 +6128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../moore-vs-mealy/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy/" class="md-nav__link">
         
   
   
@@ -6257,7 +6241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
         
   
   
@@ -6329,7 +6313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
         
   
   
@@ -6401,7 +6385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -6473,7 +6457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
+      <a href="../../Courses/DL/3-SL-Sequential-Logic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
         
   
   
@@ -6561,7 +6545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4-Misc/bistable-circuit-basics/" class="md-nav__link">
+      <a href="../../Courses/DL/4-Misc/bistable-circuit-basics/" class="md-nav__link">
         
   
   
@@ -6584,7 +6568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../4-Misc/combinational-vs-sequential-logic/" class="md-nav__link">
+      <a href="../../Courses/DL/4-Misc/combinational-vs-sequential-logic/" class="md-nav__link">
         
   
   
@@ -6656,7 +6640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Refs/" class="md-nav__link">
+      <a href="../../Courses/DL/Refs/" class="md-nav__link">
         
   
   
@@ -6736,7 +6720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Java/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%A6%81%E7%82%B9/" class="md-nav__link">
+      <a href="../../Courses/Java/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%A6%81%E7%82%B9/" class="md-nav__link">
         
   
   
@@ -6815,7 +6799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      <a href="../../Math/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -6920,7 +6904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/BA-vs-LA/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/BA-vs-LA/" class="md-nav__link">
         
   
   
@@ -6943,7 +6927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/xor%2Bxnor/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/xor%2Bxnor/" class="md-nav__link">
         
   
   
@@ -7007,7 +6991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/Untitled/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/Untitled/" class="md-nav__link">
         
   
   
@@ -7030,7 +7014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/de-morgan-laws/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/de-morgan-laws/" class="md-nav__link">
         
   
   
@@ -7053,7 +7037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/laws-BA/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/laws-BA/laws-BA/" class="md-nav__link">
         
   
   
@@ -7125,7 +7109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/logic-function-simplification/k-map/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/logic-function-simplification/k-map/" class="md-nav__link">
         
   
   
@@ -7148,7 +7132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/logic-function-simplification/logic-function-simplification/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/logic-function-simplification/logic-function-simplification/" class="md-nav__link">
         
   
   
@@ -7220,7 +7204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-nav__link">
         
   
   
@@ -7243,7 +7227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/psets/p2-%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E5%8C%96%E7%AE%80/" class="md-nav__link">
+      <a href="../../Math/DM/BoolAlgebra-%E5%B8%83%E5%B0%94%E4%BB%A3%E6%95%B0/psets/p2-%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E5%8C%96%E7%AE%80/" class="md-nav__link">
         
   
   
@@ -7323,7 +7307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/%E4%BF%A1%E6%81%AF%E7%BC%96%E7%A0%81/" class="md-nav__link">
+      <a href="../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/%E4%BF%A1%E6%81%AF%E7%BC%96%E7%A0%81/" class="md-nav__link">
         
   
   
@@ -7387,7 +7371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/BCD-BinaryCodedDecimal/8421BCD-cht/" class="md-nav__link">
+      <a href="../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/BCD-BinaryCodedDecimal/8421BCD-cht/" class="md-nav__link">
         
   
   
@@ -7451,7 +7435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/BCD-BinaryCodedDecimal/Excess3-%E4%BD%99%E4%B8%89%E7%A0%81/excess3-cht/" class="md-nav__link">
+      <a href="../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/BCD-BinaryCodedDecimal/Excess3-%E4%BD%99%E4%B8%89%E7%A0%81/excess3-cht/" class="md-nav__link">
         
   
   
@@ -7531,7 +7515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/GrayCodes-%E6%A0%BC%E9%9B%B7%E7%A0%81/gray-codes/" class="md-nav__link">
+      <a href="../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/GrayCodes-%E6%A0%BC%E9%9B%B7%E7%A0%81/gray-codes/" class="md-nav__link">
         
   
   
@@ -7603,7 +7587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/ParityCode-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E7%A0%81/parity-code/" class="md-nav__link">
+      <a href="../../Math/DM/Encoding-%E7%BC%96%E7%A0%81/ParityCode-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E7%A0%81/parity-code/" class="md-nav__link">
         
   
   
@@ -7683,7 +7667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97/" class="md-nav__link">
+      <a href="../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/-%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E8%BF%90%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -7706,7 +7690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E5%AE%9A%E7%82%B9%E6%9C%BAvs%E6%B5%AE%E7%82%B9%E6%9C%BA/" class="md-nav__link">
+      <a href="../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E5%AE%9A%E7%82%B9%E6%9C%BAvs%E6%B5%AE%E7%82%B9%E6%9C%BA/" class="md-nav__link">
         
   
   
@@ -7729,7 +7713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E6%95%B0%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="md-nav__link">
+      <a href="../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E6%95%B0%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="md-nav__link">
         
   
   
@@ -7793,7 +7777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E5%B0%8F%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E5%B0%8F%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
+      <a href="../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E5%B0%8F%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E5%B0%8F%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
         
   
   
@@ -7865,7 +7849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
+      <a href="../../Math/DM/NumSys-%E6%95%B0%E5%80%BC%E7%B3%BB%E7%BB%9F/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
         
   
   
@@ -7945,7 +7929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../Math/DM/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/" class="md-nav__link">
+      <a href="../../Math/DM/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/" class="md-nav__link">
         
   
   
@@ -7988,24 +7972,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
@@ -8018,7 +8007,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Tmp
@@ -8029,10 +8018,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../Tmp/%E9%98%85%E8%AF%BB%E7%BB%83%E4%B9%A0/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    阅读练习
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -8043,6 +8052,114 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-5
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -8103,7 +8220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/PDL/" class="md-nav__link">
+      <a href="../../misc/PDL/" class="md-nav__link">
         
   
   
@@ -8126,7 +8243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/draft/" class="md-nav__link">
+      <a href="../../misc/draft/" class="md-nav__link">
         
   
   
@@ -8149,7 +8266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/naming-conventions/" class="md-nav__link">
+      <a href="../../misc/naming-conventions/" class="md-nav__link">
         
   
   
@@ -8213,7 +8330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/GPT/gpt-prompts/" class="md-nav__link">
+      <a href="../../misc/GPT/gpt-prompts/" class="md-nav__link">
         
   
   
@@ -8285,7 +8402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/Git/gitignore/" class="md-nav__link">
+      <a href="../../misc/Git/gitignore/" class="md-nav__link">
         
   
   
@@ -8357,7 +8474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/LaTex/%E5%A4%9A%E8%A1%8C%E7%AD%89%E5%BC%8F/" class="md-nav__link">
+      <a href="../../misc/LaTex/%E5%A4%9A%E8%A1%8C%E7%AD%89%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -8380,7 +8497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/LaTex/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+      <a href="../../misc/LaTex/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/" class="md-nav__link">
         
   
   
@@ -8452,7 +8569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/MD/md2docx-with-pandoc/" class="md-nav__link">
+      <a href="../../misc/MD/md2docx-with-pandoc/" class="md-nav__link">
         
   
   
@@ -8524,7 +8641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/MkDocs/mkdocs/" class="md-nav__link">
+      <a href="../../misc/MkDocs/mkdocs/" class="md-nav__link">
         
   
   
@@ -8596,7 +8713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/PDF/pdf-tools/" class="md-nav__link">
+      <a href="../../misc/PDF/pdf-tools/" class="md-nav__link">
         
   
   
@@ -8619,7 +8736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/PDF/pdfjs/" class="md-nav__link">
+      <a href="../../misc/PDF/pdfjs/" class="md-nav__link">
         
   
   
@@ -8642,7 +8759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/PDF/poppler-pdftoppm-cht/" class="md-nav__link">
+      <a href="../../misc/PDF/poppler-pdftoppm-cht/" class="md-nav__link">
         
   
   
@@ -8665,7 +8782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/PDF/qpdf-cht/" class="md-nav__link">
+      <a href="../../misc/PDF/qpdf-cht/" class="md-nav__link">
         
   
   
@@ -8737,7 +8854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../misc/macOS/apps/" class="md-nav__link">
+      <a href="../../misc/macOS/apps/" class="md-nav__link">
         
   
   
@@ -8786,6 +8903,104 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-1-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 1-5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passage-2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passage 2-5
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -8800,10 +9015,537 @@
 
 
 
-  <h1>1</h1>
+  <h1>阅读练习</h1>
 
-<p>Mealy —— 时刻输入变化（有脉冲信号） Moore —— 时钟对齐（电平型，不会有脉冲）</p>
-<p>脉冲信号 电平信号</p>
+<p><strong>Reading Comprehension</strong></p>
+<p>Directions: Read the following passages carefully and choose the best
+answer from the four choices marked A, B, C and D.</p>
+<h2 id="passage-1-1">Passage 1-1</h2>
+<p>Questions 1 to 5 are based on the following passage .</p>
+<p>I'm beginning to wonder whether my grandmother isn't right when she
+complains, as she frequently does, that children nowadays aren't as
+well-mannered as they used to be. Whenever she gets the opportunity, she
+describes in detail how she used to be told to respect her elders and
+betters. She was taught to speak only when she was spoken to, and when
+she went out on her own, she was reminded to say "please" and "thank
+you". Children in her day, she continues, were expected to be seen and
+not heard, but these days you are lucky if you ever hear parents telling
+their children to mind their p's and q's.</p>
+<p>If you give her the chance she then takes out of her desk the old
+photograph album which she keeps there, and which she never tires of
+displaying. Of course when you look at pictures of her parents you feel
+sure that, with a father as hard-looking as that, you, too, would have
+been "seen and not heard". Beside him sits his wife, with their
+children around her: Granny and her elder brothers. It always occurs to
+me that perhaps those long, stiff, black clothes were very heavy to a
+little girl, that she hadn't enough breath left to talk, let alone bad.
+It must have been a dull and lonely life too, for she stayed mainly at
+home during her childhood, while her brothers were sent away to school
+from an early age.</p>
+<p>That said, my childhood was much freer than Granny's. I went to school
+with my brother, and I played football with him and his friends. We all
+spoke a common language and we got up to the same trouble. I would have
+died if I had had to stay indoors, wear a tight frock (女式礼服), and
+sew.</p>
+<p>1. How can we understand "children in her day were expected to be seen
+and not heard"?</p>
+<p>A. Children were not supposed to be heard by others.</p>
+<p>B. Children were not supposed to hear their parents' conversation.</p>
+<p>C. Children were not supposed to speak in the face of others.</p>
+<p>D. Children were not supposed to speak until asked to do it.</p>
+<p>2. What is the expression of "mind their p's and q's" supposed to
+mean?</p>
+<p>A. To mind their own business.</p>
+<p>B. To remember to say "please".</p>
+<p>C. To remember to say "thank you".</p>
+<p>D. To be well-mannered.</p>
+<p>3. Which of the following words can be used to describe Granny's
+feelings of her own childhood?</p>
+<p>A. Lonely.</p>
+<p>B. Dull.</p>
+<p>C. Proud.</p>
+<p>D. Happy.</p>
+<p>4. How did the author feel about her Granny's childhood?</p>
+<p>A. Disappointed.</p>
+<p>B. Unbearable.</p>
+<p>C. Respectable.</p>
+<p>D. Indifferent.</p>
+<p>5. Why did Granny often complain about modern children's behavior?</p>
+<p>A. She missed those good old days.</p>
+<p>B. She was too harsh on children.</p>
+<p>C. She didn't like kids who talk a lot.</p>
+<p>D. She was not open to new things.</p>
+<h2 id="passage-1-2">Passage 1-2</h2>
+<p>Questions 6 to 10 are based on the following passage .</p>
+<p>Is breakfast the most important meal of the day? My generation certainly
+grew up hearing and believing in this statement, which doesn't stop
+most of us from rushing out in the morning with only a cup of coffee and
+a piece of toast. However, in an estimated 40 percent of American
+families there isn't even an adult present in the kitchen to urge
+children to finish their breakfast. So, more children avoid breakfast
+than any other meal.</p>
+<p>While no one has proven that breakfast is the most important meal of the
+day, it's at least of equal importance with lunch and dinner. Experts
+warn that your body burns the energy from food within four hours.
+Although you may use up less energy while you sleep, it's a long time
+until morning and you still wake up with the need for lots more fuel.</p>
+<p>Some studies have shown that children who avoid breakfast don't do as
+well in school. Besides lack of energy, we all know how tough it is to
+focus when your stomach's making noises and you're counting hours
+until lunch.</p>
+<p>In addition, a recent Canadian study suggests that avoiding breakfast
+may increase the chance of a heart attack. It's been known that the
+incidence of heart attacks is highest in the first few hours after
+waking.</p>
+<p>So, there's no doubt the importance of breakfast is more than just an
+old wives' tale. The problem comes in following the advice. How do you
+find time to make a proper meal and then make time to eat it?</p>
+<p>The American Health Association recommends that breakfast should supply
+at least one-fourth of the daily food needs. And it's important to
+include a variety of foods to supply energy until the next meal. Foods
+like bread can be digested (消化) in as little as 30 minutes; however,
+foods like eggs, milk, meat, and cheese last longer, and can help you
+make it to lunchtime.</p>
+<p>6. Today the saying "Breakfast is the most important meal of the day"
+is .</p>
+<p>A. paid less attention to</p>
+<p>B. totally out of date</p>
+<p>C. no longer a truth</p>
+<p>D. of no value</p>
+<p>7. According to the passage breakfast is lunch and dinner.</p>
+<p>A. better than</p>
+<p>B. less important than</p>
+<p>C. as important as</p>
+<p>D. more important than</p>
+<p>8. The passage mentions that not having breakfast can cause children to
+have trouble __________.</p>
+<p>A. listening</p>
+<p>B. focusing</p>
+<p>C. exercising</p>
+<p>D. waiting</p>
+<p>9. People who do not have breakfast may be more likely to .</p>
+<p>A. get more work done</p>
+<p>B. have frequent headaches</p>
+<p>C. lose too much weight</p>
+<p>D. suffer from heart disease</p>
+<p>10. Having various foods for breakfast .</p>
+<p>A. means you can eat less for lunch</p>
+<p>B. can supply you with energy until lunch</p>
+<p>C. may make you successful in the day</p>
+<p>D. will give you warmth the whole day</p>
+<h2 id="passage-1-3">Passage 1-3</h2>
+<p>Questions 11 to 15 are based on the following passage .</p>
+<p>A man was telling one of his friends why he was content with his married
+life. "My wife makes all the small decisions," he explained, "and I
+make all the big ones, so we never try to have too much influence on
+each other's business and never get angry with each other. We have no
+complaints and no arguments."</p>
+<p>"That sounds reasonable," answered his friend. "And what sort of
+decisions does your wife make?"</p>
+<p>"Well," answered the man, "she decides what jobs I apply for, what
+sort of house we live in, what furniture we have, where we go for our
+holidays, and things like that."</p>
+<p>His friend was surprised. "Oh?" he said. "And what do you consider
+important decisions then?"</p>
+<p>"Well," answered the man, "I decide who should be President, whether
+we should increase our help to poor countries, what we should do about
+the atom bomb (原子弹), and things like that."</p>
+<p>11. The man was content with his married life because
+_________________.</p>
+<p>A. he and his wife talk about every decision they make</p>
+<p>B. he has more power than his wife does in family life</p>
+<p>C. he and his wife are responsible for different things</p>
+<p>D. he has many good friends and influence in the world</p>
+<p>12. What does the man's friend think at first?</p>
+<p>A. He thought that their marriage couldn't work.</p>
+<p>B. He thought that the man had too much power.</p>
+<p>C. He thought that the wife had too much power.</p>
+<p>D. He thought that their arrangement sounded fine.</p>
+<p>13. The wife lets the man decide ________________.</p>
+<p>A. which house to buy</p>
+<p>B. where to work</p>
+<p>C. where to travel</p>
+<p>D. who should be President</p>
+<p>14. We can tell from the story that _________________.</p>
+<p>A. the man's wife has the final say in the family</p>
+<p>B. the man has the final say in the family</p>
+<p>C. the man's friend will follow his example</p>
+<p>D. the man and his wife respect each other</p>
+<p>15. A good title for this passage is
+_________________.</p>
+<p>A. A man and his friend</p>
+<p>B. A loving husband</p>
+<p>C. A happy married life</p>
+<p>D. A choice for President</p>
+<h2 id="passage-1-4">Passage 1-4</h2>
+<p>Questions 16 to 20 are based on the following passage .</p>
+<p>Is your job doing harm to your health? If you are like a lot of American
+workers today, you experience a significant amount of stress in work.
+Stress doesn't just make you unhappy at work. It can affect your
+health. Doctors say people under stress have higher blood pressure, even
+when they are away from work. And they are at a higher risk for death
+from any cause than those who are more relaxed.</p>
+<p>How do you know if your job could be a risk to your health? Some danger
+signs include difficulty getting to sleep or difficulty waking up in the
+morning, forgetfulness, aches and pains for no apparent reason, a desire
+to eat less or tendency to eat poorly, loss of interest in activities,
+etc. Everyone has bad days in which they feel many of these symptoms,
+but if you have noticed several of them, and you have experienced them
+for months, you may need to do something.</p>
+<p>If you notice these signs in yourself or your beloved one, check with
+your doctor to eliminate other possibilities. If the cause does appear
+to be stress, you should try to make time for yourself away from work.
+Try relaxing in a warm bubble bath, listening to music, and shutting out
+the world for a while.</p>
+<p>16. According to the passage, ____________.</p>
+<p>A. many American workers are under stress lately</p>
+<p>B. almost all people know how to get rid of stress</p>
+<p>C. most people go to doctors for help with stress</p>
+<p>D. it is sure that our work is doing harm to our health</p>
+<p>17. How does stress at work affect your life?</p>
+<p>A. It makes you unhappy at work.</p>
+<p>B. It always affects your health.</p>
+<p>C. It makes you worry all the time.</p>
+<p>D. It keeps you from working well.</p>
+<p>18. Which of the following is mentioned as a sign that your job is
+unhealthy?</p>
+<p>A. Sudden aches and pains.</p>
+<p>B. Frequent bad days.</p>
+<p>C. Trouble remembering.</p>
+<p>D. Loss of time to relax.</p>
+<p>19. When should you do something about your problems?</p>
+<p>A. When you've been told by others that you should do something.</p>
+<p>B. When you've noticed several bad symptoms over a long time.</p>
+<p>C. When you've let stress affect your friendships or life at work.</p>
+<p>D. When you've visited a doctor and he has told you to leave work.</p>
+<p>20. What can you do if you've noticed some of the signs of stress?</p>
+<p>A. See a doctor and try to relax more.</p>
+<p>B. Change to another less stressful job.</p>
+<p>C. Assume much fewer responsibilities.</p>
+<p>D. Take up a hobby like playing music.</p>
+<h2 id="passage-1-5">Passage 1-5</h2>
+<p>Questions 21 to 25 are based on the following passage .</p>
+<p>Open or distance learning has had a major effect on higher education
+through the Open University, the only university to provide education
+exclusively for adult learners studying at a distance. Our 100,000
+students are currently studying at the Open University. We found limited
+development of distance learning in the case studies, with the exception
+of some postgraduate and professional courses. Even here, however, there
+seemed to be limits on further growth because of the high costs involved
+in setting up new distance learning courses, as well as uncertainties of
+demand (particularly in terms of the perceived financial returns on
+study). One of the case study universities provided video facilities and
+visiting staff to a rural area for a group of undergraduate students
+about 50 miles away. This was a new development which was working well
+and likely to be expanded to involve other universities.</p>
+<p>The main reason for general lack of development of distance learning,
+especially at the undergraduate level, may be that other universities
+have been unable to afford the considerable set-up costs and student
+support facilities. As costs of technology come down this might change.
+The Open Learning Foundation is developing connections between
+universities to set open learning approaches within existing programs of
+study and thus encourage their greater use. This is seen as likely to
+develop further in the future.</p>
+<p>21. The Open University provides an education for
+_________________.</p>
+<p>A. students who do not like attending regular universities</p>
+<p>B. students who failed the College Entrance Examination</p>
+<p>C. students who are adults and away from a university</p>
+<p>D. students who are limited in their ability to learn</p>
+<p>22. Among other things, the further growth of distance learning at
+postgraduate and professional levels is limited by
+____________________.</p>
+<p>A. the high costs involved</p>
+<p>B. a low student demand</p>
+<p>C. a lack of education</p>
+<p>D. the poor rural technology</p>
+<p>23. The attempt of one case study university to provide equipment and
+staff to a rural group of students _________.</p>
+<p>A. would be expanded</p>
+<p>B. did not work well</p>
+<p>C. might help learning</p>
+<p>D. could cost a lot</p>
+<p>24. The cost of setting up a distance learning program might change
+______________.</p>
+<p>A. as new developments are made</p>
+<p>B. as more students take classes there</p>
+<p>C. as the Open University helps more</p>
+<p>D. as technology becomes cheaper</p>
+<p>25. The tone of this passage can best be described as
+________________.</p>
+<p>A. discouraging</p>
+<p>B. encouraging</p>
+<p>C. persuasive</p>
+<p>D. scientific</p>
+<h2 id="passage-2-1">Passage 2-1</h2>
+<p>Questions 1 to 5 are based on the following passage .</p>
+<p>It might be surprising for some people to believe that, in today's
+computer-and-Internet-driven society, there are some book publishers
+that are still committed to traditional books. Maybe the most famous
+encyclopedia company, The Encyclopaedia Britannica, which dates back to
+the 18th century, is planning to release their largest set of books in
+2001. This 40-volume set will be the largest printed in its 231-year
+history.</p>
+<p>Because of the success of recent Internet and computer encyclopedias,
+some people have suggested that the publishers could turn their back on
+print. However, company representative Paul Hoffman said the company is
+committed to paper and ink.</p>
+<p>"There is still a place for books, even with all of the computer
+encyclopedias. And many people around the world still want books," he
+said.</p>
+<p>Encyclopedias, in book form, are common in library collections and on
+school shelves. They are often used in student research. And none are
+used more than those published by the Encyclopedia Britannica.</p>
+<p>Even so, the company is selling fewer and fewer books and more and more
+computer encyclopedias, possibly because of the price. The books, US
+$1450 for a 32-book set, are too expensive for people. The computerized
+version, which contains all the same information, costs only a 10th of
+the price.</p>
+<p>1. What about the Encyclopedia Britannica is so surprising?</p>
+<p>A. The company is committed to publishing books.</p>
+<p>B. The company is selling Internet encyclopedias.</p>
+<p>C. The company is still open after so many years.</p>
+<p>D. The company is planning to quit making books.</p>
+<p>2. What will make the 2001 set of books different from the other sets?</p>
+<p>A. It will be the most sold.</p>
+<p>B. It will be like the 18th-century one.</p>
+<p>C. It will be on the Internet.</p>
+<p>D. It will be the largest set.</p>
+<p>3. Why have some people suggested that the company stop printing books?</p>
+<p>A. Because people are no longer buying many encyclopedias.</p>
+<p>B. Because demand around the world is for ink and paper books.</p>
+<p>C. Because electronic encyclopedias have become so successful.</p>
+<p>D. Because Paul Hoffman has turned his back on printing books.</p>
+<p>4. What makes the Encyclopedia Britannica's books special?</p>
+<p>A. They are used more than any other encyclopedias.</p>
+<p>B. They are used more for study than for doing research.</p>
+<p>C. They are used in schools and many library collections.</p>
+<p>D. They are used in many research papers by students.</p>
+<p>5. Why are more people buying electronic encyclopedias than book
+encyclopedias?</p>
+<p>A. Electronic encyclopedias contain more.</p>
+<p>B. Electronic encyclopedias cost less money.</p>
+<p>C. Electronic encyclopedias take up less room.</p>
+<p>D. Electronic encyclopedias have new ideas.</p>
+<h2 id="passage-2-2">Passage 2-2</h2>
+<p>Questions 6 to 10 are based on the following passage .</p>
+<p>Have you ever felt your mind getting confused after a sleepless night
+and you couldn't come up with an original thought no matter how hard
+you tried?</p>
+<p>You were probably right if you thought that was caused by a lack of
+sleep. Dr. Home, a sleep researcher in England, studied 24 college
+students. One group got their normal eight hours of sleep. The other
+group didn't get any sleep at all---they stayed awake all night. The
+next day, Dr. Home tested the students. He asked them questions that
+required creative and original thinking. One of the questions was "How
+many uses can a box be put to?"</p>
+<p>The results? The wide-awake students did well on the tests. The tired
+students did poorly.</p>
+<p>Research has already shown that tired people can do okay on tests of
+routine thinking, like simple addition. But Dr. Home tested creative
+thinking only.</p>
+<p>As part of his study, he offered an amount of money as a reward to the
+tired students if they did well. But even this encouragement wasn't
+enough to help the students overcome their tiredness. They still did
+poorly. Dr. Home believes that the part of the brain where thinking
+takes place may get worn out during waking hours. Sleep may help to
+repair the brain overnight. Without any sleep, he emphasizes, "even if
+you think harder, you cannot do better."</p>
+<p>This study gives people something to think about, especially people like
+hospital workers and airplane pilots, who must stay awake all night and
+then make emergency decisions.</p>
+<p>6. According to the passage, failure to think of new ideas may be
+_____________.</p>
+<p>A. caused by a lack of sleep</p>
+<p>B. caused by hard questions</p>
+<p>C. caused by a weak brain</p>
+<p>D. caused by too much study</p>
+<p>7. Tired people have no problem with
+_____________________.</p>
+<p>A. finding uses for boxes</p>
+<p>B. making creative ideas</p>
+<p>C. doing simple math tests</p>
+<p>D. taking research tests</p>
+<p>8. The purpose for offering money to the tired students was to
+_____________.</p>
+<p>A. help them repair their brains</p>
+<p>B. stimulate their interests</p>
+<p>C. convince people to join</p>
+<p>D. encourage them to do better</p>
+<p>9. Sleep might help people by ________________.</p>
+<p>A. repairing the brain</p>
+<p>B. giving creative dreams</p>
+<p>C. providing fresh energy</p>
+<p>D. allowing harder thought</p>
+<p>10. This information is useful to people like nurses and pilots because
+_____________.</p>
+<p>A. they often meet situations in which they must be creative</p>
+<p>B. they often take tests to display their abilities to do their jobs</p>
+<p>C. they often go to the hospital because of brain problems</p>
+<p>D. they often get little sleep but make important decisions</p>
+<h2 id="passage-2-3">Passage 2-3</h2>
+<p>Questions 11 to 15 are based on following passage .</p>
+<p>Rote-learning (死记硬背), spoon-fed education, produces a brand of kids
+that don't know what to do when entering university. They are
+disciplined into following, not leading. Yet the future depends on
+creativity and imagination. The world needs creators, makers and shakers
+of the new centuries, not the followers of the past centuries. As the
+numbers increase at college and university level, more students from the
+lower ends are likely to be thrown into a process designed to choose
+only learners that have proved excellent in listening to teachers.</p>
+<p>There are three ways to learn: looking, listening and doing.</p>
+<p>Students and teachers today are a product of learning by listening. The
+computer may not be liked by traditional teachers, who use rote-learning
+to put information, which will be out of date in a few years, into the
+heads of the students. With computer learning you learn by looking,
+listening and doing; you use three methods of learning, not just one.
+Therefore, you can learn faster.</p>
+<p>The changing speed of information is frightening. What we learn now will
+be out of date in the near future. So what students are learning now at
+school may be replaced by the time they finish university. We have to
+learn by choice what to forget. Rote-learning for exams is one thing,
+but wouldn't it be better to learn how to learn? The students at
+university today could possibly be doing a job in the not too distant
+future which has not yet been invented.</p>
+<p>11. According to the author, the future doesn't need
+____________.</p>
+<p>A. creativity</p>
+<p>B. imagination</p>
+<p>C. creators</p>
+<p>D. followers</p>
+<p>12. In the author's view, how can students learn well?</p>
+<p>A. Carefully listen to the teacher in class.</p>
+<p>B. Take down every single word said by the teacher.</p>
+<p>C. Learn all the notes by heart.</p>
+<p>D. Combine listening with looking and doing.</p>
+<p>13. What does the author mean by "The changing speed of information is
+frightening"?</p>
+<p>A. We don't have enough time to adjust ourselves to the speed of
+information.</p>
+<p>B. What we learned today may not be useful tomorrow.</p>
+<p>C. The pace of life is too fast.</p>
+<p>D. The world is changing every minute.</p>
+<p>14. What does the last sentence of the passage tell us?</p>
+<p>A. Rote-learning is completely harmful.</p>
+<p>B. Students may have to do jobs which are not yet in existence.</p>
+<p>C. It's better to learn how to learn than learn what to forget.</p>
+<p>D. Students must imagine the future.</p>
+<p>15. The author's attitude towards rote-learning is _________.</p>
+<p>A. approving</p>
+<p>B. disapproving</p>
+<p>C. confident</p>
+<p>D. opposite to what the words say</p>
+<h2 id="passage-2-4">Passage 2-4</h2>
+<p>Questions 16 to 20 are based on following passage .</p>
+<p>Time spent in a bookshop can be most pleasant, whether you are a
+book-lover or merely there to buy a book as a present. You may even have
+entered the shop just to find shelter from a sudden shower. Whatever the
+reason, you can soon become totally unaware of your surroundings. You
+soon focus on some book or other, and usually it is only much later that
+you realize you have spent too much time there and must hurry off to
+keep some forgotten appointment.</p>
+<p>This opportunity to escape the realities of everyday life is the main
+attraction of a bookshop. A music shop is very much like a bookshop. You
+can range round such places to your heart's content. If it is a good
+shop, no assistant will approach you with the greeting, "Can I help
+you?" You needn't buy anything you don't want. In a bookshop an
+assistant should remain in the background until you have finished
+reading. Then, and only then, are his services necessary.</p>
+<p>Once a medical student had to read a textbook which was far too
+expensive for him to buy. He couldn't obtain it from the library and
+the only copy he could find was in a bookshop. Every afternoon,
+therefore, he would go to the shop and read a little of the book at a
+time. One day, however, he was disappointed to find the book missing
+from its usual place. He was about to leave, when he noticed the owner
+of the shop making a gesture to him with his hand. Expecting to be
+scolded, he went towards him. To his surprise, the owner pointed to the
+book which was put away in a corner. "I put it there in case anyone had
+a desire to buy it!" he said, and left the delighted student to
+continue his reading.</p>
+<p>16. Time spent in a bookshop can be most pleasant
+_______________.</p>
+<p>A. only when you can find the book you want to buy</p>
+<p>B. only when you are a book-lover</p>
+<p>C. even when you enter it to avoid a sudden shower</p>
+<p>D. even when you know you are late for an appointment</p>
+<p>17. A bookshop is of much attraction because
+______________ .</p>
+<p>A. it offers you an opportunity to forget about everyday life</p>
+<p>B. it offers you an opportunity to listen to as much music as possible</p>
+<p>C. it allows you to learn about new ideas and ways of doing things</p>
+<p>D. it allows you to have a good excuse for being late for an appointment</p>
+<p>18. In a good bookshop __________.</p>
+<p>A. an assistant should always follow you</p>
+<p>B. an assistant should frequently approach you and offer help</p>
+<p>C. you needn't buy anything you don't want</p>
+<p>D. you can communicate freely with an assistant</p>
+<p>19. The medical student went to a bookshop every day
+_____________.</p>
+<p>A. to look for useful books</p>
+<p>B. to read a textbook</p>
+<p>C. to talk with the shop owner</p>
+<p>D. to use the computer at the shop</p>
+<p>20. The owner of the bookshop put away the book
+______________.</p>
+<p>A. in case other people wanted to buy it</p>
+<p>B. in case the medical student wanted to buy it</p>
+<p>C. because he wanted to sell it at a high price</p>
+<p>D. because he wanted to keep it for himself</p>
+<h2 id="passage-2-5">Passage 2-5</h2>
+<p>Questions 21 to 25 are based on following passage .</p>
+<p>In the United States, it is not normal to telephone someone very early
+in the morning. If you telephone him early in the day, while he is
+shaving or having breakfast, the time of the call shows that the matter
+is very important and requires immediate attention. The same meaning is
+attached to telephone calls made after 11:00 p. m. If someone receives a
+call during sleeping hours, he assumes it's a matter of life and death.
+The time chosen for the call communicates its importance.</p>
+<p>In social life, time plays a very important role. In the US guests tend
+to feel they are not highly regarded if the invitation to a dinner party
+is extended only three or four days before the party date. But this is
+not true in all countries. In other areas of the world it may be
+considered foolish to make an appointment too far in advance because
+plans which are made for a date more than a week away tend to be
+forgotten.</p>
+<p>The meaning of time is different in different parts of the world. Thus,
+misunderstandings arise between people from cultures that treat time
+differently. To be on time is valued highly in American life, for
+example. If people are not on time, they may be regarded as not polite
+or not fully responsible. In the US no one would think of keeping a
+business associate waiting for an hour; it would be bad-mannered. A
+person who is five minutes late is expected to apologize. If he is less
+than five minutes late, he will say a few words of explanation, though
+perhaps he will not complete the sentence.</p>
+<p>21. If you telephone someone early in the day, it means
+___________________.</p>
+<p>A. you are expected to explain why</p>
+<p>B. you are not kind enough</p>
+<p>C. you want to show your concern for him</p>
+<p>D. you have a very important matter to discuss</p>
+<p>22. The expression "a matter of life and death" means
+__________________.</p>
+<p>A. an issue of the greatest importance and emergency</p>
+<p>B. a very important appointment</p>
+<p>C. a matter of whether someone should live or die</p>
+<p>D. a strong desire to communicate</p>
+<p>23. In the US guests tend to feel they are not highly regarded
+_______________.</p>
+<p>A. if the invitation to a dinner party is not extended early enough</p>
+<p>B. if the invitation to a dinner party is extended too far in advance</p>
+<p>C. if the invitation to a dinner party is not extended repeatedly</p>
+<p>D. if the invitation to a dinner party is extended to too many people</p>
+<p>24. The word "misunderstanding" can be explained as
+____________.</p>
+<p>A. failing to attend a party</p>
+<p>B. failing to understand correctly</p>
+<p>C. standing in one's way</p>
+<p>D. standing on one's own feet</p>
+<p>25. Which of the following statements is NOT true according to the
+passage?</p>
+<p>A. In the US it's normal to keep someone waiting for some time.</p>
+<p>B. In the US it's not polite to keep someone waiting for an hour.</p>
+<p>C. In the US one is always expected to be on time.</p>
+<p>D. In the US one is expected to apologize if he is five minutes late.</p>
 
 
 
@@ -8839,7 +9581,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 同步 vs 异步">
+          <a href="../../Math/DM/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 命题逻辑">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -8849,20 +9591,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                同步 vs 异步
+                命题逻辑
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mealy-vs-moore/" class="md-footer__link md-footer__link--next" aria-label="下一页: Mealy vs moore">
+          <a href="../../misc/PDL/" class="md-footer__link md-footer__link--next" aria-label="下一页: PDL">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Mealy vs moore
+                PDL
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -8904,12 +9646,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "content.code.select"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../../../../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
