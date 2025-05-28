@@ -376,6 +376,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/courses/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
