@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/408/4083-AG/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/4084-CO/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
@@ -381,12 +386,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DB/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DB/db/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DB/0-Misc/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/dl/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -686,6 +696,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/0-Misc/class-initializer/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/0-Misc/SDKman/sdkman/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/Exceptions/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
@@ -841,16 +861,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/Java/Misc/class-initializer/</loc>
-         <lastmod>2025-05-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/Courses/Java/Misc/SDKman/sdkman/</loc>
-         <lastmod>2025-05-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/OOP/circle/circle/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
@@ -866,7 +876,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Math/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/</loc>
+         <loc>https://abotw.github.io/notebook/Math/DM/dm/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -971,6 +981,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Misc/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Misc/PDL/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
@@ -1042,11 +1057,6 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Misc/macOS/apps/</loc>
-         <lastmod>2025-05-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/PS/problem-solving/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
