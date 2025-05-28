@@ -63,4 +63,7 @@ The `string` class has 13 constructors and more than 40 methods.
 ![](assets/strbuilder3.png)
 
 ![](assets/strbuilder4.png)
+## getBytes
+
+![](assets/Pasted%20image%2020250527153135.png)
 
