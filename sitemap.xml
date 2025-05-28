@@ -676,7 +676,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/Java/topics/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/Java/java/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -687,6 +687,21 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/Exceptions/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%A6%81%E7%82%B9/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/GUI/JWT/pJWT/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/GUI/JWT/Applet/hello-applet/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/GUI/Swing/pSwing/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -826,12 +841,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/Misc/SDKman/sdkman/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/OOP/circle/circle/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/Package/package/</loc>
+         <lastmod>2025-05-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/Java/TOC/topics/</loc>
          <lastmod>2025-05-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
