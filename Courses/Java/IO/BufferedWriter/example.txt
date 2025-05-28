@@ -1,0 +1,2 @@
+Hello, BufferedWriter!
+This is more efficient.
