@@ -6558,16 +6558,40 @@
         <li class="md-nav__item">
   <a href="#a-appletviewer-java-8" class="md-nav__link">
     <span class="md-ellipsis">
-      方法 A：使用 AppletViewer 工具（Java 8 提供）
+      A. 使用 AppletViewer 工具（Java 8 提供）
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="A. 使用 AppletViewer 工具（Java 8 提供）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helloappletjava" class="md-nav__link">
+    <span class="md-ellipsis">
+      HelloApplet.java
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helloapplethtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      HelloApplet.html
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#b-applet-swing" class="md-nav__link">
     <span class="md-ellipsis">
-      方法 B：将 Applet 改为 Swing 程序
+      B. 将 Applet 改为 Swing 程序
     </span>
   </a>
   
@@ -10701,16 +10725,40 @@
         <li class="md-nav__item">
   <a href="#a-appletviewer-java-8" class="md-nav__link">
     <span class="md-ellipsis">
-      方法 A：使用 AppletViewer 工具（Java 8 提供）
+      A. 使用 AppletViewer 工具（Java 8 提供）
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="A. 使用 AppletViewer 工具（Java 8 提供）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helloappletjava" class="md-nav__link">
+    <span class="md-ellipsis">
+      HelloApplet.java
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helloapplethtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      HelloApplet.html
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#b-applet-swing" class="md-nav__link">
     <span class="md-ellipsis">
-      方法 B：将 Applet 改为 Swing 程序
+      B. 将 Applet 改为 Swing 程序
     </span>
   </a>
   
@@ -10742,19 +10790,17 @@
 
 <h1 id="hello-applet">Hello Applet</h1>
 <p>可以把 Applet 当作普通 Java 程序来运行，<strong>通过 <code>AppletViewer</code> 工具或封装为 JFrame 运行</strong>。</p>
-<h2 id="a-appletviewer-java-8">方法 A：使用 <code>AppletViewer</code> 工具（Java 8 提供）</h2>
+<h2 id="a-appletviewer-java-8">A. 使用 <code>AppletViewer</code> 工具（Java 8 提供）</h2>
 <blockquote>
 <p>⚠️ 需要安装 Oracle JDK 8 或 OpenJDK 8。</p>
 </blockquote>
-<p><strong>步骤：</strong></p>
 <ol>
-<li>
-<p>安装 Java 8（建议用 <strong>SDKMAN</strong> 或 AdoptOpenJDK）。</p>
-</li>
-<li>
-<p>编写 Applet 代码，例如 <code>HelloApplet.java</code>：</p>
-</li>
+<li>安装 Java 8（建议用 <strong>SDKMAN</strong> 或 AdoptOpenJDK）；</li>
+<li>编写 Applet 代码，例如 <code>HelloApplet.java</code>；</li>
+<li>创建 HTML 文件 <code>HelloApplet.html</code>；</li>
+<li>编译并使用 <code>appletviewer</code> 运行。</li>
 </ol>
+<h3 id="helloappletjava"><code>HelloApplet.java</code></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span>
@@ -10771,9 +10817,7 @@
 <a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="p">}</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>创建 HTML 文件 <code>HelloApplet.html</code>：</li>
-</ol>
+<h3 id="helloapplethtml"><code>HelloApplet.html</code></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
@@ -10784,15 +10828,12 @@
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>编译并使用 <code>appletviewer</code> 运行：</li>
-</ol>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>javac<span class="w"> </span>HelloApplet.java
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a>appletviewer<span class="w"> </span>HelloApplet.html
 </code></pre></div></td></tr></table></div>
 <hr />
-<h2 id="b-applet-swing">方法 B：将 Applet 改为 Swing 程序</h2>
+<h2 id="b-applet-swing">B. 将 Applet 改为 Swing 程序</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
