@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "408/4085-OS/0-Misc/final-zzx/final@zzx.md",
+                "file": "408/4085-OS/0-Misc/final-zzx/ch06-18-txdsol-p41.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "final@zzx"
+              "title": "ch06-18-txdsol-p41"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "408/4085-OS/0-Misc/final-zzx/final@zzx.md",
+                "file": "408/4085-OS/0-Misc/final-zzx/ch06-18-txdsol-p41.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of final@zzx"
+              "title": "Outline of ch06-18-txdsol-p41"
             }
           }
         ],
@@ -168,30 +168,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a80ff10d347055a6",
+  "active": "2c1a97ad7a8df700",
   "lastOpenFiles": [
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch09-16-txdsol-p59.md",
+    "408/4085-OS/0-Misc/final-zzx/ch04-13-txdsol-p25.md",
+    "408/4085-OS/0-Misc/final-zzx/ch02-08-txdsol-p10.md",
+    "408/4085-OS/0-Misc/final-zzx/ch01-24-txdsol-p05.md",
+    "408/4085-OS/0-Misc/final-zzx/ch02-01-txdsol-p09.md",
     "408/4085-OS/0-Misc/final-zzx/final@zzx.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch08-14-txdsol-p53.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch07-18-txdsol-p47.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch07-17-txdsol-p47.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch05-17-txdsol-p34.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch05-15-txdsol-p33.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch04-13-txdsol-p25.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch03-22-txdsol-p19.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch03-20-txdsol-p18.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch03-19-txdsol-p17.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch06-18-txdsol-p41.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch04-20-txdsol-p28.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch04-19-txdsol-p28.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch08-04-txdsol-p50.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch07-05-txdsol-p44.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch06-12-txdsol-p39.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch05-10-txdsol-p32.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch03-08-txdsol-p15.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch02-08-txdsol-p10.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch01-24-txdsol-p05.md",
-    "408/4085-OS/0-Misc/final-zzx/txdsol/ch02-01-txdsol-p09.md",
+    "408/4085-OS/0-Misc/final-zzx/ch09-16-txdsol-p59.md",
+    "408/4085-OS/0-Misc/final-zzx/ch08-14-txdsol-p53.md",
+    "408/4085-OS/0-Misc/final-zzx/ch07-18-txdsol-p47.md",
+    "408/4085-OS/0-Misc/final-zzx/ch07-17-txdsol-p47.md",
+    "408/4085-OS/0-Misc/final-zzx/ch05-17-txdsol-p34.md",
+    "408/4085-OS/0-Misc/final-zzx/ch05-15-txdsol-p33.md",
+    "408/4085-OS/0-Misc/final-zzx/ch03-22-txdsol-p19.md",
+    "408/4085-OS/0-Misc/final-zzx/ch03-20-txdsol-p18.md",
+    "408/4085-OS/0-Misc/final-zzx/ch03-19-txdsol-p17.md",
+    "408/4085-OS/0-Misc/final-zzx/ch06-18-txdsol-p41.md",
+    "408/4085-OS/0-Misc/final-zzx/ch04-20-txdsol-p28.md",
+    "408/4085-OS/0-Misc/final-zzx/ch04-19-txdsol-p28.md",
+    "408/4085-OS/0-Misc/final-zzx/ch08-04-txdsol-p50.md",
+    "408/4085-OS/0-Misc/final-zzx/ch07-05-txdsol-p44.md",
+    "408/4085-OS/0-Misc/final-zzx/ch06-12-txdsol-p39.md",
+    "408/4085-OS/0-Misc/final-zzx/ch05-10-txdsol-p32.md",
+    "408/4085-OS/0-Misc/final-zzx/ch03-08-txdsol-p15.md",
     "408/4085-OS/0-Misc/final-zzx/txdsol",
     "408/4085-OS/0-Misc/final-zzx/create_txdsol_files.py.sb-c3e3c7fd-4eV0Rz",
     "408/4085-OS/0-Misc/final-zzx/create_txdsol_files~.py",
