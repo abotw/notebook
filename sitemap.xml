@@ -796,6 +796,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/0-Misc/bistable-circuit-basics/</loc>
+         <lastmod>2025-05-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/0-Misc/combinational-vs-sequential-logic/</loc>
+         <lastmod>2025-05-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/DL/1-Verilog-HDL/verilog-basic-syntax/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
@@ -856,232 +866,227 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/combinational-logic-circuits/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/analysis-design/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/race-hazard/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/combinational-logic-circuits/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/tristate-gate/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/race-hazard/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/LogicGates/logic-gates/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/tristate-gate/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/lgs-%E9%80%BB%E8%BE%91%E9%97%A8/logic-gates/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/psets/p1-CLC-analysis/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-Combinational-Logic/psets/p2-CLC-design/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/psets/p1-CLC-analysis/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/implication-table/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/2-CL-CombinationalLogic/psets/p2-CLC-design/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/latch-vs-flip-flop/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/implication-table/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/primitive-state-diagram/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/latch-vs-flip-flop/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/sequential-logic-circuit/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/primitive-state-diagram/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/timing-diagram/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/sequential-logic-circuit/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/verilog-counter4/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/timing-diagram/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/verilog-counter4/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/moore-mealy/1/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/moore-mealy/mealy-vs-moore/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/moore-mealy/1/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy-state-machine/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/moore-mealy/mealy-vs-moore/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/moore-mealy/moore-vs-mealy/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy-state-machine/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-Sequential-Logic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/4-Misc/bistable-circuit-basics/</loc>
-         <lastmod>2025-05-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/Courses/DL/4-Misc/combinational-vs-sequential-logic/</loc>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1392,6 +1397,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Courses/Java/Threads/lifecycle/thread-lifecycle/</loc>
+         <lastmod>2025-05-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Math/</loc>
          <lastmod>2025-05-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
