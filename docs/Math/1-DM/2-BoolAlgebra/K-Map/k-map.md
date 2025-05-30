@@ -1,4 +1,4 @@
-# K-Map 卡诺图
+# K-Map | 卡诺图
 
 - http://www.32x8.com/index.html
 - https://www.charlie-coleman.com/experiments/kmap/
