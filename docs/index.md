@@ -5,6 +5,10 @@ comments: "true"
 
 # 日拱一卒
 
+> 未被解决的问题会反复出现。 (Fri May 30 09:11:15 CST 2025)
+
+---
+
 > 人不是被过去决定，人是被未来召唤。([src](https://www.bilibili.com/video/BV183411U78u/)) (2025-05-28) 
 
 ---
