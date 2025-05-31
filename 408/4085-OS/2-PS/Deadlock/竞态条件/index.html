@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/Process/IPC/IPC/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/Deadlock/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/">
       
       
-        <link rel="prev" href="../../../PSync/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+        <link rel="prev" href="../../-ps/">
       
       
-        <link rel="next" href="../../../Scheduling/scheduling/">
+        <link rel="next" href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/">
       
       
-      <link rel="icon" href="../../../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>IPC - 日拱一卒</title>
+        <title>竞态条件（Race Condition） - 日拱一卒</title>
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ipc" class="md-skip">
+        <a href="#race-condition" class="md-skip">
           跳转至
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../../../../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../../../../.." title="日拱一卒" class="md-header__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              IPC
+              竞态条件（Race Condition）
             
           </span>
         </div>
@@ -179,7 +179,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../../.." class="md-tabs__link">
+      <a href="../../../../.." class="md-tabs__link">
         
   
   
@@ -202,7 +202,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../../../408/" class="md-tabs__link">
+        <a href="../../../../408/" class="md-tabs__link">
           
   
   
@@ -222,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../Courses/courses/" class="md-tabs__link">
+        <a href="../../../../../Courses/courses/" class="md-tabs__link">
           
   
   
@@ -242,7 +242,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../Math/" class="md-tabs__link">
+        <a href="../../../../../Math/" class="md-tabs__link">
           
   
   
@@ -262,7 +262,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../Tmp/en-draft/" class="md-tabs__link">
+        <a href="../../../../../Tmp/en-draft/" class="md-tabs__link">
           
   
   
@@ -282,7 +282,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../../../misc/" class="md-tabs__link">
+        <a href="../../../../../misc/" class="md-tabs__link">
           
   
   
@@ -322,7 +322,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
+    <a href="../../../../.." title="日拱一卒" class="md-nav__button md-logo" aria-label="日拱一卒" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -340,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../.." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -408,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../408/" class="md-nav__link">
+      <a href="../../../../408/" class="md-nav__link">
         
   
   
@@ -472,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/4081-CL/" class="md-nav__link">
+      <a href="../../../../4081-CL/4081-CL/" class="md-nav__link">
         
   
   
@@ -495,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/NULL/" class="md-nav__link">
+      <a href="../../../../4081-CL/NULL/" class="md-nav__link">
         
   
   
@@ -518,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/size_t/" class="md-nav__link">
+      <a href="../../../../4081-CL/size_t/" class="md-nav__link">
         
   
   
@@ -541,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/sizeof/" class="md-nav__link">
+      <a href="../../../../4081-CL/sizeof/" class="md-nav__link">
         
   
   
@@ -605,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/compile/gcc-compile-standards/" class="md-nav__link">
+      <a href="../../../../4081-CL/compile/gcc-compile-standards/" class="md-nav__link">
         
   
   
@@ -677,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
+      <a href="../../../../4081-CL/macro/%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90%E5%AE%8F/" class="md-nav__link">
         
   
   
@@ -757,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4082-DS/4082-DS/" class="md-nav__link">
+      <a href="../../../../4082-DS/4082-DS/" class="md-nav__link">
         
   
   
@@ -829,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4083-AG/4083-AG/" class="md-nav__link">
+      <a href="../../../../4083-AG/4083-AG/" class="md-nav__link">
         
   
   
@@ -893,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4083-AG/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      <a href="../../../../4083-AG/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E6%BC%94%E7%AE%97%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -973,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4084-CO/" class="md-nav__link">
+      <a href="../../../../4084-CO/4084-CO/" class="md-nav__link">
         
   
   
@@ -1037,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/0-Misc/final-sn/" class="md-nav__link">
+      <a href="../../../../4084-CO/0-Misc/final-sn/" class="md-nav__link">
         
   
   
@@ -1150,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/1-Intro/psets/ch01-01-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../4084-CO/1-Intro/psets/ch01-01-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -1230,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/num/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/num/" class="md-nav__link">
         
   
   
@@ -1335,7 +1335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E4%B9%98%E6%B3%95/sign-magnitude-one-bit-multiply/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E4%B9%98%E6%B3%95/sign-magnitude-one-bit-multiply/" class="md-nav__link">
         
   
   
@@ -1440,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E4%B9%98%E6%B3%95/psets/3.5/Untitled/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E4%B9%98%E6%B3%95/psets/3.5/Untitled/" class="md-nav__link">
         
   
   
@@ -1528,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E9%99%A4%E6%B3%95/6.3.4-tang3-p258p269-%E9%99%A4%E6%B3%95%E8%BF%90%E7%AE%97/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/3%E5%AE%9A%E7%82%B9%E8%BF%90%E7%AE%97/%E5%AE%9A%E7%82%B9%E9%99%A4%E6%B3%95/6.3.4-tang3-p258p269-%E9%99%A4%E6%B3%95%E8%BF%90%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -1649,7 +1649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/floating-point-add-sub-steps/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/floating-point-add-sub-steps/" class="md-nav__link">
         
   
   
@@ -1713,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/psets/tang3-6.29-p271/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/psets/tang3-6.29-p271/" class="md-nav__link">
         
   
   
@@ -1777,7 +1777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/psets/6.4.1-tang3-p269p274-%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/6.4.1-tang3-p269p274-%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/" class="md-nav__link">
+      <a href="../../../../4084-CO/2-Num/4%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/psets/6.4.1-tang3-p269p274-%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/6.4.1-tang3-p269p274-%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -1881,7 +1881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/-mem/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/-mem/" class="md-nav__link">
         
   
   
@@ -2027,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/CPU%E5%AD%98%E5%82%A8%E5%99%A8%E8%BF%9E%E6%8E%A5/psets/p1-%E5%94%903-4.1-p94/p1-%E5%94%903-4.1-p94-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/CPU%E5%AD%98%E5%82%A8%E5%99%A8%E8%BF%9E%E6%8E%A5/psets/p1-%E5%94%903-4.1-p94/p1-%E5%94%903-4.1-p94-sol/" class="md-nav__link">
         
   
   
@@ -2115,7 +2115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/4.13-tang2psets-p54/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/4.13-tang2psets-p54/" class="md-nav__link">
         
   
   
@@ -2179,7 +2179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/" class="md-nav__link">
         
   
   
@@ -2284,7 +2284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p1-%E5%94%903-4.8-p120/%E5%94%903-4.8-p120-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p1-%E5%94%903-4.8-p120/%E5%94%903-4.8-p120-sol/" class="md-nav__link">
         
   
   
@@ -2356,7 +2356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p2-%E5%94%903-4.9-p120/%E5%94%903-4.9-p120-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p2-%E5%94%903-4.9-p120/%E5%94%903-4.9-p120-sol/" class="md-nav__link">
         
   
   
@@ -2428,7 +2428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p3-%E5%94%903-4.11-p121/%E5%94%903-4.11-p121-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/mapping/psets/p3-%E5%94%903-4.11-p121/%E5%94%903-4.11-p121-sol/" class="md-nav__link">
         
   
   
@@ -2598,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/matrics/0-psets/p1-%E5%94%903-4.7-p111/%E5%94%903-4.7-p111/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/Cache-%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/matrics/0-psets/p1-%E5%94%903-4.7-p111/%E5%94%903-4.7-p111/" class="md-nav__link">
         
   
   
@@ -2694,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/HammingCode-%E6%B1%89%E6%98%8E%E7%A0%81/hamming/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/HammingCode-%E6%B1%89%E6%98%8E%E7%A0%81/hamming/" class="md-nav__link">
         
   
   
@@ -2766,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/storage_structure/storage/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/storage_structure/storage/" class="md-nav__link">
         
   
   
@@ -2789,7 +2789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/3-Mem/storage_structure/storage_structure/" class="md-nav__link">
+      <a href="../../../../4084-CO/3-Mem/storage_structure/storage_structure/" class="md-nav__link">
         
   
   
@@ -2869,7 +2869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/-IS/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/-IS/" class="md-nav__link">
         
   
   
@@ -2933,7 +2933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F-AddressingModes/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F-AddressingModes/" class="md-nav__link">
         
   
   
@@ -3038,7 +3038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/4%40%E9%97%B4%E6%8E%A5%E5%AF%BB%E5%9D%80/indirect-addressing/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/4%40%E9%97%B4%E6%8E%A5%E5%AF%BB%E5%9D%80/indirect-addressing/" class="md-nav__link">
         
   
   
@@ -3110,7 +3110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/5%E5%AF%84%E5%AD%98%E5%99%A8%E5%AF%BB%E5%9D%80/register-addressing/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/5%E5%AF%84%E5%AD%98%E5%99%A8%E5%AF%BB%E5%9D%80/register-addressing/" class="md-nav__link">
         
   
   
@@ -3182,7 +3182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/8%E5%8F%98%E5%9D%80%E5%AF%BB%E5%9D%80/indexed-addressing/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/8%E5%8F%98%E5%9D%80%E5%AF%BB%E5%9D%80/indexed-addressing/" class="md-nav__link">
         
   
   
@@ -3270,7 +3270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E6%89%A9%E5%B1%95%E6%93%8D%E4%BD%9C%E7%A0%81%E6%8A%80%E6%9C%AF/extended-opcode-technique/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E6%89%A9%E5%B1%95%E6%93%8D%E4%BD%9C%E7%A0%81%E6%8A%80%E6%9C%AF/extended-opcode-technique/" class="md-nav__link">
         
   
   
@@ -3342,7 +3342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/ch08-03-tang3-p370-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/ch08-03-tang3-p370-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/" class="md-nav__link">
         
   
   
@@ -3414,7 +3414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/7.4.3-tang3-p323-%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+      <a href="../../../../4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/7.4.3-tang3-p323-%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
         
   
   
@@ -3494,7 +3494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/-CPU/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/-CPU/" class="md-nav__link">
         
   
   
@@ -3558,7 +3558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/CPU%E6%80%A7%E8%83%BD/cpu-performace-equation/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/CPU%E6%80%A7%E8%83%BD/cpu-performace-equation/" class="md-nav__link">
         
   
   
@@ -3630,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.2-p368-tang3-CPU%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%BD%A8%E8%BF%B9/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.2-p368-tang3-CPU%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%BD%A8%E8%BF%B9/" class="md-nav__link">
         
   
   
@@ -3653,7 +3653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.4.6-tang3-p364-%E4%B8%AD%E6%96%AD%E5%B1%8F%E8%94%BD%E6%8A%80%E6%9C%AF/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/8.4.6-tang3-p364-%E4%B8%AD%E6%96%AD%E5%B1%8F%E8%94%BD%E6%8A%80%E6%9C%AF/" class="md-nav__link">
         
   
   
@@ -3676,7 +3676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/interrupt-priority-mask-isr/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/CPU%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E8%BD%A8%E8%BF%B9/interrupt-priority-mask-isr/" class="md-nav__link">
         
   
   
@@ -3748,7 +3748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/instruction-pipeline/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/instruction-pipeline/" class="md-nav__link">
         
   
   
@@ -3771,7 +3771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/pipeline-performance-metrics/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/pipeline-performance-metrics/" class="md-nav__link">
         
   
   
@@ -3794,7 +3794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/tang3-8.1-p354-%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/" class="md-nav__link">
+      <a href="../../../../4084-CO/5-CPU/%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/tang3-8.1-p354-%E6%8C%87%E4%BB%A4%E6%B5%81%E6%B0%B4%E7%BA%BF/" class="md-nav__link">
         
   
   
@@ -3874,7 +3874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/-IO/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/-IO/" class="md-nav__link">
         
   
   
@@ -3938,7 +3938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/0-Polling%2BInterrupt%2BDMA/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/0-Polling%2BInterrupt%2BDMA/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/" class="md-nav__link">
         
   
   
@@ -4010,7 +4010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/1-Polling/polling/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/1-Polling/polling/" class="md-nav__link">
         
   
   
@@ -4082,7 +4082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/2-Interrupt/interrupt/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/2-Interrupt/interrupt/" class="md-nav__link">
         
   
   
@@ -4105,7 +4105,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/2-Interrupt/%E4%B8%AD%E6%96%AD%E5%B5%8C%E5%A5%97/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/2-Interrupt/%E4%B8%AD%E6%96%AD%E5%B5%8C%E5%A5%97/" class="md-nav__link">
         
   
   
@@ -4177,7 +4177,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/3-DMA/5.3-p207-tang3/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/3-DMA/5.3-p207-tang3/" class="md-nav__link">
         
   
   
@@ -4200,7 +4200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/3-DMA/DMA/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/3-DMA/DMA/" class="md-nav__link">
         
   
   
@@ -4223,7 +4223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/3-DMA/dma-cycle-stealing.md/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/3-DMA/dma-cycle-stealing.md/" class="md-nav__link">
         
   
   
@@ -4246,7 +4246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/3-DMA/dma-transfer-process/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/3-DMA/dma-transfer-process/" class="md-nav__link">
         
   
   
@@ -4359,7 +4359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/6-IO/psets/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../../4084-CO/6-IO/psets/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -4447,7 +4447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/-bus/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/-bus/" class="md-nav__link">
         
   
   
@@ -4552,7 +4552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/psets/ch03-07-tang3-p66-%E6%80%BB%E7%BA%BF%E9%80%9A%E4%BF%A1%E6%8E%A7%E5%88%B6/ch03-07-tang3-p66-%E6%80%BB%E7%BA%BF%E9%80%9A%E4%BF%A1%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/psets/ch03-07-tang3-p66-%E6%80%BB%E7%BA%BF%E9%80%9A%E4%BF%A1%E6%8E%A7%E5%88%B6/ch03-07-tang3-p66-%E6%80%BB%E7%BA%BF%E9%80%9A%E4%BF%A1%E6%8E%A7%E5%88%B6/" class="md-nav__link">
         
   
   
@@ -4624,7 +4624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/psets/p1-%E5%94%903-3.1-p61-BusBandwidth/p1-%E5%94%903-3.1-p61-BusBandwidth-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/psets/p1-%E5%94%903-3.1-p61-BusBandwidth/p1-%E5%94%903-3.1-p61-BusBandwidth-sol/" class="md-nav__link">
         
   
   
@@ -4696,7 +4696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/psets/p2-%E5%94%903-3.2-p62-BaudRate/p2-%E5%94%903-3.2-p62-BaudRate-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/psets/p2-%E5%94%903-3.2-p62-BaudRate/p2-%E5%94%903-3.2-p62-BaudRate-sol/" class="md-nav__link">
         
   
   
@@ -4768,7 +4768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/psets/p3-%E5%94%903-3.3-p63-%E5%AD%97%E7%AC%A6%E6%A0%BC%E5%BC%8F%2B%E6%B3%A2%E5%BD%A2%E5%9B%BE/p3-%E5%94%903-3.3-p63-%E5%AD%97%E7%AC%A6%E6%A0%BC%E5%BC%8F%2B%E6%B3%A2%E5%BD%A2%E5%9B%BE-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/psets/p3-%E5%94%903-3.3-p63-%E5%AD%97%E7%AC%A6%E6%A0%BC%E5%BC%8F%2B%E6%B3%A2%E5%BD%A2%E5%9B%BE/p3-%E5%94%903-3.3-p63-%E5%AD%97%E7%AC%A6%E6%A0%BC%E5%BC%8F%2B%E6%B3%A2%E5%BD%A2%E5%9B%BE-sol/" class="md-nav__link">
         
   
   
@@ -4840,7 +4840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/7-Bus/psets/p4-%E5%94%904-3.4-p64-BitRate/p4-%E5%94%904-3.4-p64-BitRate-sol/" class="md-nav__link">
+      <a href="../../../../4084-CO/7-Bus/psets/p4-%E5%94%904-3.4-p64-BitRate/p4-%E5%94%904-3.4-p64-BitRate-sol/" class="md-nav__link">
         
   
   
@@ -4928,7 +4928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/CISC/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/CISC/" class="md-nav__link">
         
   
   
@@ -4951,7 +4951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/CPI/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/CPI/" class="md-nav__link">
         
   
   
@@ -4974,7 +4974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/CU/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/CU/" class="md-nav__link">
         
   
   
@@ -4997,7 +4997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/Endianness/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/Endianness/" class="md-nav__link">
         
   
   
@@ -5020,7 +5020,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/FLOPS/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/FLOPS/" class="md-nav__link">
         
   
   
@@ -5043,7 +5043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/IR/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/IR/" class="md-nav__link">
         
   
   
@@ -5066,7 +5066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/ISA/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/ISA/" class="md-nav__link">
         
   
   
@@ -5089,7 +5089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/Microinstruction/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/Microinstruction/" class="md-nav__link">
         
   
   
@@ -5112,7 +5112,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/Performance/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/Performance/" class="md-nav__link">
         
   
   
@@ -5135,7 +5135,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/RISC/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/RISC/" class="md-nav__link">
         
   
   
@@ -5158,7 +5158,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/SP/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/SP/" class="md-nav__link">
         
   
   
@@ -5181,7 +5181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/TLB/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/TLB/" class="md-nav__link">
         
   
   
@@ -5204,7 +5204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/char-device/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/char-device/" class="md-nav__link">
         
   
   
@@ -5227,7 +5227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/flag-register/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/flag-register/" class="md-nav__link">
         
   
   
@@ -5250,7 +5250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/instruction-cycle/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/instruction-cycle/" class="md-nav__link">
         
   
   
@@ -5273,7 +5273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/objdump/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/objdump/" class="md-nav__link">
         
   
   
@@ -5296,7 +5296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E4%B8%BB%E9%A2%91/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E4%B8%BB%E9%A2%91/" class="md-nav__link">
         
   
   
@@ -5319,7 +5319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -5342,7 +5342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E6%8C%87%E4%BB%A4%E9%9B%86/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E6%8C%87%E4%BB%A4%E9%9B%86/" class="md-nav__link">
         
   
   
@@ -5365,7 +5365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%80/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%80/" class="md-nav__link">
         
   
   
@@ -5388,7 +5388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97-vs-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97-vs-%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -5411,7 +5411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4084-CO/cards/%E9%97%B4%E5%9D%80%E5%91%A8%E6%9C%9F/" class="md-nav__link">
+      <a href="../../../../4084-CO/cards/%E9%97%B4%E5%9D%80%E5%91%A8%E6%9C%9F/" class="md-nav__link">
         
   
   
@@ -5493,7 +5493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4085-OS/" class="md-nav__link">
+      <a href="../../../4085-OS/" class="md-nav__link">
         
   
   
@@ -5598,7 +5598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../0-Misc/final-zzx/final-zzx-%E7%AE%80%E7%AD%94-17p/" class="md-nav__link">
+      <a href="../../../0-Misc/final-zzx/final-zzx-%E7%AE%80%E7%AD%94-17p/" class="md-nav__link">
         
   
   
@@ -5621,7 +5621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../0-Misc/final-zzx/final%40zzx/" class="md-nav__link">
+      <a href="../../../0-Misc/final-zzx/final%40zzx/" class="md-nav__link">
         
   
   
@@ -5701,7 +5701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/-os1/" class="md-nav__link">
+      <a href="../../../1-Intro/-os1/" class="md-nav__link">
         
   
   
@@ -5724,7 +5724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E5%8E%9F%E8%AF%AD/" class="md-nav__link">
+      <a href="../../../1-Intro/%E5%8E%9F%E8%AF%AD/" class="md-nav__link">
         
   
   
@@ -5747,7 +5747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E5%A4%9A%E9%81%93%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
+      <a href="../../../1-Intro/%E5%A4%9A%E9%81%93%E7%A8%8B%E5%BA%8F/" class="md-nav__link">
         
   
   
@@ -5770,7 +5770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E5%BE%AE%E5%86%85%E6%A0%B8/" class="md-nav__link">
+      <a href="../../../1-Intro/%E5%BE%AE%E5%86%85%E6%A0%B8/" class="md-nav__link">
         
   
   
@@ -5793,7 +5793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/" class="md-nav__link">
+      <a href="../../../1-Intro/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/" class="md-nav__link">
         
   
   
@@ -5816,7 +5816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+      <a href="../../../1-Intro/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
         
   
   
@@ -5839,7 +5839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E7%B3%BB%E7%BB%9F%E5%90%9E%E5%90%90%E9%87%8F/" class="md-nav__link">
+      <a href="../../../1-Intro/%E7%B3%BB%E7%BB%9F%E5%90%9E%E5%90%90%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -5862,7 +5862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../1-Intro/%E9%98%BB%E5%A1%9E/" class="md-nav__link">
+      <a href="../../../1-Intro/%E9%98%BB%E5%A1%9E/" class="md-nav__link">
         
   
   
@@ -5936,7 +5936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../-ps/" class="md-nav__link">
+      <a href="../../-ps/" class="md-nav__link">
         
   
   
@@ -5956,6 +5956,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5966,11 +5968,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6_4_2" id="__nav_2_6_4_2_label" tabindex="0">
@@ -5978,7 +5980,7 @@
   
   
   <span class="md-ellipsis">
-    F死锁
+    Deadlock
     
   </span>
   
@@ -5986,10 +5988,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6_4_2">
             <span class="md-nav__icon md-icon"></span>
-            F死锁
+            Deadlock
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5997,10 +5999,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../F%E6%AD%BB%E9%94%81/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    竞态条件（Race Condition）
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6011,6 +6035,113 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概念简述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心要点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      经典案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="经典案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 银行账户转账问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-unixlinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. UNIX/Linux 文件权限检查漏洞
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 共享变量自增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见防范方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      与其他垂直领域的关联
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      思维导图式总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6023,7 +6154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../F%E6%AD%BB%E9%94%81/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
+      <a href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
         
   
   
@@ -6065,7 +6196,7 @@
   
   
   <span class="md-ellipsis">
-    F银行家算法
+    Psets
     
   </span>
   
@@ -6076,7 +6207,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_2_3">
             <span class="md-nav__icon md-icon"></span>
-            F银行家算法
+            Psets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6087,12 +6218,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../F%E6%AD%BB%E9%94%81/F%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95/ch03-22-txdsol-p19/" class="md-nav__link">
+      <a href="../psets/P1-Banker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch03-22-txdsol-p19
+    P1: Banker
     
   </span>
   
@@ -6167,7 +6298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PSync/psets-psync/" class="md-nav__link">
+      <a href="../../PSync/psets-psync/" class="md-nav__link">
         
   
   
@@ -6190,7 +6321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PSync/psync/" class="md-nav__link">
+      <a href="../../PSync/psync/" class="md-nav__link">
         
   
   
@@ -6213,7 +6344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PSync/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../../PSync/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -6241,8 +6372,6 @@
                 
   
   
-    
-  
   
   
     
@@ -6253,11 +6382,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_4" >
         
           
           <label class="md-nav__link" for="__nav_2_6_4_4" id="__nav_2_6_4_4_label" tabindex="0">
@@ -6273,7 +6402,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_4">
             <span class="md-nav__icon md-icon"></span>
             Process
@@ -6284,73 +6413,10 @@
                 
   
   
-    
   
   
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_4_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_6_4_4_1" id="__nav_2_6_4_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    IPC
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_4_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_6_4_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            IPC
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    IPC
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Process/IPC/" class="md-nav__link">
         
   
   
@@ -6361,59 +6427,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ipc" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 为什么需要 IPC？
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ipc_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 常见的 IPC 方式
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      🧠 小结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6475,7 +6488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Scheduling/scheduling/" class="md-nav__link">
+      <a href="../../Scheduling/scheduling/" class="md-nav__link">
         
   
   
@@ -6498,7 +6511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Scheduling/%E5%91%A8%E8%BD%AC%E6%97%B6%E9%97%B4/" class="md-nav__link">
+      <a href="../../Scheduling/%E5%91%A8%E8%BD%AC%E6%97%B6%E9%97%B4/" class="md-nav__link">
         
   
   
@@ -6562,7 +6575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Scheduling/psets/psets-cpu-scheduling/" class="md-nav__link">
+      <a href="../../Scheduling/psets/psets-cpu-scheduling/" class="md-nav__link">
         
   
   
@@ -6642,7 +6655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../semaphore/ch04-19-txdsol-p28/" class="md-nav__link">
+      <a href="../../Semaphore/ch04-19-txdsol-p28/" class="md-nav__link">
         
   
   
@@ -6665,7 +6678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../semaphore/ch04-20-txdsol-p28/" class="md-nav__link">
+      <a href="../../Semaphore/ch04-20-txdsol-p28/" class="md-nav__link">
         
   
   
@@ -6688,7 +6701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../semaphore/psets-semaphore/" class="md-nav__link">
+      <a href="../../Semaphore/psets-semaphore/" class="md-nav__link">
         
   
   
@@ -6711,7 +6724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../semaphore/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
+      <a href="../../Semaphore/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -6791,7 +6804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/-mem3/" class="md-nav__link">
+      <a href="../../../3-Mem/-mem3/" class="md-nav__link">
         
   
   
@@ -6855,7 +6868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/1546-2%E7%BA%A7%E9%A1%B5%E8%A1%A8%E7%9A%84%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%2B%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/1546-2%E7%BA%A7%E9%A1%B5%E8%A1%A8%E7%9A%84%E9%80%BB%E8%BE%91%E5%9C%B0%E5%9D%80%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%2B%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2/" class="md-nav__link">
         
   
   
@@ -6878,7 +6891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/MMU/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/MMU/" class="md-nav__link">
         
   
   
@@ -6901,7 +6914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/paging/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/paging/" class="md-nav__link">
         
   
   
@@ -6924,7 +6937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/segmentation/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/segmentation/" class="md-nav__link">
         
   
   
@@ -6947,7 +6960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/virmem/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/virmem/" class="md-nav__link">
         
   
   
@@ -6970,7 +6983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/" class="md-nav__link">
         
   
   
@@ -6993,7 +7006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E5%86%85%E5%AD%98%E5%9B%9E%E6%94%B6/" class="md-nav__link">
         
   
   
@@ -7016,7 +7029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2-AddressTranslation/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2-AddressTranslation/" class="md-nav__link">
         
   
   
@@ -7039,7 +7052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4-AddressSpace/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4-AddressSpace/" class="md-nav__link">
         
   
   
@@ -7062,7 +7075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E7%89%A9%E7%90%86%E9%A1%B5/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E7%89%A9%E7%90%86%E9%A1%B5/" class="md-nav__link">
         
   
   
@@ -7085,7 +7098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" class="md-nav__link">
         
   
   
@@ -7108,7 +7121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E8%AF%B7%E6%B1%82%E5%88%86%E9%A1%B5%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E8%AF%B7%E6%B1%82%E5%88%86%E9%A1%B5%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -7131,7 +7144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D%E7%AE%A1%E7%90%86%E6%96%B9%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -7154,7 +7167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/cards/%E9%A1%B5%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95/" class="md-nav__link">
+      <a href="../../../3-Mem/cards/%E9%A1%B5%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95/" class="md-nav__link">
         
   
   
@@ -7267,7 +7280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P1-Paging/P1-Paging/" class="md-nav__link">
+      <a href="../../../3-Mem/psets/P1-Paging/P1-Paging/" class="md-nav__link">
         
   
   
@@ -7339,12 +7352,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P2-Segmentation/P2-Segmentation/" class="md-nav__link">
+      <a href="../../../3-Mem/psets/P2-Segmentation/P2-Segmentation/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    P2-Segmentation
+    P2: Segmentation
     
   </span>
   
@@ -7411,35 +7424,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P3-PageReplacement/ch06-18-txdsol-p41/" class="md-nav__link">
+      <a href="../../../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch06-18-txdsol-p41
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P3-PageReplacement/psets-page-replacement/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Psets: Page Replacement | 页面置换算法
+    P3: Page Replacement | 页面置换算法
     
   </span>
   
@@ -7522,7 +7512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/-fs4/" class="md-nav__link">
+      <a href="../../../4-FS/-fs4/" class="md-nav__link">
         
   
   
@@ -7586,7 +7576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/1-File/-file4.1/" class="md-nav__link">
+      <a href="../../../4-FS/1-File/-file4.1/" class="md-nav__link">
         
   
   
@@ -7609,7 +7599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/1-File/file/" class="md-nav__link">
+      <a href="../../../4-FS/1-File/file/" class="md-nav__link">
         
   
   
@@ -7632,7 +7622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/1-File/inode/" class="md-nav__link">
+      <a href="../../../4-FS/1-File/inode/" class="md-nav__link">
         
   
   
@@ -7704,7 +7694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/2-Dir/-dir4.2/" class="md-nav__link">
+      <a href="../../../4-FS/2-Dir/-dir4.2/" class="md-nav__link">
         
   
   
@@ -7776,7 +7766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/3-FS/-fs4.3/" class="md-nav__link">
+      <a href="../../../4-FS/3-FS/-fs4.3/" class="md-nav__link">
         
   
   
@@ -7889,7 +7879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/psets/P1-Dir-FCB-inode/P1-Dir-FCB-inode/" class="md-nav__link">
+      <a href="../../../4-FS/psets/P1-Dir-FCB-inode/P1-Dir-FCB-inode/" class="md-nav__link">
         
   
   
@@ -7961,7 +7951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../4-FS/psets/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/" class="md-nav__link">
+      <a href="../../../4-FS/psets/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/" class="md-nav__link">
         
   
   
@@ -8049,7 +8039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../5-IO/-io5/" class="md-nav__link">
+      <a href="../../../5-IO/-io5/" class="md-nav__link">
         
   
   
@@ -8113,7 +8103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../5-IO/Disk/block/" class="md-nav__link">
+      <a href="../../../5-IO/Disk/block/" class="md-nav__link">
         
   
   
@@ -8136,7 +8126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../5-IO/Disk/disk/" class="md-nav__link">
+      <a href="../../../5-IO/Disk/disk/" class="md-nav__link">
         
   
   
@@ -8249,7 +8239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../5-IO/psets/P1-DiskScheduling/P1-DiskScheduling/" class="md-nav__link">
+      <a href="../../../5-IO/psets/P1-DiskScheduling/P1-DiskScheduling/" class="md-nav__link">
         
   
   
@@ -8345,7 +8335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../4086-CN/4086-CN/" class="md-nav__link">
+      <a href="../../../../4086-CN/4086-CN/" class="md-nav__link">
         
   
   
@@ -8424,7 +8414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/courses/" class="md-nav__link">
+      <a href="../../../../../Courses/courses/" class="md-nav__link">
         
   
   
@@ -8488,7 +8478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DB/db/" class="md-nav__link">
+      <a href="../../../../../Courses/DB/db/" class="md-nav__link">
         
   
   
@@ -8552,7 +8542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DB/0-Misc/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../../../Courses/DB/0-Misc/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -8632,7 +8622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/dl/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/dl/" class="md-nav__link">
         
   
   
@@ -8696,7 +8686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/0-Misc/bistable-circuit-basics/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/0-Misc/bistable-circuit-basics/" class="md-nav__link">
         
   
   
@@ -8719,7 +8709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/0-Misc/combinational-vs-sequential-logic/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/0-Misc/combinational-vs-sequential-logic/" class="md-nav__link">
         
   
   
@@ -8791,7 +8781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/verilog-basic-syntax/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/verilog-basic-syntax/" class="md-nav__link">
         
   
   
@@ -8814,7 +8804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/verilog-common-modules/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/verilog-common-modules/" class="md-nav__link">
         
   
   
@@ -8837,7 +8827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/verilog-modeling-levels/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/verilog-modeling-levels/" class="md-nav__link">
         
   
   
@@ -8901,7 +8891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/DUT/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/DUT/" class="md-nav__link">
         
   
   
@@ -8924,7 +8914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/IPC/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/IPC/" class="md-nav__link">
         
   
   
@@ -8947,7 +8937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/RTL/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/RTL/" class="md-nav__link">
         
   
   
@@ -8970,7 +8960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/XDC/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/XDC/" class="md-nav__link">
         
   
   
@@ -8993,7 +8983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/reg%2B%E9%9D%9E%E9%98%BB%E5%A1%9E%E5%9E%8B%E8%B5%8B%E5%80%BC/" class="md-nav__link">
         
   
   
@@ -9016,7 +9006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/vivado/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/vivado/" class="md-nav__link">
         
   
   
@@ -9039,7 +9029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1/" class="md-nav__link">
         
   
   
@@ -9062,7 +9052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/cards/%E6%A8%A1%E5%9D%97%E5%AE%9E%E4%BE%8B%E5%8C%96/" class="md-nav__link">
         
   
   
@@ -9134,7 +9124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/1-Verilog-HDL/chts/verilog-cht/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/1-Verilog-HDL/chts/verilog-cht/" class="md-nav__link">
         
   
   
@@ -9214,7 +9204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/analysis-design/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/analysis-design/" class="md-nav__link">
         
   
   
@@ -9237,7 +9227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/combinational-logic-circuits/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/combinational-logic-circuits/" class="md-nav__link">
         
   
   
@@ -9260,7 +9250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/race-hazard/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/race-hazard/" class="md-nav__link">
         
   
   
@@ -9324,7 +9314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/LogicGates/logic-gates/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/LogicGates/logic-gates/" class="md-nav__link">
         
   
   
@@ -9396,7 +9386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/tristate-gate/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/tristate-gate/" class="md-nav__link">
         
   
   
@@ -9460,7 +9450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/DEMUX-demultiplexer-%E5%88%86%E9%85%8D%E5%99%A8/-/" class="md-nav__link">
         
   
   
@@ -9532,7 +9522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/MUX-multiplexer-%E9%80%89%E6%8B%A9%E5%99%A8/mux/" class="md-nav__link">
         
   
   
@@ -9604,7 +9594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/adder-%E5%8A%A0%E6%B3%95%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -9676,7 +9666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/comparator-%E6%AF%94%E8%BE%83%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -9748,7 +9738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/decoder-%E8%AF%91%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -9820,7 +9810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/encoder-%E7%BC%96%E7%A0%81%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -9892,7 +9882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E5%99%A8/parity-%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C/" class="md-nav__link">
         
   
   
@@ -9964,7 +9954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/cards/subtractor-%E5%87%8F%E6%B3%95%E5%99%A8/Untitled/" class="md-nav__link">
         
   
   
@@ -10044,7 +10034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/psets/p1-CLC-analysis/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/psets/p1-CLC-analysis/" class="md-nav__link">
         
   
   
@@ -10067,7 +10057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/2-CL-CombinationalLogic/psets/p2-CLC-design/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/2-CL-CombinationalLogic/psets/p2-CLC-design/" class="md-nav__link">
         
   
   
@@ -10147,7 +10137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/implication-table/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/implication-table/" class="md-nav__link">
         
   
   
@@ -10170,7 +10160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/latch-vs-flip-flop/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/latch-vs-flip-flop/" class="md-nav__link">
         
   
   
@@ -10193,7 +10183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/primitive-state-diagram/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -10216,7 +10206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/sequential-logic-circuit/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/sequential-logic-circuit/" class="md-nav__link">
         
   
   
@@ -10239,7 +10229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/timing-diagram/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/timing-diagram/" class="md-nav__link">
         
   
   
@@ -10262,7 +10252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/verilog-counter4/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/verilog-counter4/" class="md-nav__link">
         
   
   
@@ -10326,7 +10316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/flip-flop/" class="md-nav__link">
         
   
   
@@ -10349,7 +10339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/verilog-JKFF/" class="md-nav__link">
         
   
   
@@ -10372,7 +10362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FF-FlipFlop-%E8%A7%A6%E5%8F%91%E5%99%A8/%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -10444,7 +10434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/FSM/" class="md-nav__link">
         
   
   
@@ -10467,7 +10457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/excitation-output-nextstate-equation/" class="md-nav__link">
         
   
   
@@ -10490,7 +10480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/fsm-finite-state-machine/" class="md-nav__link">
         
   
   
@@ -10513,7 +10503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/FSM-FiniteStateMachine-%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -10585,7 +10575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/2%E9%97%A8%E6%8E%A7%20SR%20%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -10608,7 +10598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/3D%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -10631,7 +10621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/4JK%E9%94%81%E5%AD%98%E5%99%A8/" class="md-nav__link">
         
   
   
@@ -10654,7 +10644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/latch/" class="md-nav__link">
         
   
   
@@ -10718,7 +10708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/1rs-latch/" class="md-nav__link">
         
   
   
@@ -10741,7 +10731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/SR-latch/sr-latch/" class="md-nav__link">
         
   
   
@@ -10813,7 +10803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Latch-%E9%94%81%E5%AD%98%E5%99%A8/T%E8%A7%A6%E5%8F%91%E5%99%A8/tff/" class="md-nav__link">
         
   
   
@@ -10893,7 +10883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Sync-Async/synchronous-vs-asynchronous-sequential-circuits/" class="md-nav__link">
         
   
   
@@ -10916,7 +10906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/Sync-Async/%E5%90%8C%E6%AD%A5-vs-%E5%BC%82%E6%AD%A5/" class="md-nav__link">
         
   
   
@@ -10988,7 +10978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/1/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/1/" class="md-nav__link">
         
   
   
@@ -11011,7 +11001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/mealy-vs-moore/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/mealy-vs-moore/" class="md-nav__link">
         
   
   
@@ -11034,7 +11024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy-state-machine/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy-state-machine/" class="md-nav__link">
         
   
   
@@ -11057,7 +11047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/moore-mealy/moore-vs-mealy/" class="md-nav__link">
         
   
   
@@ -11170,7 +11160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/" class="md-nav__link">
         
   
   
@@ -11242,7 +11232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/" class="md-nav__link">
         
   
   
@@ -11314,7 +11304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/p3-primitive-state-diagram/" class="md-nav__link">
         
   
   
@@ -11386,7 +11376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/3-SL-SequentialLogic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/3-SL-SequentialLogic/psets/p4-%E9%9A%90%E5%90%AB%E8%A1%A8/p4-implication-table/" class="md-nav__link">
         
   
   
@@ -11474,7 +11464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/DL/Refs/" class="md-nav__link">
+      <a href="../../../../../Courses/DL/Refs/" class="md-nav__link">
         
   
   
@@ -11595,7 +11585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/1-Encoding/encoding/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/1-Encoding/encoding/" class="md-nav__link">
         
   
   
@@ -11659,7 +11649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/2421BCD-cht/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/2421BCD-cht/" class="md-nav__link">
         
   
   
@@ -11682,7 +11672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/8421BCD-cht/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/8421BCD-cht/" class="md-nav__link">
         
   
   
@@ -11705,7 +11695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/excess3-cht/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/1-Encoding/BCD-BinaryCodedDecimal/excess3-cht/" class="md-nav__link">
         
   
   
@@ -11777,7 +11767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/1-Encoding/GrayCode/gray-code/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/1-Encoding/GrayCode/gray-code/" class="md-nav__link">
         
   
   
@@ -11898,7 +11888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/2-Coding/ReliabilityCoding/parity-code/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/2-Coding/ReliabilityCoding/parity-code/" class="md-nav__link">
         
   
   
@@ -11921,7 +11911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/2-Coding/ReliabilityCoding/reliability-coding/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/2-Coding/ReliabilityCoding/reliability-coding/" class="md-nav__link">
         
   
   
@@ -12001,7 +11991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/-numsys/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/-numsys/" class="md-nav__link">
         
   
   
@@ -12065,7 +12055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/" class="md-nav__link">
         
   
   
@@ -12088,7 +12078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/biased-representation-essence/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/biased-representation-essence/" class="md-nav__link">
         
   
   
@@ -12111,7 +12101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/fast-decoding-twos-complement/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/fast-decoding-twos-complement/" class="md-nav__link">
         
   
   
@@ -12134,7 +12124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/value-range-comparison-codes/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/value-range-comparison-codes/" class="md-nav__link">
         
   
   
@@ -12157,7 +12147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/zero-representation-in-codes/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/zero-representation-in-codes/" class="md-nav__link">
         
   
   
@@ -12180,7 +12170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/1%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/%E5%8E%9F%E5%8F%8D%E8%A1%A5%E7%A7%BB/" class="md-nav__link">
         
   
   
@@ -12252,7 +12242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E5%AE%9A%E7%82%B9%E6%9C%BAvs%E6%B5%AE%E7%82%B9%E6%9C%BA/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E5%AE%9A%E7%82%B9%E6%9C%BAvs%E6%B5%AE%E7%82%B9%E6%9C%BA/" class="md-nav__link">
         
   
   
@@ -12357,7 +12347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/psets/6.2-tang3-p228p233-%E5%AE%9A%E7%82%B9%E6%95%B0%E6%B5%AE%E7%82%B9%E6%95%B0/6.2-tang3-p228p233-%E5%AE%9A%E7%82%B9%E6%95%B0%E6%B5%AE%E7%82%B9%E6%95%B0/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/psets/6.2-tang3-p228p233-%E5%AE%9A%E7%82%B9%E6%95%B0%E6%B5%AE%E7%82%B9%E6%95%B0/6.2-tang3-p228p233-%E5%AE%9A%E7%82%B9%E6%95%B0%E6%B5%AE%E7%82%B9%E6%95%B0/" class="md-nav__link">
         
   
   
@@ -12437,7 +12427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/2%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/%E6%95%B4%E6%95%B0%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="md-nav__link">
         
   
   
@@ -12517,7 +12507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/ICS/3-NumSys/Conversion/conversion/" class="md-nav__link">
+      <a href="../../../../../Courses/ICS/3-NumSys/Conversion/conversion/" class="md-nav__link">
         
   
   
@@ -12605,7 +12595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/java/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/java/" class="md-nav__link">
         
   
   
@@ -12669,7 +12659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/0-Misc/class-initializer/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/0-Misc/class-initializer/" class="md-nav__link">
         
   
   
@@ -12733,7 +12723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/0-Misc/SDKman/sdkman/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/0-Misc/SDKman/sdkman/" class="md-nav__link">
         
   
   
@@ -12813,7 +12803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Exceptions/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Exceptions/" class="md-nav__link">
         
   
   
@@ -12836,7 +12826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Exceptions/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%A6%81%E7%82%B9/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Exceptions/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E8%A6%81%E7%82%B9/" class="md-nav__link">
         
   
   
@@ -12859,7 +12849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Exceptions/exceptions/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Exceptions/exceptions/" class="md-nav__link">
         
   
   
@@ -12931,7 +12921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/GUI/overview-of-java-gui-programming-concepts/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/GUI/overview-of-java-gui-programming-concepts/" class="md-nav__link">
         
   
   
@@ -12995,7 +12985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/GUI/JWT/pJWT/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/GUI/JWT/pJWT/" class="md-nav__link">
         
   
   
@@ -13059,7 +13049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/GUI/JWT/Applet/hello-applet/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/GUI/JWT/Applet/hello-applet/" class="md-nav__link">
         
   
   
@@ -13139,7 +13129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/GUI/Swing/pSwing/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/GUI/Swing/pSwing/" class="md-nav__link">
         
   
   
@@ -13203,7 +13193,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/GUI/Swing/layout-manager/layout-manager/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/GUI/Swing/layout-manager/layout-manager/" class="md-nav__link">
         
   
   
@@ -13332,7 +13322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/BIO/BIO/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/BIO/BIO/" class="md-nav__link">
         
   
   
@@ -13404,7 +13394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/BufferedReader/cBufferedReader/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/BufferedReader/cBufferedReader/" class="md-nav__link">
         
   
   
@@ -13476,7 +13466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/BufferedWriter/cBufferedWriter/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/BufferedWriter/cBufferedWriter/" class="md-nav__link">
         
   
   
@@ -13548,7 +13538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/DataInputStream/cDataInputStream/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/DataInputStream/cDataInputStream/" class="md-nav__link">
         
   
   
@@ -13620,7 +13610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/DataOutputStream/cDataOutputStream/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/DataOutputStream/cDataOutputStream/" class="md-nav__link">
         
   
   
@@ -13692,7 +13682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/FIO/FIO/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/FIO/FIO/" class="md-nav__link">
         
   
   
@@ -13756,7 +13746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/FIO/scanner/scanner/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/FIO/scanner/scanner/" class="md-nav__link">
         
   
   
@@ -13836,7 +13826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/FileInputStream/cFileInputStream/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/FileInputStream/cFileInputStream/" class="md-nav__link">
         
   
   
@@ -13908,7 +13898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/FileOutputStream/cFileOutputStream/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/FileOutputStream/cFileOutputStream/" class="md-nav__link">
         
   
   
@@ -13980,7 +13970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/FileWriter/cFileWriter/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/FileWriter/cFileWriter/" class="md-nav__link">
         
   
   
@@ -14052,7 +14042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/InputStreamReader/cInputStreamReader/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/InputStreamReader/cInputStreamReader/" class="md-nav__link">
         
   
   
@@ -14124,7 +14114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/PrintStream/cPrintStream/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/PrintStream/cPrintStream/" class="md-nav__link">
         
   
   
@@ -14196,7 +14186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/IO/RandomAccessFile/cRandomAccessFile/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/IO/RandomAccessFile/cRandomAccessFile/" class="md-nav__link">
         
   
   
@@ -14276,7 +14266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/jsl/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/jsl/" class="md-nav__link">
         
   
   
@@ -14340,7 +14330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Calendar/calendar%20copy/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Calendar/calendar%20copy/" class="md-nav__link">
         
   
   
@@ -14363,7 +14353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Calendar/calendar/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Calendar/calendar/" class="md-nav__link">
         
   
   
@@ -14435,7 +14425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Date/date/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Date/date/" class="md-nav__link">
         
   
   
@@ -14507,7 +14497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Math/math/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Math/math/" class="md-nav__link">
         
   
   
@@ -14579,7 +14569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Number/number/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Number/number/" class="md-nav__link">
         
   
   
@@ -14651,7 +14641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/Random/random/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/Random/random/" class="md-nav__link">
         
   
   
@@ -14723,7 +14713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/String/string/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/String/string/" class="md-nav__link">
         
   
   
@@ -14787,7 +14777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/String/String-todo/java-string-builder/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/String/String-todo/java-string-builder/" class="md-nav__link">
         
   
   
@@ -14810,7 +14800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/String/String-todo/java-string-class/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/String/String-todo/java-string-class/" class="md-nav__link">
         
   
   
@@ -14833,7 +14823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/String/String-todo/java-stringtokenizer-class/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/String/String-todo/java-stringtokenizer-class/" class="md-nav__link">
         
   
   
@@ -14913,7 +14903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/System/system/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/System/system/" class="md-nav__link">
         
   
   
@@ -14936,7 +14926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Libs/System/system2/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Libs/System/system2/" class="md-nav__link">
         
   
   
@@ -15057,7 +15047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/OOP/circle/circle/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/OOP/circle/circle/" class="md-nav__link">
         
   
   
@@ -15137,7 +15127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Package/package/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Package/package/" class="md-nav__link">
         
   
   
@@ -15209,7 +15199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/TOC/topics/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/TOC/topics/" class="md-nav__link">
         
   
   
@@ -15281,7 +15271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Threads/overview-of-java-multithreaded-programming/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Threads/overview-of-java-multithreaded-programming/" class="md-nav__link">
         
   
   
@@ -15345,7 +15335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Threads/implement/three-ways-to-implement-multithreading/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Threads/implement/three-ways-to-implement-multithreading/" class="md-nav__link">
         
   
   
@@ -15417,7 +15407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Courses/Java/Threads/lifecycle/thread-lifecycle/" class="md-nav__link">
+      <a href="../../../../../Courses/Java/Threads/lifecycle/thread-lifecycle/" class="md-nav__link">
         
   
   
@@ -15512,7 +15502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/" class="md-nav__link">
+      <a href="../../../../../Math/" class="md-nav__link">
         
   
   
@@ -15576,7 +15566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/0-Misc/%E6%95%B0%E5%AD%97%E6%95%8F%E6%84%9F%E6%80%A7/" class="md-nav__link">
+      <a href="../../../../../Math/0-Misc/%E6%95%B0%E5%AD%97%E6%95%8F%E6%84%9F%E6%80%A7/" class="md-nav__link">
         
   
   
@@ -15648,7 +15638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/dm/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/dm/" class="md-nav__link">
         
   
   
@@ -15712,7 +15702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/1-Logic/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/1-Logic/%E5%91%BD%E9%A2%98%E9%80%BB%E8%BE%91/" class="md-nav__link">
         
   
   
@@ -15784,7 +15774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/logic-simplification/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/logic-simplification/" class="md-nav__link">
         
   
   
@@ -15848,7 +15838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/K-Map/SoP%2BPoS/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/K-Map/SoP%2BPoS/" class="md-nav__link">
         
   
   
@@ -15871,7 +15861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/K-Map/k-map/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/K-Map/k-map/" class="md-nav__link">
         
   
   
@@ -15943,7 +15933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/Laws/duality/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/Laws/duality/" class="md-nav__link">
         
   
   
@@ -15966,7 +15956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/Laws/laws-BA/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/Laws/laws-BA/" class="md-nav__link">
         
   
   
@@ -16038,7 +16028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/assets/BA-vs-LA/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/assets/BA-vs-LA/" class="md-nav__link">
         
   
   
@@ -16061,7 +16051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/assets/xor%2Bxnor/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/assets/xor%2Bxnor/" class="md-nav__link">
         
   
   
@@ -16133,7 +16123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/psets/p1-%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AD%89%E4%BB%B7%E8%AF%81%E6%98%8E/" class="md-nav__link">
         
   
   
@@ -16156,7 +16146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Math/1-DM/2-BoolAlgebra/psets/p2-%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E5%8C%96%E7%AE%80/" class="md-nav__link">
+      <a href="../../../../../Math/1-DM/2-BoolAlgebra/psets/p2-%E9%80%BB%E8%BE%91%E5%87%BD%E6%95%B0%E5%8C%96%E7%AE%80/" class="md-nav__link">
         
   
   
@@ -16251,7 +16241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Tmp/en-draft/" class="md-nav__link">
+      <a href="../../../../../Tmp/en-draft/" class="md-nav__link">
         
   
   
@@ -16274,7 +16264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../Tmp/%E9%98%85%E8%AF%BB%E7%BB%83%E4%B9%A0/" class="md-nav__link">
+      <a href="../../../../../Tmp/%E9%98%85%E8%AF%BB%E7%BB%83%E4%B9%A0/" class="md-nav__link">
         
   
   
@@ -16345,7 +16335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/" class="md-nav__link">
+      <a href="../../../../../misc/" class="md-nav__link">
         
   
   
@@ -16368,7 +16358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/PDL/" class="md-nav__link">
+      <a href="../../../../../misc/PDL/" class="md-nav__link">
         
   
   
@@ -16391,7 +16381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/draft/" class="md-nav__link">
+      <a href="../../../../../misc/draft/" class="md-nav__link">
         
   
   
@@ -16414,7 +16404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/naming-conventions/" class="md-nav__link">
+      <a href="../../../../../misc/naming-conventions/" class="md-nav__link">
         
   
   
@@ -16478,7 +16468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/GB/GBT7714/" class="md-nav__link">
+      <a href="../../../../../misc/GB/GBT7714/" class="md-nav__link">
         
   
   
@@ -16550,7 +16540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/MD/md2docx-with-pandoc/" class="md-nav__link">
+      <a href="../../../../../misc/MD/md2docx-with-pandoc/" class="md-nav__link">
         
   
   
@@ -16622,7 +16612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/PDF/pdf-tools/" class="md-nav__link">
+      <a href="../../../../../misc/PDF/pdf-tools/" class="md-nav__link">
         
   
   
@@ -16645,7 +16635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/PDF/pdfjs/" class="md-nav__link">
+      <a href="../../../../../misc/PDF/pdfjs/" class="md-nav__link">
         
   
   
@@ -16668,7 +16658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/PDF/poppler-pdftoppm-cht/" class="md-nav__link">
+      <a href="../../../../../misc/PDF/poppler-pdftoppm-cht/" class="md-nav__link">
         
   
   
@@ -16691,7 +16681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/PDF/qpdf-cht/" class="md-nav__link">
+      <a href="../../../../../misc/PDF/qpdf-cht/" class="md-nav__link">
         
   
   
@@ -16763,7 +16753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/git/gitignore/" class="md-nav__link">
+      <a href="../../../../../misc/git/gitignore/" class="md-nav__link">
         
   
   
@@ -16835,7 +16825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/gpt/gpt-prompts/" class="md-nav__link">
+      <a href="../../../../../misc/gpt/gpt-prompts/" class="md-nav__link">
         
   
   
@@ -16907,7 +16897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/latex/%E5%A4%9A%E8%A1%8C%E7%AD%89%E5%BC%8F/" class="md-nav__link">
+      <a href="../../../../../misc/latex/%E5%A4%9A%E8%A1%8C%E7%AD%89%E5%BC%8F/" class="md-nav__link">
         
   
   
@@ -16930,7 +16920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/latex/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/" class="md-nav__link">
+      <a href="../../../../../misc/latex/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/" class="md-nav__link">
         
   
   
@@ -17002,7 +16992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/macOS/apps/" class="md-nav__link">
+      <a href="../../../../../misc/macOS/apps/" class="md-nav__link">
         
   
   
@@ -17025,7 +17015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/macOS/pbcopy%2Bpbpaste/" class="md-nav__link">
+      <a href="../../../../../misc/macOS/pbcopy%2Bpbpaste/" class="md-nav__link">
         
   
   
@@ -17097,7 +17087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../../misc/mkdocs/mkdocs/" class="md-nav__link">
+      <a href="../../../../../misc/mkdocs/mkdocs/" class="md-nav__link">
         
   
   
@@ -17145,6 +17135,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -17153,27 +17145,87 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ipc" class="md-nav__link">
-    <span class="md-ellipsis">
-      💡 为什么需要 IPC？
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ipc_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      📦 常见的 IPC 方式
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 小结
+      概念简述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心要点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      经典案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="经典案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 银行账户转账问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-unixlinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. UNIX/Linux 文件权限检查漏洞
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 共享变量自增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见防范方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      与其他垂直领域的关联
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      思维导图式总结
     </span>
   </a>
   
@@ -17195,79 +17247,117 @@
 
 
 
-  <h1>IPC</h1>
-
-<p><strong>定义</strong><br />
-IPC 是进程间通信（Inter-Process Communication）的缩写，是指不同进程之间交换数据或信息的方式。</p>
-<hr />
-<h3 id="ipc">💡 为什么需要 IPC？</h3>
+<h1 id="race-condition">竞态条件（Race Condition）</h1>
+<h2 id="_1">概念简述</h2>
 <ul>
 <li>
-<p>每个进程拥有独立的地址空间，不能直接访问其他进程的数据。</p>
+<p><strong>竞态条件</strong>：多个进程或线程在<strong>并发访问共享资源</strong>时，<strong>执行顺序不确定</strong>，从而导致<strong>程序行为不可预测</strong>或<strong>错误结果</strong>的现象。</p>
 </li>
 <li>
-<p>当多个进程需要协作完成一项任务时，就需要通过 IPC 机制来通信和同步。</p>
+<p>产生条件：</p>
+<ol>
+<li>
+<p><strong>并发执行</strong></p>
+</li>
+<li>
+<p><strong>共享资源</strong></p>
+</li>
+<li>
+<p><strong>缺乏适当同步</strong></p>
+</li>
+</ol>
 </li>
 </ul>
 <hr />
-<h3 id="ipc_1">📦 常见的 IPC 方式</h3>
+<h2 id="_2">核心要点</h2>
+<ul>
+<li>
+<p><strong>本质</strong>：多个线程/进程“竞争”资源，且对执行顺序的依赖导致错误。</p>
+</li>
+<li>
+<p><strong>常见后果</strong>：数据不一致、死锁、程序崩溃、安全漏洞。</p>
+</li>
+<li>
+<p><strong>典型资源</strong>：变量、文件、缓冲区、I/O 设备、临界区等。</p>
+</li>
+</ul>
+<hr />
+<h2 id="_3">经典案例</h2>
+<h3 id="1">1. <strong>银行账户转账问题</strong></h3>
+<p>两个线程同时读取余额100元，一个扣款30元，一个扣款80元，<strong>均成功通过检查</strong>（余额≥所需），最终余额变为-10，违背业务规则。</p>
+<h3 id="2-unixlinux">2. <strong>UNIX/Linux 文件权限检查漏洞</strong></h3>
+<p>早期某些程序先检查某文件是否可访问（<code>access()</code>），再打开文件（<code>open()</code>）。攻击者可在二者之间替换文件，实现<strong>TOCTTOU（检查与使用间时序漏洞）</strong>。</p>
+<h3 id="3">3. <strong>共享变量自增</strong></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// 假设 counter 初始为 0</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">counter</span><span class="o">++</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>拆解为三步：读 → 加1 → 写。两个线程同时执行可能都读到 0，最后写入都是 1，丢失一次加法。</p>
+<hr />
+<h2 id="_4">常见防范方法</h2>
 <table>
 <thead>
 <tr>
-<th>方式</th>
-<th>特点说明</th>
+<th>方法</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>管道（Pipe）</td>
-<td>适用于<strong>有亲缘关系的进程</strong>；数据单向流动。</td>
+<td>原子操作</td>
+<td>使用硬件或语言层支持的不可中断操作</td>
 </tr>
 <tr>
-<td>命名管道（FIFO）</td>
-<td>可以在<strong>无亲缘关系的进程之间</strong>通信；支持双向。</td>
+<td>互斥锁（mutex）</td>
+<td>加锁保证同一时刻仅一个线程访问关键区域</td>
 </tr>
 <tr>
-<td>消息队列</td>
-<td>基于内核队列，支持<strong>异步通信</strong>，可以存储多条消息。</td>
+<td>信号量（semaphore）</td>
+<td>控制资源访问数量，常用于资源池等情况</td>
 </tr>
 <tr>
-<td>共享内存</td>
-<td>速度最快；多个进程<strong>共享一块内存区域</strong>，需加锁保证同步。</td>
+<td>屏障（barrier）</td>
+<td>等待所有线程到达某点后再继续执行</td>
 </tr>
 <tr>
-<td>信号量</td>
-<td>一种用于<strong>进程同步</strong>的计数器机制，常与共享内存配合使用。</td>
-</tr>
-<tr>
-<td>套接字（Socket）</td>
-<td>原用于网络通信，也可用于<strong>本地进程通信</strong>，功能最强但开销较大。</td>
-</tr>
-<tr>
-<td>信号（Signal）</td>
-<td>用于<strong>通知进程发生了某种事件</strong>，简单但信息量小。</td>
+<td>死锁预防</td>
+<td>谨慎设计锁顺序，避免相互等待</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="_1">🧠 小结</h3>
+<h2 id="_5">与其他垂直领域的关联</h2>
 <ul>
 <li>
-<p>IPC 是操作系统提供的基本机制之一。</p>
+<p><strong>操作系统</strong>：进程调度、线程同步、临界区管理等。</p>
 </li>
 <li>
-<p>不同的 IPC 方式适用于不同的场景，需根据通信需求选择合适的方式。</p>
+<p><strong>嵌入式系统</strong>：由于资源紧张，竞态条件尤为危险，常用中断屏蔽或锁机制保护共享数据。</p>
+</li>
+<li>
+<p><strong>网络编程</strong>：并发连接处理（如多线程HTTP服务器）需小心数据同步。</p>
+</li>
+<li>
+<p><strong>软件测试</strong>：竞态条件往往是<strong>间歇性 bug</strong>，需使用工具如 ThreadSanitizer、Helgrind 等检测。</p>
 </li>
 </ul>
+<hr />
+<h2 id="_6">思维导图式总结</h2>
+<ul>
+<li>竞态条件：并发 + 共享 + 同步缺失<br />
+    ↓<br />
+    错误行为 → 崩溃 / 漏洞 / 数据错乱<br />
+    ↓<br />
+    对策：加锁 / 原子操作 / 严格线程管理</li>
+</ul>
+<hr />
+<p>是否需要我为你生成一个竞态条件的思维导图图像？</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -17297,7 +17387,7 @@ IPC 是进程间通信（Inter-Process Communication）的缩写，是指不同�
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../../PSync/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 进程同步机制的解决方法">
+          <a href="../../-ps/" class="md-footer__link md-footer__link--prev" aria-label="上一页: PS | 进程管理">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -17307,20 +17397,20 @@ IPC 是进程间通信（Inter-Process Communication）的缩写，是指不同�
                 上一页
               </span>
               <div class="md-ellipsis">
-                进程同步机制的解决方法
+                PS | 进程管理
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../Scheduling/scheduling/" class="md-footer__link md-footer__link--next" aria-label="下一页: Scheduling">
+          <a href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-footer__link md-footer__link--next" aria-label="下一页: 让权等待">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                Scheduling
+                让权等待
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -17362,12 +17452,12 @@ IPC 是进程间通信（Inter-Process Communication）的缩写，是指不同�
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "content.code.select", "content.action.view", "content.image.zoom"], "search": "../../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "content.code.select", "content.action.view", "content.image.zoom"], "search": "../../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../../../../../javascripts/katex.js"></script>
+        <script src="../../../../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

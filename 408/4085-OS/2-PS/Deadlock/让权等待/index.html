@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/semaphore/ch04-19-txdsol-p28/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/Deadlock/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/">
       
       
-        <link rel="prev" href="../../Scheduling/psets/psets-cpu-scheduling/">
+        <link rel="prev" href="../%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/">
       
       
-        <link rel="next" href="../ch04-20-txdsol-p28/">
+        <link rel="next" href="../psets/P1-Banker/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>ch04-19-txdsol-p28 - 日拱一卒</title>
+        <title>让权等待 - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ch04-19-txdsol-p28" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ch04-19-txdsol-p28
+              让权等待
             
           </span>
         </div>
@@ -5956,6 +5956,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5966,11 +5968,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6_4_2" id="__nav_2_6_4_2_label" tabindex="0">
@@ -5978,7 +5980,7 @@
   
   
   <span class="md-ellipsis">
-    F死锁
+    Deadlock
     
   </span>
   
@@ -5986,10 +5988,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6_4_2">
             <span class="md-nav__icon md-icon"></span>
-            F死锁
+            Deadlock
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6000,7 +6002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../F%E6%AD%BB%E9%94%81/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
+      <a href="../%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -6020,10 +6022,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../F%E6%AD%BB%E9%94%81/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    让权等待
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6034,6 +6058,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#busy-waiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 一、问题背景：忙等待（Busy Waiting）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relinquishing-waiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌱 二、让权等待（Relinquishing Waiting）的概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌱 二、让权等待（Relinquishing Waiting）的概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚦对比：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 三、让权等待的常见实现方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 三、让权等待的常见实现方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cpu-sched_yieldsleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 使用系统调用让出 CPU（如 sched_yield()、sleep()）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 在内核级同步中，“让权等待”常表现为阻塞等待：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 四、总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6065,7 +6184,7 @@
   
   
   <span class="md-ellipsis">
-    F银行家算法
+    Psets
     
   </span>
   
@@ -6076,7 +6195,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_2_3">
             <span class="md-nav__icon md-icon"></span>
-            F银行家算法
+            Psets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6087,12 +6206,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../F%E6%AD%BB%E9%94%81/F%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95/ch03-22-txdsol-p19/" class="md-nav__link">
+      <a href="../psets/P1-Banker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch03-22-txdsol-p19
+    P1: Banker
     
   </span>
   
@@ -6284,49 +6403,8 @@
   
   
   
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_4_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6_4_4_1" id="__nav_2_6_4_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    IPC
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_4_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            IPC
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../Process/IPC/IPC/" class="md-nav__link">
+      <a href="../../Process/IPC/" class="md-nav__link">
         
   
   
@@ -6337,14 +6415,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6529,8 +6599,6 @@
                 
   
   
-    
-  
   
   
     
@@ -6541,11 +6609,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_6" >
         
           
           <label class="md-nav__link" for="__nav_2_6_4_6" id="__nav_2_6_4_6_label" tabindex="0">
@@ -6561,7 +6629,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_6">
             <span class="md-nav__icon md-icon"></span>
             Semaphore
@@ -6572,19 +6640,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Semaphore/ch04-19-txdsol-p28/" class="md-nav__link">
         
   
   
@@ -6595,7 +6654,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -6608,7 +6666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch04-20-txdsol-p28/" class="md-nav__link">
+      <a href="../../Semaphore/ch04-20-txdsol-p28/" class="md-nav__link">
         
   
   
@@ -6631,7 +6689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../psets-semaphore/" class="md-nav__link">
+      <a href="../../Semaphore/psets-semaphore/" class="md-nav__link">
         
   
   
@@ -6654,7 +6712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
+      <a href="../../Semaphore/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -7287,7 +7345,7 @@
   
   
   <span class="md-ellipsis">
-    P2-Segmentation
+    P2: Segmentation
     
   </span>
   
@@ -7354,35 +7412,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../3-Mem/psets/P3-PageReplacement/ch06-18-txdsol-p41/" class="md-nav__link">
+      <a href="../../../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch06-18-txdsol-p41
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../3-Mem/psets/P3-PageReplacement/psets-page-replacement/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Psets: Page Replacement | 页面置换算法
+    P3: Page Replacement | 页面置换算法
     
   </span>
   
@@ -17091,6 +17126,89 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#busy-waiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 一、问题背景：忙等待（Busy Waiting）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relinquishing-waiting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌱 二、让权等待（Relinquishing Waiting）的概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌱 二、让权等待（Relinquishing Waiting）的概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚦对比：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 三、让权等待的常见实现方式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 三、让权等待的常见实现方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cpu-sched_yieldsleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 使用系统调用让出 CPU（如 sched_yield()、sleep()）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 在内核级同步中，“让权等待”常表现为阻塞等待：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 四、总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -17105,160 +17223,77 @@
 
 
 
-<h1 id="ch04-19-txdsol-p28">ch04-19-txdsol-p28</h1>
-<p><img alt="" src="assets/Pasted%20image%2020250529114059.png" /></p>
-<p>19．有 3 个进程 P1、P2、P3 协作解决文件打印问题。P1 将文件记录从磁盘读入内存</p>
-<p>的缓冲区 1，每执行一次读一个记录 ；P2 将缓冲区 1 中的内容复制到缓冲区 2 中，每执行</p>
-<p>一次复制一个记录 ；P3 将缓冲区 2 中的内容打印出来，每执行一次打印一个记录。缓冲区</p>
-<p>的大小与记录大小一样。请用信号量机制来保证文件的正确打印。</p>
-<p><img alt="" src="assets/Pasted%20image%2020250529114120.png" /></p>
-<p>【参考答案】对缓冲区1来说，P1是生产者，P2是消费者；对缓冲区2来说，P2是生产者，P3</p>
-<p>是消费者。缓冲区1和缓冲区2都只能存放一个记录，它们都是临界资源，但无须使用信号量来</p>
-<p>实现互斥。P2对于缓冲区1是消费者，对于缓冲区2是生产者，因此要对P2设置两个信号量来分别</p>
-<p>控制其对不同缓冲区的不同操作。该文件打印过程的同步算法可描述为：</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-0-10">10</a></span>
-<span class="normal"><a href="#__codelineno-0-11">11</a></span>
-<span class="normal"><a href="#__codelineno-0-12">12</a></span>
-<span class="normal"><a href="#__codelineno-0-13">13</a></span>
-<span class="normal"><a href="#__codelineno-0-14">14</a></span>
-<span class="normal"><a href="#__codelineno-0-15">15</a></span>
-<span class="normal"><a href="#__codelineno-0-16">16</a></span>
-<span class="normal"><a href="#__codelineno-0-17">17</a></span>
-<span class="normal"><a href="#__codelineno-0-18">18</a></span>
-<span class="normal"><a href="#__codelineno-0-19">19</a></span>
-<span class="normal"><a href="#__codelineno-0-20">20</a></span>
-<span class="normal"><a href="#__codelineno-0-21">21</a></span>
-<span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span>
-<span class="normal"><a href="#__codelineno-0-26">26</a></span>
-<span class="normal"><a href="#__codelineno-0-27">27</a></span>
-<span class="normal"><a href="#__codelineno-0-28">28</a></span>
-<span class="normal"><a href="#__codelineno-0-29">29</a></span>
-<span class="normal"><a href="#__codelineno-0-30">30</a></span>
-<span class="normal"><a href="#__codelineno-0-31">31</a></span>
-<span class="normal"><a href="#__codelineno-0-32">32</a></span>
-<span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>semaphore empty1=1,full1=0,empty2=1,full2=0;
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a>P1( ) {
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a>P2( ){
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a>while(1) {
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a>从磁盘读一个记录 ;
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a>P(empty1);
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a>将记录存放到缓冲区 1 中 ;
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>V(full1);
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a>}
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>}
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>while(1) {
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>P(full1);
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>P(empty2);
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a>从缓冲区 1 中取一个记录 ;
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a>将记录复制到缓冲区 2 中 ;
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a>V(empty1);
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>V(full2);
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>}
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>}
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>P3( ) {
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a>while(1){
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a>P(full2);
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a>从缓冲区 2 中取一个记录 ;
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a>V(empty2);
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>将取出的记录打印出来 ;
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>main( ) {
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a>cobegin
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a>P1( );
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>P2( );
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>P3( );
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>coend
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a>}
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a>}
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>}
+<h1 id="_1">让权等待</h1>
+<p>“<strong>让权等待</strong>”（<strong>busy-waiting with relinquishing</strong> 或称为 <strong>relinquishing waiting</strong>）是操作系统中一种进程同步时避免忙等待（busy waiting）的一种策略。</p>
+<hr />
+<h2 id="busy-waiting">🔧 一、问题背景：忙等待（Busy Waiting）</h2>
+<p>在并发程序中，如果一个进程（或线程）想要进入一个临界区（critical section），但此时锁被其他进程占用，它可能会不断地“查看”锁是否释放：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">lock</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w">  </span><span class="c1">// 忙等待：不断检查锁</span>
 </code></pre></div></td></tr></table></div>
+<p>这段代码就是典型的<strong>忙等待</strong>。它的问题是：<strong>浪费 CPU 时间</strong>。即使进程暂时无法进入临界区，它依然一直占用 CPU，不停循环检查。</p>
+<hr />
+<h2 id="relinquishing-waiting">🌱 二、让权等待（Relinquishing Waiting）的概念</h2>
+<p>“让权等待”是一种改进策略，它的核心思想是：</p>
+<blockquote>
+<p>当进程发现自己无法进入临界区时，<strong>主动让出 CPU（yield），进入等待状态或睡眠状态</strong>，这样就不会浪费 CPU 时间。</p>
+</blockquote>
+<h4 id="_2">🚦对比：</h4>
+<table>
+<thead>
+<tr>
+<th>方式</th>
+<th>是否浪费 CPU 时间</th>
+<th>是否容易实现</th>
+<th>响应速度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>忙等待</td>
+<td>✅ 是</td>
+<td>✅ 容易</td>
+<td>⚡ 快</td>
+</tr>
+<tr>
+<td>让权等待</td>
+<td>❌ 否</td>
+<td>⚠ 稍复杂</td>
+<td>🐢 稍慢</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_3">🧠 三、让权等待的常见实现方式</h2>
+<h4 id="1-cpu-sched_yieldsleep">1. 使用系统调用让出 CPU（如 <code>sched_yield()</code>、<code>sleep()</code>）</h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">lock</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="n">sched_yield</span><span class="p">();</span><span class="w">  </span><span class="c1">// 主动让出 CPU 给其他进程</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>或者让自己稍微“休息”一下：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">lock</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w">  </span><span class="c1">// 等 1 秒再检查</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>这样就不会无谓消耗 CPU。</p>
+<h4 id="2">2. 在内核级同步中，“让权等待”常表现为阻塞等待：</h4>
+<p>比如使用 <strong>信号量</strong>、<strong>互斥锁（mutex）</strong>、<strong>条件变量</strong>等：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">pthread_mutex_lock</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mutex</span><span class="p">);</span><span class="w">  </span><span class="c1">// 如果获取不到，会阻塞，进入等待队列</span>
+</code></pre></div></td></tr></table></div>
+<p>这时候当前线程就<strong>让权</strong>，<strong>进入等待队列</strong>，直到锁释放再被唤醒。</p>
+<hr />
+<h2 id="_4">🎯 四、总结</h2>
+<p><strong>让权等待</strong> = 当资源不可用时，不死磕（不忙等），<strong>主动暂停自己，让 CPU 去做更有用的事</strong>。</p>
+<p>它的意义在于提高系统的<strong>整体资源利用率</strong>，避免 CPU 时间浪费。</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -17288,7 +17323,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../Scheduling/psets/psets-cpu-scheduling/" class="md-footer__link md-footer__link--prev" aria-label="上一页: SJF (ch03-19-txdsol-p17)">
+          <a href="../%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 竞态条件（Race Condition）">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -17298,20 +17333,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                SJF (ch03-19-txdsol-p17)
+                竞态条件（Race Condition）
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ch04-20-txdsol-p28/" class="md-footer__link md-footer__link--next" aria-label="下一页: ch04-20-txdsol-p28">
+          <a href="../psets/P1-Banker/" class="md-footer__link md-footer__link--next" aria-label="下一页: P1: Banker">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                ch04-20-txdsol-p28
+                P1: Banker
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/F%E6%AD%BB%E9%94%81/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/2-PS/Semaphore/ch04-20-txdsol-p28/">
       
       
-        <link rel="prev" href="../../-ps/">
+        <link rel="prev" href="../ch04-19-txdsol-p28/">
       
       
-        <link rel="next" href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/">
+        <link rel="next" href="../psets-semaphore/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>竞态条件（Race Condition） - 日拱一卒</title>
+        <title>ch04-20-txdsol-p28 - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#race-condition" class="md-skip">
+        <a href="#ch04-20-txdsol-p28" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              竞态条件（Race Condition）
+              ch04-20-txdsol-p28
             
           </span>
         </div>
@@ -5956,8 +5956,6 @@
                 
   
   
-    
-  
   
   
     
@@ -5968,11 +5966,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_2" >
         
           
           <label class="md-nav__link" for="__nav_2_6_4_2" id="__nav_2_6_4_2_label" tabindex="0">
@@ -5980,7 +5978,7 @@
   
   
   <span class="md-ellipsis">
-    F死锁
+    Deadlock
     
   </span>
   
@@ -5988,10 +5986,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_2">
             <span class="md-nav__icon md-icon"></span>
-            F死锁
+            Deadlock
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5999,32 +5997,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    竞态条件（Race Condition）
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Deadlock/%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6/" class="md-nav__link">
         
   
   
@@ -6035,113 +6011,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      概念简述
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      核心要点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      经典案例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="经典案例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 银行账户转账问题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-unixlinux" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. UNIX/Linux 文件权限检查漏洞
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 共享变量自增
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      常见防范方法
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      与其他垂直领域的关联
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      思维导图式总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -6154,7 +6023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
+      <a href="../../Deadlock/%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-nav__link">
         
   
   
@@ -6196,7 +6065,7 @@
   
   
   <span class="md-ellipsis">
-    F银行家算法
+    Psets
     
   </span>
   
@@ -6207,7 +6076,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_4_2_3">
             <span class="md-nav__icon md-icon"></span>
-            F银行家算法
+            Psets
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -6218,12 +6087,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../F%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95/ch03-22-txdsol-p19/" class="md-nav__link">
+      <a href="../../Deadlock/psets/P1-Banker/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch03-22-txdsol-p19
+    P1: Banker
     
   </span>
   
@@ -6415,49 +6284,8 @@
   
   
   
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_4_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_6_4_4_1" id="__nav_2_6_4_4_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    IPC
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_4_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_4_4_1">
-            <span class="md-nav__icon md-icon"></span>
-            IPC
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../Process/IPC/IPC/" class="md-nav__link">
+      <a href="../../Process/IPC/" class="md-nav__link">
         
   
   
@@ -6468,14 +6296,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -6660,6 +6480,8 @@
                 
   
   
+    
+  
   
   
     
@@ -6670,11 +6492,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_4_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6_4_6" id="__nav_2_6_4_6_label" tabindex="0">
@@ -6690,7 +6512,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_4_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6_4_6">
             <span class="md-nav__icon md-icon"></span>
             Semaphore
@@ -6704,7 +6526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaphore/ch04-19-txdsol-p28/" class="md-nav__link">
+      <a href="../ch04-19-txdsol-p28/" class="md-nav__link">
         
   
   
@@ -6724,10 +6546,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../semaphore/ch04-20-txdsol-p28/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6738,6 +6569,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -6750,7 +6582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaphore/psets-semaphore/" class="md-nav__link">
+      <a href="../psets-semaphore/" class="md-nav__link">
         
   
   
@@ -6773,7 +6605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../semaphore/%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
+      <a href="../%E4%BF%A1%E5%8F%B7%E9%87%8F/" class="md-nav__link">
         
   
   
@@ -7406,7 +7238,7 @@
   
   
   <span class="md-ellipsis">
-    P2-Segmentation
+    P2: Segmentation
     
   </span>
   
@@ -7473,35 +7305,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../3-Mem/psets/P3-PageReplacement/ch06-18-txdsol-p41/" class="md-nav__link">
+      <a href="../../../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    ch06-18-txdsol-p41
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../3-Mem/psets/P3-PageReplacement/psets-page-replacement/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Psets: Page Replacement | 页面置换算法
+    P3: Page Replacement | 页面置换算法
     
   </span>
   
@@ -17210,101 +17019,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      概念简述
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      核心要点
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      经典案例
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="经典案例">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 银行账户转账问题
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-unixlinux" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. UNIX/Linux 文件权限检查漏洞
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 共享变量自增
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      常见防范方法
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      与其他垂直领域的关联
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      思维导图式总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -17319,117 +17033,154 @@
 
 
 
-<h1 id="race-condition">竞态条件（Race Condition）</h1>
-<h2 id="_1">概念简述</h2>
-<ul>
-<li>
-<p><strong>竞态条件</strong>：多个进程或线程在<strong>并发访问共享资源</strong>时，<strong>执行顺序不确定</strong>，从而导致<strong>程序行为不可预测</strong>或<strong>错误结果</strong>的现象。</p>
-</li>
-<li>
-<p>产生条件：</p>
-<ol>
-<li>
-<p><strong>并发执行</strong></p>
-</li>
-<li>
-<p><strong>共享资源</strong></p>
-</li>
-<li>
-<p><strong>缺乏适当同步</strong></p>
-</li>
-</ol>
-</li>
-</ul>
-<hr />
-<h2 id="_2">核心要点</h2>
-<ul>
-<li>
-<p><strong>本质</strong>：多个线程/进程“竞争”资源，且对执行顺序的依赖导致错误。</p>
-</li>
-<li>
-<p><strong>常见后果</strong>：数据不一致、死锁、程序崩溃、安全漏洞。</p>
-</li>
-<li>
-<p><strong>典型资源</strong>：变量、文件、缓冲区、I/O 设备、临界区等。</p>
-</li>
-</ul>
-<hr />
-<h2 id="_3">经典案例</h2>
-<h3 id="1">1. <strong>银行账户转账问题</strong></h3>
-<p>两个线程同时读取余额100元，一个扣款30元，一个扣款80元，<strong>均成功通过检查</strong>（余额≥所需），最终余额变为-10，违背业务规则。</p>
-<h3 id="2-unixlinux">2. <strong>UNIX/Linux 文件权限检查漏洞</strong></h3>
-<p>早期某些程序先检查某文件是否可访问（<code>access()</code>），再打开文件（<code>open()</code>）。攻击者可在二者之间替换文件，实现<strong>TOCTTOU（检查与使用间时序漏洞）</strong>。</p>
-<h3 id="3">3. <strong>共享变量自增</strong></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1">// 假设 counter 初始为 0</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">counter</span><span class="o">++</span><span class="p">;</span>
+<h1 id="ch04-20-txdsol-p28">ch04-20-txdsol-p28</h1>
+<p><img alt="" src="assets/Pasted%20image%2020250529114157.png" /></p>
+<p>20．桌上有一个能盛得下 5 个水果的空盘子。爸爸不停地向盘中放苹果或橘子，儿子</p>
+<p>不停地从盘中取出橘子享用，女儿不停地从盘中取出苹果享用。规定 3 人不能同时向（从）</p>
+<p>盘子中放（取）水果。试用信号量来实现爸爸、儿子和女儿这 3 个“循环进程”之间的</p>
+<p>同步。</p>
+<p><img alt="" src="assets/Pasted%20image%2020250529114223.png" /></p>
+<p>【参考答案】分析：本题是生产者-消费者问题的变形，相当于一个能生产两种产品的生</p>
+<p>产者（爸爸）向两个消费者（儿子和女儿）提供产品的同步问题，因此，须设置两个不同的</p>
+<p>full信号量apple和orange，它们的初值均为0。为了描述上述同步问题，可定义如下信号量：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>semaphore empty=5, orange=0, apple=0, mutex=1;
 </code></pre></div></td></tr></table></div>
-<p>拆解为三步：读 → 加1 → 写。两个线程同时执行可能都读到 0，最后写入都是 1，丢失一次加法。</p>
-<hr />
-<h2 id="_4">常见防范方法</h2>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>原子操作</td>
-<td>使用硬件或语言层支持的不可中断操作</td>
-</tr>
-<tr>
-<td>互斥锁（mutex）</td>
-<td>加锁保证同一时刻仅一个线程访问关键区域</td>
-</tr>
-<tr>
-<td>信号量（semaphore）</td>
-<td>控制资源访问数量，常用于资源池等情况</td>
-</tr>
-<tr>
-<td>屏障（barrier）</td>
-<td>等待所有线程到达某点后再继续执行</td>
-</tr>
-<tr>
-<td>死锁预防</td>
-<td>谨慎设计锁顺序，避免相互等待</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_5">与其他垂直领域的关联</h2>
-<ul>
-<li>
-<p><strong>操作系统</strong>：进程调度、线程同步、临界区管理等。</p>
-</li>
-<li>
-<p><strong>嵌入式系统</strong>：由于资源紧张，竞态条件尤为危险，常用中断屏蔽或锁机制保护共享数据。</p>
-</li>
-<li>
-<p><strong>网络编程</strong>：并发连接处理（如多线程HTTP服务器）需小心数据同步。</p>
-</li>
-<li>
-<p><strong>软件测试</strong>：竞态条件往往是<strong>间歇性 bug</strong>，需使用工具如 ThreadSanitizer、Helgrind 等检测。</p>
-</li>
-</ul>
-<hr />
-<h2 id="_6">思维导图式总结</h2>
-<ul>
-<li>竞态条件：并发 + 共享 + 同步缺失<br />
-    ↓<br />
-    错误行为 → 崩溃 / 漏洞 / 数据错乱<br />
-    ↓<br />
-    对策：加锁 / 原子操作 / 严格线程管理</li>
-</ul>
-<hr />
-<p>是否需要我为你生成一个竞态条件的思维导图图像？</p>
+<p>爸爸、儿子、女儿的算法可描述为：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span>
+<span class="normal"><a href="#__codelineno-1-32">32</a></span>
+<span class="normal"><a href="#__codelineno-1-33">33</a></span>
+<span class="normal"><a href="#__codelineno-1-34">34</a></span>
+<span class="normal"><a href="#__codelineno-1-35">35</a></span>
+<span class="normal"><a href="#__codelineno-1-36">36</a></span>
+<span class="normal"><a href="#__codelineno-1-37">37</a></span>
+<span class="normal"><a href="#__codelineno-1-38">38</a></span>
+<span class="normal"><a href="#__codelineno-1-39">39</a></span>
+<span class="normal"><a href="#__codelineno-1-40">40</a></span>
+<span class="normal"><a href="#__codelineno-1-41">41</a></span>
+<span class="normal"><a href="#__codelineno-1-42">42</a></span>
+<span class="normal"><a href="#__codelineno-1-43">43</a></span>
+<span class="normal"><a href="#__codelineno-1-44">44</a></span>
+<span class="normal"><a href="#__codelineno-1-45">45</a></span>
+<span class="normal"><a href="#__codelineno-1-46">46</a></span>
+<span class="normal"><a href="#__codelineno-1-47">47</a></span>
+<span class="normal"><a href="#__codelineno-1-48">48</a></span>
+<span class="normal"><a href="#__codelineno-1-49">49</a></span>
+<span class="normal"><a href="#__codelineno-1-50">50</a></span>
+<span class="normal"><a href="#__codelineno-1-51">51</a></span>
+<span class="normal"><a href="#__codelineno-1-52">52</a></span>
+<span class="normal"><a href="#__codelineno-1-53">53</a></span>
+<span class="normal"><a href="#__codelineno-1-54">54</a></span>
+<span class="normal"><a href="#__codelineno-1-55">55</a></span>
+<span class="normal"><a href="#__codelineno-1-56">56</a></span>
+<span class="normal"><a href="#__codelineno-1-57">57</a></span>
+<span class="normal"><a href="#__codelineno-1-58">58</a></span>
+<span class="normal"><a href="#__codelineno-1-59">59</a></span>
+<span class="normal"><a href="#__codelineno-1-60">60</a></span>
+<span class="normal"><a href="#__codelineno-1-61">61</a></span>
+<span class="normal"><a href="#__codelineno-1-62">62</a></span>
+<span class="normal"><a href="#__codelineno-1-63">63</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Dad( ) {
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>Son( ) {
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>while(1) {
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>P(empty);
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a>P(mutex);
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>将水果放入盘中 ;
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>while(1) {
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a>P(orange);
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a>P(mutex);
+<a id="__codelineno-1-18" name="__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19"></a>从盘中取一个橘子 ;
+<a id="__codelineno-1-20" name="__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21"></a>Daughter( ) {
+<a id="__codelineno-1-22" name="__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23"></a>while(1) {
+<a id="__codelineno-1-24" name="__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25"></a>P(apple);
+<a id="__codelineno-1-26" name="__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27"></a>P(mutex);
+<a id="__codelineno-1-28" name="__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29"></a>从盘中取一个苹果 ;
+<a id="__codelineno-1-30" name="__codelineno-1-30"></a>
+<a id="__codelineno-1-31" name="__codelineno-1-31"></a>V(mutex);
+<a id="__codelineno-1-32" name="__codelineno-1-32"></a>
+<a id="__codelineno-1-33" name="__codelineno-1-33"></a>if( 放入的是橘子 )
+<a id="__codelineno-1-34" name="__codelineno-1-34"></a>
+<a id="__codelineno-1-35" name="__codelineno-1-35"></a>V(orange);
+<a id="__codelineno-1-36" name="__codelineno-1-36"></a>
+<a id="__codelineno-1-37" name="__codelineno-1-37"></a>V(mutex);
+<a id="__codelineno-1-38" name="__codelineno-1-38"></a>
+<a id="__codelineno-1-39" name="__codelineno-1-39"></a>V(empty);
+<a id="__codelineno-1-40" name="__codelineno-1-40"></a>
+<a id="__codelineno-1-41" name="__codelineno-1-41"></a>享用橘子 ;
+<a id="__codelineno-1-42" name="__codelineno-1-42"></a>
+<a id="__codelineno-1-43" name="__codelineno-1-43"></a>V(mutex);
+<a id="__codelineno-1-44" name="__codelineno-1-44"></a>
+<a id="__codelineno-1-45" name="__codelineno-1-45"></a>V(empty);
+<a id="__codelineno-1-46" name="__codelineno-1-46"></a>
+<a id="__codelineno-1-47" name="__codelineno-1-47"></a>享用苹果 ;
+<a id="__codelineno-1-48" name="__codelineno-1-48"></a>
+<a id="__codelineno-1-49" name="__codelineno-1-49"></a>else
+<a id="__codelineno-1-50" name="__codelineno-1-50"></a>
+<a id="__codelineno-1-51" name="__codelineno-1-51"></a>}
+<a id="__codelineno-1-52" name="__codelineno-1-52"></a>
+<a id="__codelineno-1-53" name="__codelineno-1-53"></a>}
+<a id="__codelineno-1-54" name="__codelineno-1-54"></a>
+<a id="__codelineno-1-55" name="__codelineno-1-55"></a>V(apple);
+<a id="__codelineno-1-56" name="__codelineno-1-56"></a>
+<a id="__codelineno-1-57" name="__codelineno-1-57"></a>}
+<a id="__codelineno-1-58" name="__codelineno-1-58"></a>
+<a id="__codelineno-1-59" name="__codelineno-1-59"></a>}
+<a id="__codelineno-1-60" name="__codelineno-1-60"></a>
+<a id="__codelineno-1-61" name="__codelineno-1-61"></a>}
+<a id="__codelineno-1-62" name="__codelineno-1-62"></a>
+<a id="__codelineno-1-63" name="__codelineno-1-63"></a>}
+</code></pre></div></td></tr></table></div>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -17459,7 +17210,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../../-ps/" class="md-footer__link md-footer__link--prev" aria-label="上一页: PS | 进程管理">
+          <a href="../ch04-19-txdsol-p28/" class="md-footer__link md-footer__link--prev" aria-label="上一页: ch04-19-txdsol-p28">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -17469,20 +17220,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                PS | 进程管理
+                ch04-19-txdsol-p28
               </div>
             </div>
           </a>
         
         
           
-          <a href="../%E8%AE%A9%E6%9D%83%E7%AD%89%E5%BE%85/" class="md-footer__link md-footer__link--next" aria-label="下一页: 让权等待">
+          <a href="../psets-semaphore/" class="md-footer__link md-footer__link--next" aria-label="下一页: Psets: semaphore">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                让权等待
+                Psets: semaphore
               </div>
             </div>
             <div class="md-footer__button md-icon">
