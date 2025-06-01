@@ -5115,7 +5115,7 @@
         
   
   <span class="md-ellipsis">
-    OS | 操作系统
+    OS | 操作系统 | 作業系統
   </span>
   
 
@@ -5187,7 +5187,7 @@
             
   
   <span class="md-ellipsis">
-    Final zzx
+    Final 25sp zzx
   </span>
   
 
@@ -5197,7 +5197,7 @@
         <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_6_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_2_1">
             <span class="md-nav__icon md-icon"></span>
-            Final zzx
+            Final 25sp zzx
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5208,32 +5208,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../0-Misc/final-zzx/final-zzx-%E7%AE%80%E7%AD%94-17p/" class="md-nav__link">
+      <a href="../../../../0-Misc/final-25sp-zzx/final-25sp-zzx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    简答
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../0-Misc/final-zzx/final%40zzx/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Final (张召霞, 25春)
+    (17') 简答
   </span>
   
 
@@ -16472,12 +16451,12 @@
 
 
 <h1 id="ch04-19-txdsol-p28">ch04-19-txdsol-p28</h1>
-<p><img alt="" src="assets/Pasted%20image%2020250529114059.png" /></p>
+<p><img alt="" src="../../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114059.png" /></p>
 <p>19．有 3 个进程 P1、P2、P3 协作解决文件打印问题。P1 将文件记录从磁盘读入内存</p>
 <p>的缓冲区 1，每执行一次读一个记录 ；P2 将缓冲区 1 中的内容复制到缓冲区 2 中，每执行</p>
 <p>一次复制一个记录 ；P3 将缓冲区 2 中的内容打印出来，每执行一次打印一个记录。缓冲区</p>
 <p>的大小与记录大小一样。请用信号量机制来保证文件的正确打印。</p>
-<p><img alt="" src="assets/Pasted%20image%2020250529114120.png" /></p>
+<p><img alt="" src="../../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114120.png" /></p>
 <p>【参考答案】对缓冲区1来说，P1是生产者，P2是消费者；对缓冲区2来说，P2是生产者，P3</p>
 <p>是消费者。缓冲区1和缓冲区2都只能存放一个记录，它们都是临界资源，但无须使用信号量来</p>
 <p>实现互斥。P2对于缓冲区1是消费者，对于缓冲区2是生产者，因此要对P2设置两个信号量来分别</p>
