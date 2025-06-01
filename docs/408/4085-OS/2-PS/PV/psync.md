@@ -1,7 +1,7 @@
 
 # Processes Sync
 
-- [psync@OS-JC-250220.pdf](psync@OS-JC-250220.pdf)
+- [psync@OS-JC-250220.pdf](../PV/psync@OS-JC-250220.pdf)
 
 ---
 
