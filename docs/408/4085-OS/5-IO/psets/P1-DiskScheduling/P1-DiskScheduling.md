@@ -15,12 +15,6 @@ tags:
 5. LOOK
 6. CLOOK
 
-## Tools
-
-- [https://disk-scheduling-algorithms-visualizer.netlify.app/](https://disk-scheduling-algorithms-visualizer.netlify.app/)
-- [https://khushalip.github.io/OS-lab/diskAlgo/disk.html](https://khushalip.github.io/OS-lab/diskAlgo/disk.html)
-- [https://www.algorithmroom.com/calculator/disk-scheduling](https://www.algorithmroom.com/calculator/disk-scheduling)
-
 ## Posts
 
 - [https://www.101computing.net/disk-scheduling-algorithms/](https://www.101computing.net/disk-scheduling-algorithms/)
