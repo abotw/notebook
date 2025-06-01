@@ -109,7 +109,7 @@ tags:
 
 ## Ex. 2 ch06-18-txdsol-p41
 
-![](assets/Pasted%20image%2020250529113603.png)
+![](assets/ch06-18-txdsol-p41.png)
 
 ```
 1 2 4 2 6 2 1 5 6 1
@@ -162,5 +162,5 @@ tags:
 ![](assets/Pasted%20image%2020250531223429.png)
 
 
-![](assets/Pasted%20image%2020250529113622.png)
+![](assets/ch06-18-txdsol-p41-sol.png)
 
