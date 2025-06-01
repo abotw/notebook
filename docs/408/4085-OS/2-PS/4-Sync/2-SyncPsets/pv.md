@@ -117,7 +117,7 @@ void consumer() {
 
 ---
 
-![](1-pro-con/pro-con.drawio.svg)
+![](2-SyncPsets/1-pro-con/pro-con.drawio.svg)
 
 ## Reader-Writer Problem Template (Reader Priority)
 
@@ -281,7 +281,7 @@ void writer() {
 }
 ```
 
-![](2-rw/rw-rw.drawio.svg)
+![](2-SyncPsets/2-rw/rw-rw.drawio.svg)
 
 
 

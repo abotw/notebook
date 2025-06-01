@@ -3,6 +3,8 @@ aliases:
   - 输入/输出（I/O）管理
 ---
 
+# IO
+
 ## liuyong17-OS期末复习提纲
 
 ### I/O 设备类型
