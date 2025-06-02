@@ -1,7 +1,7 @@
 
 # Disk | 磁盘
 
-- [disk@OS-JC-250220.pdf](./disk@OS-JC-250220.pdf)
+- [assets/disk-JC25-OS.pdf](assets/disk-JC25-OS.pdf)
 
 ## Overview
 

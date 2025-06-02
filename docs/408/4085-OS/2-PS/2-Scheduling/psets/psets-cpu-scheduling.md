@@ -1,15 +1,16 @@
 ---
 tags:
-  - cal-zzx
+  - psets
 ---
 
-# SJF (ch03-19-txdsol-p17)
+# Psets: CPU Scheduling
+
+## SJF (ch03-19-txdsol-p17)
 
 ![](assets/ch03-19-txdsol-p17.png)
 ![](assets/ch03-19-txdsol-p17-sol.png)
 
-
-![](assets/Pasted%20image%2020250531102752.png)
+![](assets/ch03-19-txdsol-p17-SJF.png)
 
 (src: [http://cpuburst.com/ganttcharts.html](http://cpuburst.com/ganttcharts.html))
 

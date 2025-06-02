@@ -1,6 +1,5 @@
 ---
-aliases:
-  - 输入/输出（I/O）管理
+aliases: []
 ---
 
 # IO
