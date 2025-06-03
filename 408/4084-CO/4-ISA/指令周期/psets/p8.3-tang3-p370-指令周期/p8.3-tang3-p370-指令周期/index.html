@@ -22,7 +22,7 @@
     
     
       
-        <title>指令周期 (ch08-03-tang3-p370) (8.4.3.3-tang2psets-p268p273) - 日拱一卒</title>
+        <title>指令周期 - 日拱一卒</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ch08-03-tang3-p370-8433-tang2psets-p268p273" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              指令周期 (ch08-03-tang3-p370) (8.4.3.3-tang2psets-p268p273)
+              指令周期
             
           </span>
         </div>
@@ -4093,15 +4093,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    指令周期
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    指令周期 (ch08-03-tang3-p370) (8.4.3.3-tang2psets-p268p273)
+    指令周期
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    <span class="md-ellipsis">
+      others
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5915,7 +5954,7 @@
         
   
   <span class="md-ellipsis">
-    IO控制方式 (ch05-03-tang3-p210)
+    IO控制方式
   </span>
   
 
@@ -18448,6 +18487,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    <span class="md-ellipsis">
+      others
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -18461,28 +18517,63 @@
                   
 
 
-<h1 id="ch08-03-tang3-p370-8433-tang2psets-p268p273">指令周期 (ch08-03-tang3-p370) (8.4.3.3-tang2psets-p268p273)</h1>
+<h1 id="_1">指令周期</h1>
 <blockquote>
 <p>画出指令周期的流程图，分别说明图中每个子周期的作用。</p>
+<p>—— 8.3-tang3-p370
+—— 8.4.3.3-tang2psets-p268p273</p>
 </blockquote>
+<hr />
+<p><strong>IF</strong> -&gt; (ID) -&gt; <strong>EXE</strong> -&gt; (INT)</p>
+<p><img alt="" src="../assets/InstructionCycle.drawio.svg" /></p>
+<hr />
 <p><img alt="" src="../assets/8.4.3.3-tang2psets-p268p273.png" /></p>
-<p>图 8.32 所示是指令周期的流程图：</p>
 <ul>
-<li>
-<p><strong>取指周期</strong>：完成取指令和分析指令的操作；</p>
+<li><strong>取指周期</strong><ul>
+<li>fetch: 取指令</li>
+<li>decode / analyze: 分析指令</li>
+</ul>
 </li>
-<li>
-<p><strong>间址周期</strong>：用于取操作数的有效地址；</p>
-</li>
-<li>
-<p><strong>执行周期</strong>：完成执行指令的操作；</p>
-</li>
-<li>
-<p><strong>中断周期</strong>：当 CPU 响应中断时，由中断隐指令完成保护程序断点、硬件关中断和向量地址送 PC（硬件向量法）的操作。</p>
+<li><strong>间址周期</strong>：用于取操作数 (operand) 的有效地址 (EA)；</li>
+<li><strong>执行周期</strong>：完成执行指令的操作；</li>
+<li><strong>中断周期 (Save → Disable → Load)</strong>：当CPU<strong>响应中断</strong>时，由<strong>中断隐指令 (implicit interrupt instruction)</strong> 完成<ul>
+<li>save PC: 保护程序断点</li>
+<li>disable INT: 硬件关中断</li>
+<li>load PC: 向量地址 (vector) 送 PC（硬件向量法）的操作。</li>
+</ul>
 </li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>原内容</th>
+<th>概括</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保护程序断点</td>
+<td><strong>Save PC</strong></td>
+<td>保存断点，保留程序现场（即 PC）</td>
+</tr>
+<tr>
+<td>硬件关中断</td>
+<td><strong>Disable Int</strong></td>
+<td>硬件自动关中断</td>
+</tr>
+<tr>
+<td>向量地址送 PC（硬件向量法）</td>
+<td><strong>Load Vector</strong></td>
+<td>把中断服务程序 (ISR, vector) 地址送入 PC</td>
+</tr>
+</tbody>
+</table>
 <p><img alt="" src="../assets/pic8.32-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F%E6%B5%81%E7%A8%8B-tang2psets-p274.png" /></p>
 <p><img alt="" src="../assets/pic8.8-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F%E6%B5%81%E7%A8%8B-tang3-p343.png" /></p>
+<h2 id="others">others</h2>
+<p><a href="http://www.math.uaa.alaska.edu/~afkjm/cs221/handouts/ch11-113.pdf">http://www.math.uaa.alaska.edu/~afkjm/cs221/handouts/ch11-113.pdf</a></p>
+<p><img alt="" src="../assets/Pasted%20image%2020250603170847.png" /></p>
 
 
 
