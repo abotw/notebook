@@ -4,8 +4,8 @@ aliases:
   - Addressing Modes
 ---
 
-![[470L22W24-27.png]]
-![[李曦2025-指令系统-19.png]]
+![[../assets/470L22W24/470L22W24-27.png]]
+![[../assets/李曦2025-指令系统/李曦2025-指令系统-19.png]]
 
 ## Immediate, 立即寻址 (literal)
 
