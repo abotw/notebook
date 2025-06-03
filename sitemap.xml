@@ -66,7 +66,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/1-Intro/psets/ch01-1.1-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/ch01-1.1-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/1-Intro/psets/p1.1-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/p1.1-tang3-p19-%E7%B3%BB%E7%BB%9F%E7%A1%AC%E4%BB%B6%E8%BD%AF%E4%BB%B6/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -111,12 +111,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/psets/ch04-e4.1-tang3-p94/ch04-e4.1-tang3-p94/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/psets/e4.1-tang3-p94/e4.1-tang3-p94/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/psets/ch04-e4.2-tang3-p95/ch04-e4.2-tang3-p95/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/psets/e4.2-tang3-p95/e4.2-tang3-p95/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -126,42 +126,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/2-HammingCode/psets/ch04-e4.4-tang3-p102/ch04-e4.4-tang3-p102/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/2-HammingCode/psets/e4.4-tang3-p102/e4.4-tang3-p102/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/2-HammingCode/psets/ch04-e4.5-tang3-p103/ch04-e4.4-tang3-p102/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/2-HammingCode/psets/e4.5-tang3-p102/e4.5-tang3-p102/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/4.13-tang2psets-p54/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/1-CacheMatrics/psets/e4.13-tang2psets-p54/e4.13-tang2psets-p54/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/mapping/%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/1-CacheMatrics/psets/e4.7-tang3-p111/e4.7-tang3-p111/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/mapping/psets/p1-%E5%94%903-4.8-p120/%E5%94%903-4.8-p120-sol/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/mapping/psets/p2-%E5%94%903-4.9-p120/%E5%94%903-4.9-p120-sol/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/psets/p1-%E5%94%903-4.8-p120/%E5%94%903-4.8-p120-sol/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/mapping/psets/p3-%E5%94%903-4.11-p121/%E5%94%903-4.11-p121-sol/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/psets/p2-%E5%94%903-4.9-p120/%E5%94%903-4.9-p120-sol/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/matrics/0-psets/p1-%E5%94%903-4.7-p111/%E5%94%903-4.7-p111/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/psets/p3-%E5%94%903-4.11-p121/%E5%94%903-4.11-p121-sol/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -311,27 +311,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/ch03-3.7-tang3-p66-%E5%BC%82%E6%AD%A5%E9%80%9A%E4%BF%A1%E5%BA%94%E7%AD%94%E6%96%B9%E5%BC%8F/ch03-3.7-tang3-p66-%E5%BC%82%E6%AD%A5%E9%80%9A%E4%BF%A1%E5%BA%94%E7%AD%94%E6%96%B9%E5%BC%8F/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/e3.1-tang3-p61-%E6%8F%90%E9%AB%98%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E7%8E%87%E7%9A%84%E6%8E%AA%E6%96%BD/e3.1-tang3-p61-%E6%8F%90%E9%AB%98%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E7%8E%87%E7%9A%84%E6%8E%AA%E6%96%BD-sol/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/ch03-e3.1-tang3-p61-%E6%8F%90%E9%AB%98%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E7%8E%87%E7%9A%84%E6%8E%AA%E6%96%BD/ch03-e3.1-tang3-p61-%E6%8F%90%E9%AB%98%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E7%8E%87%E7%9A%84%E6%8E%AA%E6%96%BD-sol/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/e3.2-tang3-p62-BaudRate/e3.2-tang3-p62-BaudRate/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/ch03-e3.2-tang3-p62-BaudRate/ch03-e3.2-tang3-p62-BaudRate/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/e3.3-tang3-p63-%E5%BC%82%E6%AD%A5%E4%B8%B2%E8%A1%8C%E4%BC%A0%E8%BE%93/e3.3-tang3-p63-%E5%BC%82%E6%AD%A5%E4%B8%B2%E8%A1%8C%E4%BC%A0%E8%BE%93/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/ch03-e3.3-tang3-p63-%E5%BC%82%E6%AD%A5%E4%B8%B2%E8%A1%8C%E4%BC%A0%E8%BE%93/p3-%E5%94%903-3.3-p63-%E5%AD%97%E7%AC%A6%E6%A0%BC%E5%BC%8F%2B%E6%B3%A2%E5%BD%A2%E5%9B%BE-sol/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/e3.4-tang3-p64-BitRate/e3.4-tang3-p64-BitRate/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/ch03-e3.4-tang3-p64-BitRate/ch03-e3.4-tang3-p64-BitRate/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/7-Bus/psets/p3.7-tang3-p66-%E5%BC%82%E6%AD%A5%E9%80%9A%E4%BF%A1%E5%BA%94%E7%AD%94%E6%96%B9%E5%BC%8F/p3.7-tang3-p66-%E5%BC%82%E6%AD%A5%E9%80%9A%E4%BF%A1%E5%BA%94%E7%AD%94%E6%96%B9%E5%BC%8F/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
