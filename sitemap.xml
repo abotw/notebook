@@ -146,7 +146,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Mapping/mapping/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -171,12 +171,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/storage_structure/storage/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/assets/storage_structure/storage/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/storage_structure/storage_structure/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/assets/storage_structure/storage_structure/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -266,11 +266,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/0-Polling%2BInterrupt%2BDMA/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/</loc>
-         <lastmod>2025-06-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/1-Polling/polling/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
@@ -282,11 +277,6 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/2-Interrupt/%E4%B8%AD%E6%96%AD%E5%B5%8C%E5%A5%97/</loc>
-         <lastmod>2025-06-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/3-DMA/5.3-p207-tang3/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -306,7 +296,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/psets/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/ch05-03-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/3-DMA/e5.3-tang3-p207/</loc>
+         <lastmod>2025-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/4-VS/IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F%E5%AF%B9%E6%AF%94/</loc>
+         <lastmod>2025-06-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/6-IO/psets/p5.3-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/p5.3-tang3-p210-IO%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/</loc>
          <lastmod>2025-06-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
