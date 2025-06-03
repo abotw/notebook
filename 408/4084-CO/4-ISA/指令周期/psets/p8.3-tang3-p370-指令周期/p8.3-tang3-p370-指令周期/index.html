@@ -18524,19 +18524,21 @@
 —— 8.4.3.3-tang2psets-p268p273</p>
 </blockquote>
 <hr />
-<p><strong>IF</strong> -&gt; (ID) -&gt; <strong>EXE</strong> -&gt; (INT)</p>
+<ul>
+<li><strong>IF</strong> -&gt; (OF) -&gt; <strong>EXE</strong> -&gt; (INT)</li>
+</ul>
 <p><img alt="" src="../assets/InstructionCycle.drawio.svg" /></p>
 <hr />
 <p><img alt="" src="../assets/8.4.3.3-tang2psets-p268p273.png" /></p>
 <ul>
-<li><strong>取指周期</strong><ul>
-<li>fetch: 取指令</li>
-<li>decode / analyze: 分析指令</li>
+<li><strong>取指周期 IF</strong><ul>
+<li>IF: 取指令</li>
+<li>ID: 分析指令 / 译码</li>
 </ul>
 </li>
-<li><strong>间址周期</strong>：用于取操作数 (operand) 的有效地址 (EA)；</li>
-<li><strong>执行周期</strong>：完成执行指令的操作；</li>
-<li><strong>中断周期 (Save → Disable → Load)</strong>：当CPU<strong>响应中断</strong>时，由<strong>中断隐指令 (implicit interrupt instruction)</strong> 完成<ul>
+<li><strong>间址周期 OF</strong>：用于取操作数 (operand) 的有效地址 (EA)；</li>
+<li><strong>执行周期 EXE</strong>：完成执行指令的操作；</li>
+<li><strong>中断周期 INT (Save → Disable → Load)</strong>：当CPU<strong>响应中断</strong>时，由<strong>中断隐指令 (implicit interrupt instruction)</strong> 完成<ul>
 <li>save PC: 保护程序断点</li>
 <li>disable INT: 硬件关中断</li>
 <li>load PC: 向量地址 (vector) 送 PC（硬件向量法）的操作。</li>
@@ -18572,6 +18574,9 @@
 <p><img alt="" src="../assets/pic8.32-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F%E6%B5%81%E7%A8%8B-tang2psets-p274.png" /></p>
 <p><img alt="" src="../assets/pic8.8-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F%E6%B5%81%E7%A8%8B-tang3-p343.png" /></p>
 <h2 id="others">others</h2>
+<p><a href="http://staff.ustc.edu.cn/~llxx/cod/courseware/2025/2025-1.pdf">http://staff.ustc.edu.cn/~llxx/cod/courseware/2025/2025-1.pdf</a></p>
+<p><img alt="" src="../assets/Pasted%20image%2020250603172846.png" /></p>
+<hr />
 <p><a href="http://www.math.uaa.alaska.edu/~afkjm/cs221/handouts/ch11-113.pdf">http://www.math.uaa.alaska.edu/~afkjm/cs221/handouts/ch11-113.pdf</a></p>
 <p><img alt="" src="../assets/Pasted%20image%2020250603170847.png" /></p>
 
