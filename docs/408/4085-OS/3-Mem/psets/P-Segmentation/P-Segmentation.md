@@ -1,10 +1,9 @@
 ---
-tags:
-  - cal-zzx
+tags: []
 date: 2025-06-01T11:03:00
 ---
-
-# P2: Segmentation
+segment
+# Psets: Segmentation
 
 ## Ex. 1 ch05-17-txdsol-p34
 
@@ -17,6 +16,7 @@ Consider the following segment table:
 | 2       | 70K  | 5K     |
 | 3       | 120K | 8K     |
 | 4       | 150K | 4K     |
+
 What are the physical addresses for each of the following logical addresses?
 
 - 0, 137
@@ -53,3 +53,8 @@ All values are in decimal.
 
 ---
 
+[https://gist.nju.edu.cn/course-slides/os25/3_memory.pdf](https://gist.nju.edu.cn/course-slides/os25/3_memory.pdf)
+
+![](assets/Pasted%20image%2020250604201447.png)
+
+---

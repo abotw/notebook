@@ -91,17 +91,30 @@
 
 应遵循的准则包括：
 
-1. (1') **共同目标**：资源利用率高、公平性与平衡性、策略强制执行；
-    
-2. (1') **批处理系统**：平均周转时间短、系统吞吐量大、处理机利用率高；
-    
-3. (1') **分时系统**：响应时间快、负载均衡；
-    
-4. (1') **实时系统**：保证截止时间、可预测性。
+1. (1') **共同目标**：资源（处理机）利用率高、公平性与平衡性、**策略强制执行**；（efficiency + fairness + balance + preemptive）
+2. (1') **批处理系统**：系统吞吐量大、平均周转时间短；（throughput + turnaround time）
+3. (1') **分时系统**：响应时间快、负载均衡；（response + waiting）
+4. (1') **实时系统**：保证截止时间、可预测性。（deadlines + predictability）
 
 ### 参考
 
 ![](assets/Pasted%20image%2020250529114428.png)
+
+---
+
+[https://gist.nju.edu.cn/course-slides/os25/2.2_scheduling.pdf](https://gist.nju.edu.cn/course-slides/os25/2.2_scheduling.pdf)
+
+![](assets/Pasted%20image%2020250604185856.png)
+
+- Batch System (批处理系统)
+	- throughput
+	- turnaround time
+- Interactive System (分时系统)
+	- response time
+	- waiting time
+- Real-Time System (实时系统)
+	- predictability
+	- deadlines
 
 ## 5. PS: PV: 信号量 (2') *
 

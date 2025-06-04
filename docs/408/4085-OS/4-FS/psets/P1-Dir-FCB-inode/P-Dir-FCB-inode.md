@@ -1,6 +1,5 @@
 ---
-tags:
-  - cal-zzx
+tags: []
 ---
 
 # Dir, FCB, inode
@@ -8,6 +7,8 @@ tags:
 ## ch08-14-txdsol-p53
 
 ![](assets/Pasted%20image%2020250529112926.png)
+
+- +1: inode number --启动磁盘--> inode (-> mem)
 
 ## 题目回顾
 
@@ -26,9 +27,11 @@ tags:
 
 ---
 
-## 一、引入索引节点**之前**
+### 一、引入索引节点**之前**
 
 ![](assets/Pasted%20image%2020250531182950.png)
+
+![](assets/Pasted%20image%2020250604202643.png)
 
 ### 组织方式
 
@@ -47,7 +50,9 @@ tags:
 
 ---
 
-## 二、引入索引节点**之后**
+### 二、引入索引节点**之后**
+
+![](assets/Pasted%20image%2020250604202753.png)
 
 ![](assets/directory-entiry.png)
 

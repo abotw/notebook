@@ -1,10 +1,9 @@
 ---
-tags:
-  - cal-zzx
+tags: []
 date: 2025-06-01T11:03:00
 ---
 
-# P1: Paging
+# Psets: Paging
 
 ## Ex. 1 ch05-15-txdsol-p33
 
@@ -19,12 +18,12 @@ The memory is 64KB and page size is 1KB (10 bits).
 | 2           | 6            |
 | 3           | 7            |
 
-- Given the physical address of each of the following logical addresses.
+- (8') Given the physical address of each of the following logical addresses.
 	- $1023_{10}$
 	- $2500_{10}$
 	- $3500_{10}$
 	- $4500_{10}$
-- Given the address translation diagram of the logical address $1023_{10}$.
+- (6') Given the address translation diagram of the logical address $1023_{10}$.
 
 ### Answer
 
@@ -84,3 +83,9 @@ $$
 ---
 
 ![](assets/address-translation-2.png)
+
+---
+
+[https://gist.nju.edu.cn/course-slides/os25/3_memory.pdf](https://gist.nju.edu.cn/course-slides/os25/3_memory.pdf)
+
+![](assets/Pasted%20image%2020250604201853.png)
