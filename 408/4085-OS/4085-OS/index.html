@@ -19291,10 +19291,24 @@
 </li>
 <li><strong>(32') 综合</strong><ol>
 <li>(8') <a href="../2-PS/2-Scheduling/psets/psets-cpu-scheduling/">CPU Scheduling</a><ol>
-<li>FCFS (First-Come First-Served, 先来先服务)</li>
-<li>SJF (Shortest Job First, 最短优先)</li>
-<li>RR (Round Robin, 时间片轮转)</li>
-<li>Priority (优先级)</li>
+<li>Keys<ol>
+<li>(2') <strong>调度顺序</strong></li>
+<li>(2') <strong>指标：AWTT, 平均带权周转时间</strong><ol>
+<li>周转时间 (Turnaround Time)：<span class="arithmatex">\(TT= Finish - Arrival\)</span></li>
+<li>带权周转时间 (Weighted Turnaround Time)：<span class="arithmatex">\(WTT = \frac{TT}{\text{Burst}}\)</span></li>
+<li>平均带权周转时间 (Average Weighted Turnaround Time)：<span class="arithmatex">\(AWTT = \frac{ATT}{N_p}\)</span></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Policies<ol>
+<li>FCFS (First-Come First-Served, 先来先服务) - arrival time</li>
+<li><strong>SJF (Shortest Job First, 最短运行时间优先)</strong> - burst time</li>
+<li>STCF (Shortest Time-to-Completion First, 最短剩余时间优先, = <strong>SJF-P</strong>) - remaining burst time</li>
+<li>RR (Round Robin, 时间片轮转) - quantum / time slice</li>
+<li>Priority (优先级) - priority</li>
+</ol>
+</li>
 </ol>
 </li>
 <li>(12') <a href="../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/">Page Replacement </a><ol>
