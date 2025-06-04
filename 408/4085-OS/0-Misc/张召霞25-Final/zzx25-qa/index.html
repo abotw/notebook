@@ -19625,24 +19625,33 @@
 <p>(1') 在设计OS时，调度方式与调度算法的选择取决于<strong>系统类型</strong>与<strong>设计目标</strong>。不同类型的系统（如<strong>批处理系统</strong>、<strong>分时系统</strong>、<strong>实时系统</strong>）适用不同的调度策略。</p>
 <p>应遵循的准则包括：</p>
 <ol>
-<li>
-<p>(1') <strong>共同目标</strong>：资源利用率高、公平性与平衡性、策略强制执行；</p>
-</li>
-<li>
-<p>(1') <strong>批处理系统</strong>：平均周转时间短、系统吞吐量大、处理机利用率高；</p>
-</li>
-<li>
-<p>(1') <strong>分时系统</strong>：响应时间快、负载均衡；</p>
-</li>
-<li>
-<p>(1') <strong>实时系统</strong>：保证截止时间、可预测性。</p>
-</li>
+<li>(1') <strong>共同目标</strong>：资源（处理机）利用率高、公平性与平衡性、<strong>策略强制执行</strong>；（efficiency + fairness + balance + preemptive）</li>
+<li>(1') <strong>批处理系统</strong>：系统吞吐量大、平均周转时间短；（throughput + turnaround time）</li>
+<li>(1') <strong>分时系统</strong>：响应时间快、负载均衡；（response + waiting）</li>
+<li>(1') <strong>实时系统</strong>：保证截止时间、可预测性。（deadlines + predictability）</li>
 </ol>
 <h3 id="_8">参考</h3>
 <p><img alt="" src="../assets/Pasted%20image%2020250529114428.png" /></p>
 <hr />
 <p><a href="https://gist.nju.edu.cn/course-slides/os25/2.2_scheduling.pdf">https://gist.nju.edu.cn/course-slides/os25/2.2_scheduling.pdf</a></p>
 <p><img alt="" src="../assets/Pasted%20image%2020250604185856.png" /></p>
+<ul>
+<li>Batch System (批处理系统)<ul>
+<li>throughput</li>
+<li>turnaround time</li>
+</ul>
+</li>
+<li>Interactive System (分时系统)<ul>
+<li>response time</li>
+<li>waiting time</li>
+</ul>
+</li>
+<li>Real-Time System (实时系统)<ul>
+<li>predictability</li>
+<li>deadlines</li>
+</ul>
+</li>
+</ul>
 <h2 id="5-ps-pv-2">5. PS: PV: 信号量 (2') *</h2>
 <blockquote>
 <p>(2') 若信号量的初值为 2，当前值为 -1，则表示有多少个等待进程？请分析。</p>
