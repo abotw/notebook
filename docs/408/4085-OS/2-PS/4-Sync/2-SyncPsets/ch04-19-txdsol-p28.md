@@ -6,7 +6,7 @@ tags:
 # ch04-19-txdsol-p28
 
 
-![](../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114059.png)
+![](../../../0-Misc/张召霞25-Final/assets/Pasted%20image%2020250529114059.png)
 
 19．有 3 个进程 P1、P2、P3 协作解决文件打印问题。P1 将文件记录从磁盘读入内存
 
@@ -16,7 +16,7 @@ tags:
 
 的大小与记录大小一样。请用信号量机制来保证文件的正确打印。
 
-![](../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114120.png)
+![](../../../0-Misc/张召霞25-Final/assets/Pasted%20image%2020250529114120.png)
 
 【参考答案】对缓冲区1来说，P1是生产者，P2是消费者；对缓冲区2来说，P2是生产者，P3
 

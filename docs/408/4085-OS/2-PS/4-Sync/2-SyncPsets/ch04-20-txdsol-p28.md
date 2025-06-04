@@ -6,7 +6,7 @@ tags:
 # ch04-20-txdsol-p28
 
 
-![](../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114157.png)
+![](../../../0-Misc/张召霞25-Final/assets/Pasted%20image%2020250529114157.png)
 
 20．桌上有一个能盛得下 5 个水果的空盘子。爸爸不停地向盘中放苹果或橘子，儿子
 
@@ -16,7 +16,7 @@ tags:
 
 同步。
 
-![](../../../0-Misc/final-25sp-zzx/assets/Pasted%20image%2020250529114223.png)
+![](../../../0-Misc/张召霞25-Final/assets/Pasted%20image%2020250529114223.png)
 
 【参考答案】分析：本题是生产者-消费者问题的变形，相当于一个能生产两种产品的生
 
