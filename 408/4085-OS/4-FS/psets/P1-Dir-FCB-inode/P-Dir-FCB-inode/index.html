@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/4-FS/psets/P1-Dir-FCB-inode/P1-Dir-FCB-inode/">
+        <link rel="canonical" href="https://abotw.github.io/notebook/408/4085-OS/4-FS/psets/P1-Dir-FCB-inode/P-Dir-FCB-inode/">
       
       
         <link rel="prev" href="../../../3-FS/-fs4.3/">
@@ -9522,7 +9522,7 @@
             
   
   <span class="md-ellipsis">
-    P1 Paging
+    P Paging
   </span>
   
 
@@ -9532,7 +9532,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_5_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_5_5_1">
             <span class="md-nav__icon md-icon"></span>
-            P1 Paging
+            P Paging
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -9543,11 +9543,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P1-Paging/P1-Paging/" class="md-nav__link">
+      <a href="../../../../3-Mem/psets/P-Paging/P-Paging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    P1: Paging
+    Psets: Paging
   </span>
   
 
@@ -9589,7 +9589,7 @@
             
   
   <span class="md-ellipsis">
-    P2 Segmentation
+    P Segmentation
   </span>
   
 
@@ -9599,7 +9599,7 @@
         <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_6_5_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6_5_5_2">
             <span class="md-nav__icon md-icon"></span>
-            P2 Segmentation
+            P Segmentation
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -9610,11 +9610,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../3-Mem/psets/P2-Segmentation/P2-Segmentation/" class="md-nav__link">
+      <a href="../../../../3-Mem/psets/P-Segmentation/P-Segmentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    P2 Segmentation
+    P Segmentation
   </span>
   
 
@@ -10167,17 +10167,17 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="题目回顾">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一、引入索引节点之前
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="一、引入索引节点之前">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
@@ -10197,20 +10197,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       二、引入索引节点之后
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="二、引入索引节点之后">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
@@ -19233,17 +19227,17 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="题目回顾">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       一、引入索引节点之前
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="一、引入索引节点之前">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
@@ -19263,20 +19257,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       二、引入索引节点之后
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="二、引入索引节点之后">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
@@ -19388,6 +19376,9 @@
 <h1 id="dir-fcb-inode">Dir, FCB, inode</h1>
 <h2 id="ch08-14-txdsol-p53">ch08-14-txdsol-p53</h2>
 <p><img alt="" src="../assets/Pasted%20image%2020250529112926.png" /></p>
+<ul>
+<li>+1: inode number --启动磁盘--&gt; inode (-&gt; mem)</li>
+</ul>
 <h2 id="_1">题目回顾</h2>
 <ul>
 <li>
@@ -19408,8 +19399,9 @@
 </ul>
 <p>目标是比较<strong>引入索引节点前后</strong>，<strong>查找某文件的 FCB 平均需启动磁盘的次数</strong>。</p>
 <hr />
-<h2 id="_2">一、引入索引节点<strong>之前</strong></h2>
+<h3 id="_2">一、引入索引节点<strong>之前</strong></h3>
 <p><img alt="" src="../assets/Pasted%20image%2020250531182950.png" /></p>
+<p><img alt="" src="../assets/Pasted%20image%2020250604202643.png" /></p>
 <h3 id="_3">组织方式</h3>
 <ul>
 <li>每个目录项包含整个 FCB（即 64B）。</li>
@@ -19430,7 +19422,8 @@
 </li>
 </ul>
 <hr />
-<h2 id="_5">二、引入索引节点<strong>之后</strong></h2>
+<h3 id="_5">二、引入索引节点<strong>之后</strong></h3>
+<p><img alt="" src="../assets/Pasted%20image%2020250604202753.png" /></p>
 <p><img alt="" src="../assets/directory-entiry.png" /></p>
 <h3 id="_6">目录项变小</h3>
 <ul>

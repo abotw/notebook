@@ -791,12 +791,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/3-Mem/psets/P1-Paging/P1-Paging/</loc>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/3-Mem/psets/P-Paging/P-Paging/</loc>
          <lastmod>2025-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/3-Mem/psets/P2-Segmentation/P2-Segmentation/</loc>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/3-Mem/psets/P-Segmentation/P-Segmentation/</loc>
          <lastmod>2025-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -836,7 +836,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/4-FS/psets/P1-Dir-FCB-inode/P1-Dir-FCB-inode/</loc>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/4-FS/psets/P1-Dir-FCB-inode/P-Dir-FCB-inode/</loc>
          <lastmod>2025-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
