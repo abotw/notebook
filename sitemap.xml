@@ -516,17 +516,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/0-OS-summary/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/4085-OS/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/6-OS-summary/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/0-Misc/%E5%BC%A0%E5%8F%AC%E9%9C%9E25-Final/zzx25-qa/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -862,6 +857,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/5-IO/1-Disk/psets/P1-DiskScheduling/P1-disk-scheduling/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/Misc/%E5%BC%A0%E5%8F%AC%E9%9C%9E25-Final/zzx25-qa/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
