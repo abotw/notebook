@@ -61,6 +61,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/sum-CO/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/1-Intro/-intro/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
@@ -516,12 +521,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/0-OS-summary/</loc>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/4085-OS/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/4085-OS/</loc>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/sum-OS/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
