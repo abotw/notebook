@@ -19493,34 +19493,48 @@
 <h2 id="25sp-final">张召霞 | 25Sp | Final</h2>
 <ol>
 <li><strong>(17') 简答</strong><ol>
-<li>(4')</li>
-<li>(4')</li>
-<li>(4')</li>
-<li>(5')</li>
+<li>(4') 在创建一个进程时，OS 需要完成的主要工作是什么？</li>
+<li>(4') 若信号量的初值为 2，当前值为 -1，则表示有多少个等待进程？请分析。</li>
+<li>(4') 为什么说分段系统较分页系统更易实现信息共享与保护？</li>
+<li>(5') 设备中断处理程序通常须完成哪些工作？它对中断进行处理的过程包含哪些步骤？</li>
 </ol>
 </li>
 <li><strong>(19') 算法</strong><ol>
-<li>(7') <a href="../2-PS/4-Sync/2-SyncPsets/pv/">PV (前驱图)</a></li>
-<li>(12') <a href="../2-PS/5-Deadlock/psets/P1-bankers-algorithm/">Banker's Algorithm</a></li>
+<li>(5') Precedence Graph | 前驱图</li>
+<li>(14') <a href="../2-PS/5-Deadlock/psets/P1-bankers-algorithm/">Banker's Algorithm</a></li>
 </ol>
 </li>
 <li><strong>(32') 计算</strong><ol>
-<li>(14') Memory Address Translation<ol>
-<li><a href="../3-Mem/psets/P-Paging/P-Paging/">paging</a></li>
+<li>(12') Memory Address Translation<ol>
+<li><strong><a href="../3-Mem/psets/P-Paging/P-Paging/">paging</a></strong></li>
 <li><a href="../3-Mem/psets/P-Segmentation/P-Segmentation/">segmentation</a></li>
 </ol>
 </li>
-<li>(6') <a href="../4-FS/psets/P1-Dir-FCB-inode/P-Dir-FCB-inode/">Dir</a></li>
-<li>(12') <a href="../4-FS/psets/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/">FS</a><ol>
-<li>(4') direct</li>
-<li>(4') file size</li>
+<li>(12') <a href="../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/">Page Replacement </a><ol>
+<li>Keys<ol>
+<li>(3') a series of referenced page numbers</li>
+<li>(3') Page Faults / Page Fault Rate</li>
+</ol>
+</li>
+<li>Algo.<ol>
+<li><strong>(6')</strong> <span class="arithmatex">\(FIFO\text{↘}\)</span> (Fist-In-First-Out, 先进先出) - <strong>oldest</strong></li>
+<li>(6') <span class="arithmatex">\(\overset{\rightarrow}{\text{OPT}}\)</span> (MIN, Optimal, 最佳) - not used for the longest time in <strong>future</strong></li>
+<li><strong>(6')</strong> <span class="arithmatex">\(\overset{\leftarrow}{\text{LRU}}\)</span> (Least Recently Used, 最近最久未使用) - not used for the longest time in <strong>past</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>(8') <a href="../4-FS/psets/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/P2-%E6%B7%B7%E5%90%88%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D%E7%9A%84%E8%AE%A1%E7%AE%97/">FS</a><ol>
+<li><strong>(4') direct</strong></li>
+<li><strong>(4') max file size</strong></li>
 <li>(4') disk visits</li>
 </ol>
 </li>
 </ol>
 </li>
 <li><strong>(32') 综合</strong><ol>
-<li>(8') <a href="../2-PS/2-Scheduling/psets/psets-cpu-scheduling/">CPU Scheduling</a><ol>
+<li>(10') <a href="../2-PS/4-Sync/2-SyncPsets/pv/">PV</a> - 父母儿女吃水果</li>
+<li>(10') <a href="../2-PS/2-Scheduling/psets/psets-cpu-scheduling/">CPU Scheduling</a><ol>
 <li>Keys<ol>
 <li>(2') <strong>调度顺序</strong></li>
 <li>(2') <strong>指标：AWTT, 平均带权周转时间</strong> (arrival -&gt; waiting -&gt; start -&gt; burst -&gt; end)<ol>
@@ -19542,33 +19556,19 @@
 </li>
 </ol>
 </li>
-<li>(12') <a href="../3-Mem/psets/P3-PageReplacement/P3-PageReplacement/">Page Replacement </a><ol>
-<li>Keys<ol>
-<li>(2') a series of referenced page numbers</li>
-<li>(2') Page Faults / Page Fault Rate</li>
-</ol>
-</li>
-<li>Algo.<ol>
-<li>(4') <span class="arithmatex">\(FIFO\text{↘}\)</span> (Fist-In-First-Out, 先进先出) - <strong>oldest</strong></li>
-<li>(4') <span class="arithmatex">\(\overset{\rightarrow}{\text{OPT}}\)</span> (MIN, Optimal, 最佳) - not used for the longest time in <strong>future</strong></li>
-<li>(4') <span class="arithmatex">\(\overset{\leftarrow}{\text{LRU}}\)</span> (Least Recently Used, 最近最久未使用) - not used for the longest time in <strong>past</strong></li>
-</ol>
-</li>
-</ol>
-</li>
 <li>(12') <a href="../5-IO/1-Disk/psets/P1-DiskScheduling/P1-disk-scheduling/">Disk Scheduling </a><ol>
 <li>Keys<ol>
-<li>(2') sequence of seeks</li>
-<li>(2') movements</li>
+<li>(3') sequence of seeks</li>
+<li>(3') movements</li>
 </ol>
 </li>
 <li>Algo.<ol>
-<li><strong>(4') FCFS (First Come First Service)</strong></li>
-<li><strong>(4') SSTF (Shortest Seek Time First)</strong></li>
-<li>(4') SCAN</li>
-<li>(4') CSCAN</li>
-<li><strong>(4') LOOK</strong></li>
-<li>(4') CLOOK</li>
+<li><strong>(6') FCFS (First Come First Service)</strong></li>
+<li>(6') SSTF (Shortest Seek Time First)</li>
+<li>(6') SCAN</li>
+<li>(6') CSCAN</li>
+<li><strong>(6') LOOK</strong></li>
+<li>(6') CLOOK</li>
 </ol>
 </li>
 </ol>
