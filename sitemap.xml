@@ -621,11 +621,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/0945/0945/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1-ProCon/and-semaphore/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
@@ -641,47 +636,52 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1145/1145/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1345/1345/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1447/1447/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1545/1545/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1746/1746/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/1943/1943/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/2045/2045/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/2145/2145/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/4-Smokers/smokers/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/0945/0945/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1145/1145/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1345/1345/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1447/1447/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1545/1545/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1746/1746/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/1943/1943/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/2045/2045/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/408/2145/2145/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
