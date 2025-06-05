@@ -601,11 +601,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/pv/</loc>
-         <lastmod>2025-06-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/1-SyncTools/sync-tools/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
@@ -617,6 +612,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/1-SyncTools/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%BA%E5%88%B6%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+         <lastmod>2025-06-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4085-OS/2-PS/4-Sync/2-SyncPsets/pv/</loc>
          <lastmod>2025-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
