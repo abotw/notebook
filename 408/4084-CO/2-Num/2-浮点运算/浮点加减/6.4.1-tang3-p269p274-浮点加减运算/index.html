@@ -1708,6 +1708,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      浮点数加减运算步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="浮点数加减运算步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#408" class="md-nav__link">
+    <span class="md-ellipsis">
+      408考研注意点总结（补充）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tang2psets" class="md-nav__link">
     <span class="md-ellipsis">
       tang2psets
@@ -1736,7 +1769,7 @@
         
   
   <span class="md-ellipsis">
-    浮点数加减运算的基本步骤
+    Floating point add sub steps
   </span>
   
 
@@ -19434,6 +19467,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      浮点数加减运算步骤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="浮点数加减运算步骤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#408" class="md-nav__link">
+    <span class="md-ellipsis">
+      408考研注意点总结（补充）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tang2psets" class="md-nav__link">
     <span class="md-ellipsis">
       tang2psets
@@ -19462,6 +19528,153 @@
 <li><a href="../assets/FloatAddSub-tang3.pdf">FloatAddSub-tang3.pdf</a></li>
 </ul>
 <p><img alt="" src="../assets/Pasted%20image%2020250530135807.png" /></p>
+<hr />
+<p>浮点数表示形式为：<br />
+<strong><code>阶符,阶码数值;数符.尾数数值</code></strong>，可以解释为：</p>
+<ul>
+<li>
+<p><code>阶符</code>：阶码的符号（+ 或 -）</p>
+</li>
+<li>
+<p><code>阶码数值</code>：表示指数部分的大小</p>
+</li>
+<li>
+<p><code>数符</code>：数值的符号（+ 或 -）</p>
+</li>
+<li>
+<p><code>尾数数值</code>：尾数部分的有效数字</p>
+</li>
+</ul>
+<p>例如：<code>+,10;+0.1100</code> 表示 +1.100×2+10+1.100 \times 2^{+10}</p>
+<hr />
+<h2 id="_1">浮点数加减运算步骤</h2>
+<ol>
+<li><strong>对阶（Exponent Alignment）</strong>  <ul>
+<li>目标：使两个操作数的阶码（Exponent，指数）相等。</li>
+<li>方法：<strong>小阶向大阶对齐，右移尾数</strong><ol>
+<li>找出阶码较小的操作数</li>
+<li>将其尾数（Mantissa）右移（即除以2）</li>
+<li>每移动1位，其阶码加1，直至两数阶码相同</li>
+<li>保留有效位数（若是定长尾数，需要截断或舍入）。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><strong>尾数加减（Mantissa Addition/Subtraction）</strong><ul>
+<li>阶码一致后，根据数符执行尾数加减<ul>
+<li>同号：做加法，结果符号同原符号；</li>
+<li>异号：做减法，结果符号取较大数的数符。</li>
+</ul>
+</li>
+<li>注意尾数为补码表示时，要进行补码加减。</li>
+</ul>
+</li>
+<li><strong>规格化（Normalization）</strong><ul>
+<li>尾数结果可能不是规格化形式（即，尾数数值不是以“1”开头），需移位调整<ul>
+<li>若高位为 0，则尾数左移，阶码减小，直到满足规格化要求（最高位为1）</li>
+<li>若前导位大于1（如进位），右移尾数并增加阶码；</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>舍入（Rounding）</strong><ul>
+<li>尾数超出有效位数时，按舍入规则处理多出的部分（如向零舍入、向偶数舍入等）；</li>
+<li>舍入可能再次引起尾数进位 → 需再次规格化。</li>
+</ul>
+</li>
+<li><strong>溢出/下溢判断（Overflow / Underflow Check）</strong><ul>
+<li>检查阶码是否超过可表示范围：<ul>
+<li>阶码过大为<strong>上溢（overflow）</strong>，结果置为 ±∞ 或报错。</li>
+<li>阶码过小为<strong>下溢（underflow）</strong>，若小于最小规格化数 → 表示为“非规格化数”或置 0。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="_2">📌 示例</h3>
+<p>以如下两数相加为例：</p>
+<ul>
+<li>
+<p>A: <code>+,5;+0.1100</code> （= +1.100 × 2⁵）</p>
+</li>
+<li>
+<p>B: <code>+,3;+0.1010</code> （= +1.010 × 2³）</p>
+</li>
+</ul>
+<p><strong>步骤：</strong></p>
+<ol>
+<li>
+<p><strong>对阶：</strong></p>
+<ul>
+<li>
+<p>A阶码为5，B为3 → 右移B尾数2位：<code>+0.1010 → +0.001010</code>（近似为 +0.00101）</p>
+</li>
+<li>
+<p>同时把B的阶码+2，变为5</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>尾数加法：</strong></p>
+<ul>
+<li>
+<p>A尾数 <code>0.1100</code></p>
+</li>
+<li>
+<p>B尾数 <code>0.00101</code></p>
+</li>
+<li>
+<p>相加得 <code>0.11101</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>规格化：</strong></p>
+<ul>
+<li><code>0.11101</code> 前导1已经符合规范 → 保持阶码为5</li>
+</ul>
+</li>
+<li>
+<p><strong>舍入：</strong></p>
+<ul>
+<li>若尾数仅保留4位 → <code>0.1110</code>（舍掉最后1位）</li>
+</ul>
+</li>
+<li>
+<p><strong>最终结果：</strong></p>
+<ul>
+<li>
+<p>阶码：<code>+5</code></p>
+</li>
+<li>
+<p>尾数：<code>+0.1110</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<p>即：<strong><code>+,5;+0.1110</code></strong></p>
+<hr />
+<p>如果你有具体格式限制（比如尾数必须4位二进制）或采用补码尾数等，可以继续扩展规则。是否需要我继续补充特殊情况处理（如负数、尾数为补码、非规格化数）？</p>
+<hr />
+<h2 id="408">408考研注意点总结（补充）</h2>
+<ul>
+<li>
+<p>重点理解“对阶”与“规格化”中的移位方向及其影响。</p>
+</li>
+<li>
+<p>明确加/减法实际操作的是尾数，符号位仅决定加/减而非运算符。</p>
+</li>
+<li>
+<p>掌握常见陷阱：如<strong>对阶时尾数精度损失</strong>、<strong>舍入后引发规格化</strong>等。</p>
+</li>
+<li>
+<p>熟悉 IEEE 754 浮点数结构（符号位 + 阶码 + 尾数）及其表示范围。</p>
+</li>
+<li>
+<p>下溢在考试中常用于考查对非规格化数和“0”的处理。</p>
+</li>
+</ul>
 <h2 id="tang2psets">tang2psets</h2>
 <p><img alt="" src="../assets/Pasted%20image%2020250530135703.png" />
 <img alt="" src="../assets/Pasted%20image%2020250530135746.png" /></p>
@@ -19517,13 +19730,13 @@
         
         
           
-          <a href="../floating-point-add-sub-steps/" class="md-footer__link md-footer__link--next" aria-label="下一页: 浮点数加减运算的基本步骤">
+          <a href="../floating-point-add-sub-steps/" class="md-footer__link md-footer__link--next" aria-label="下一页: Floating point add sub steps">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                浮点数加减运算的基本步骤
+                Floating point add sub steps
               </div>
             </div>
             <div class="md-footer__button md-icon">
