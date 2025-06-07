@@ -4,6 +4,10 @@ aliases:
   - Addressing Modes
 ---
 
+# 寻址方式
+
+![](assets/Pasted%20image%2020250607223713.png)
+
 ![[../assets/470L22W24/470L22W24-27.png]]
 ![[../assets/李曦2025-指令系统/李曦2025-指令系统-19.png]]
 
