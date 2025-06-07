@@ -47,7 +47,7 @@
 	   \[[worksheet](3-Storage/1-Mem/2-HammingCode/assets/hamming-code-worksheet.pdf)\]
 		1. [e4.4-tang3-p102](3-Storage/1-Mem/2-HammingCode/psets/e4.4-tang3-p102/e4.4-tang3-p102.md) (检错、纠错)
 		2. [e4.5-tang3-p102](3-Storage/1-Mem/2-HammingCode/psets/e4.5-tang3-p102/e4.5-tang3-p102.md) (配奇、配偶)
-	3. 4.3.2 Cache—主存地址映射
+	3. **4.3.2 Cache—主存地址映射**
 	   \[[Cache2Mem-tang3.pdf](3-Storage/2-Cache/2-Mapping/assets/Cache2Mem-tang3.pdf)\]
 		1. [e4.8-tang3-p120](3-Storage/2-Cache/2-Mapping/psets/e4.8-tang3-p120/e4.8-tang3-p120.md)
 		2. [e4.9-tang3-p120](3-Storage/2-Cache/2-Mapping/psets/e4.9-tang3-p120/e4.9-tang3-p120.md)
