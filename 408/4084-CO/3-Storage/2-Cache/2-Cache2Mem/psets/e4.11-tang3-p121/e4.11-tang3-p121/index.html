@@ -3291,11 +3291,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sol" class="md-nav__link">
     <span class="md-ellipsis">
       sol
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-4-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 4-set associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -19459,11 +19510,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sol" class="md-nav__link">
     <span class="md-ellipsis">
       sol
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-4-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 4-set associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -19483,16 +19585,21 @@
 
 
 <h1 id="e411-tang3-p121">e4.11-tang3-p121</h1>
-<p><img alt="" src="../e4.11-tang3-p121.png" /></p>
+<p><img alt="" src="../assets/e4.11-tang3-p121-1.png" />
+<img alt="" src="../assets/e4.11-tang3-p121-2.png" /></p>
+<h2 id="key">key</h2>
+<p><img alt="" src="../assets/e4.11-tang3-p121-key1.png" />
+<img alt="" src="../assets/e4.11-tang3-p121-key2.png" /></p>
 <h2 id="sol">sol</h2>
-<p>MM size = 16MB = 2^{24}B
-cache size = 8KB = 2^{13}B</p>
-<p>1 word = 32b = 4B
-1 block = 8 words = 32B = 2^{5}B</p>
-<p>四路组相联映射 n = 4 = 2^{2} sets</p>
-<p>(1)</p>
-<p>cache blocks = cache size / block size = 2^{8}
-cache sets = cache blocks / n = 2^{6} sets</p>
+<p>mem = 16MB = <span class="arithmatex">\(2^{24}\)</span>B</p>
+<p>cache = 8KB = <span class="arithmatex">\(2^{13}\)</span>B</p>
+<p>block = 8w = 32B = <span class="arithmatex">\(2^5\)</span>B</p>
+<p>1w = 32b = 4B = <span class="arithmatex">\(2^2\)</span>B</p>
+<p>4-set = <span class="arithmatex">\(2^2\)</span>set</p>
+<h3 id="1-4-set-associative">1. 4-set associative</h3>
+<div class="arithmatex">\[
+\text{Cache sets}=\frac{\text{Cache blocks}}{\text{n-set}}=\frac{\frac{\text{cache}}{\text{block}}}{\text{n-set}}=\frac{\text{cache}}{\text{block}\times\text{n-set}}=\frac{2^{13}}{2^{5}\times2^2}=2^{6}
+\]</div>
 <table>
 <thead>
 <tr>
@@ -19503,9 +19610,14 @@ cache sets = cache blocks / n = 2^{6} sets</p>
 </thead>
 <tbody>
 <tr>
-<td>MM size</td>
-<td>cache sets = 2^{8} = 256</td>
-<td>block size = 2^{5}B</td>
+<td>主存字块标记</td>
+<td>组地址</td>
+<td>字块内地址</td>
+</tr>
+<tr>
+<td>mem = 16MB = <span class="arithmatex">\(2^{24}\)</span>B</td>
+<td>cache sets = <span class="arithmatex">\(2^6\)</span></td>
+<td>block = 8w = 32B = <span class="arithmatex">\(2^5\)</span>B</td>
 </tr>
 <tr>
 <td>13 = 24-6-5</td>
@@ -19514,20 +19626,18 @@ cache sets = cache blocks / n = 2^{6} sets</p>
 </tr>
 </tbody>
 </table>
-<p>(2)</p>
-<p>每次读100个字
-重复此次序读10次</p>
-<p>(3)</p>
-<p>t = cache存取周期
-5t = MM存取周期</p>
-<p>4.75285171 - 1
-$$
-\frac{1000\times 5t}{13\times5t+(1000-13)\times{t}}-1\approx3.75
-$$</p>
-<p>(4)</p>
+<h3 id="2">2.</h3>
+<div class="arithmatex">\[
+h=\frac{N_c}{N_c+N_m}\times100\%=\frac{100\times10-13}{100\times10}\times100\%=98.7\%
+\]</div>
+<h3 id="3">3.</h3>
+<div class="arithmatex">\[
+=\frac{t_m}{t_a}-1=\frac{t_m}{ht_c+(1-h)t_m}-1=\frac{5t_c}{0.987\times t_c+(1-0.987)\times5t_c}-1\approx3.75
+\]</div>
+<h3 id="4">4.</h3>
 <p>0.95057034</p>
 <div class="arithmatex">\[
-\frac{t}{0.987\times{t}+(1-0.987)\times5t}\times100\%\approx95\%
+e=\frac{t_c}{t_a}=\frac{t_c}{0.987\times{t_c}+(1-0.987)\times5t_c}\times100\%\approx95\%
 \]</div>
 
 

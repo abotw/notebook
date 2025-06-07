@@ -3440,6 +3440,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direct" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. direct
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fully-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. fully associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 2 set associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-4-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 4 set associative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -19483,6 +19525,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-direct" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. direct
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fully-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. fully associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 2 set associative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-4-set-associative" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 4 set associative
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -19501,17 +19585,20 @@
 
 
 <h1 id="e49-tang3-p120">e4.9-tang3-p120</h1>
-<p><img alt="" src="../e4.9-tang3-p120-key.png" /></p>
+<p><img alt="" src="../assets/e4.9-tang3-p120.png" /></p>
 <h2 id="key">key</h2>
-<p><img alt="" src="../e4.9-tang3-p120-sol.png" /></p>
+<p><img alt="" src="../assets/e4.9-tang3-p120-key1.png" />
+<img alt="" src="../assets/e4.9-tang3-p120-key2.png" />
+<img alt="" src="../assets/e4.9-tang3-p120-key3.png" />
+<img alt="" src="../assets/e4.9-tang3-p120-key4.png" /></p>
 <h2 id="sol">sol</h2>
-<p>1w = 16b = 2B
-1 block size = 4 words = 2^{2}w</p>
-<p>访存地址为字地址</p>
-<p>cache size = 4096 * 16 = 2^{12}w
-MM size = 512K * 16 = 2^{19}w</p>
-<p>(1)
-cache blocks = cache size / block size = 2^{10} blocks</p>
+<p>w: 访存地址为字地址</p>
+<p>mem = 512k * 16b = 512kw = <span class="arithmatex">\(2^{19}\)</span>w</p>
+<p>cache = 4096 * 16b = 4096w = <span class="arithmatex">\(2^{12}\)</span>w</p>
+<p>block = 4w = <span class="arithmatex">\(2^2\)</span>w</p>
+<p>1w = 16b</p>
+<h3 id="1-direct">1. direct</h3>
+<p>cache blocks = cache size / block size = <span class="arithmatex">\(\frac{2^{12}}{2^2}=2^{10}\)</span></p>
 <table>
 <thead>
 <tr>
@@ -19522,14 +19609,14 @@ cache blocks = cache size / block size = 2^{10} blocks</p>
 </thead>
 <tbody>
 <tr>
-<td>主存字块标记</td>
-<td>Cache字块标记</td>
-<td>字块内地址</td>
+<td>mem = <span class="arithmatex">\(2^{19}\)</span>w</td>
+<td>cache blocks = <span class="arithmatex">\(2^{10}\)</span></td>
+<td>block = <span class="arithmatex">\(2^2\)</span>w</td>
 </tr>
 <tr>
-<td>MM size</td>
-<td>cache blocks</td>
-<td>block size = 2^{2}w</td>
+<td>主存字块标记</td>
+<td>Cache字块地址</td>
+<td>字块内地址</td>
 </tr>
 <tr>
 <td><strong>7 = 19 - 10 - 2</strong></td>
@@ -19538,7 +19625,7 @@ cache blocks = cache size / block size = 2^{10} blocks</p>
 </tr>
 </tbody>
 </table>
-<p>(2)</p>
+<h3 id="2-fully-associative">2. fully associative</h3>
 <table>
 <thead>
 <tr>
@@ -19552,8 +19639,8 @@ cache blocks = cache size / block size = 2^{10} blocks</p>
 <td>字块内地址</td>
 </tr>
 <tr>
-<td>MM size</td>
-<td>block size = 2^{2}w</td>
+<td>mem = <span class="arithmatex">\(2^{19}\)</span>w</td>
+<td>block = <span class="arithmatex">\(2^2\)</span>w</td>
 </tr>
 <tr>
 <td>17 = 19 - 2</td>
@@ -19561,8 +19648,10 @@ cache blocks = cache size / block size = 2^{10} blocks</p>
 </tr>
 </tbody>
 </table>
-<p>(3)
-cache sets = cache blocks / 2 (二路组相联) = 2^{9} sets</p>
+<h3 id="3-2-set-associative">3. 2 set associative</h3>
+<div class="arithmatex">\[
+\text{cache sets} = \frac{\text{cache blocks}}{2}\text{(二路组相联)}= 2^{9}\text{sets}
+\]</div>
 <table>
 <thead>
 <tr>
@@ -19578,9 +19667,9 @@ cache sets = cache blocks / 2 (二路组相联) = 2^{9} sets</p>
 <td>字块内地址</td>
 </tr>
 <tr>
-<td>MM size</td>
-<td>cache sets</td>
-<td>block size = 2^{2}w</td>
+<td>mem = <span class="arithmatex">\(2^{19}\)</span>w</td>
+<td>cache sets = <span class="arithmatex">\(2^9\)</span></td>
+<td>block = <span class="arithmatex">\(2^2\)</span>w</td>
 </tr>
 <tr>
 <td><strong>8 = 19 - 9 - 2</strong></td>
@@ -19589,9 +19678,14 @@ cache sets = cache blocks / 2 (二路组相联) = 2^{9} sets</p>
 </tr>
 </tbody>
 </table>
-<p>(4)
-MM size = 512K * 32 = 512K * 2w = 2^{20}w
-cache sets = cache blocks / 4 (四路组相联) = 2^{8} sets</p>
+<h3 id="4-4-set-associative">4. 4 set associative</h3>
+<p>mem = 512k * 32 = 512k * 2w = <span class="arithmatex">\(2^{20}\)</span> w</p>
+<div class="arithmatex">\[
+\text{cache sets} 
+= \frac{\text{cache blocks}}{4}\text{(二路组相联)}
+= \frac{2^{10}}{2^2}
+= 2^{8}\text{sets}
+\]</div>
 <table>
 <thead>
 <tr>
@@ -19607,9 +19701,9 @@ cache sets = cache blocks / 4 (四路组相联) = 2^{8} sets</p>
 <td>字块内地址</td>
 </tr>
 <tr>
-<td>MM size</td>
-<td>cache sets</td>
-<td>block size = 2^{2}w</td>
+<td>mem = <span class="arithmatex">\(2^{20}\)</span>w</td>
+<td>cache sets = <span class="arithmatex">\(2^8\)</span></td>
+<td>block = <span class="arithmatex">\(2^2\)</span>w</td>
 </tr>
 <tr>
 <td><strong>10 = 20 - 8 - 2</strong></td>

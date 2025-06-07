@@ -3358,9 +3358,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sol" class="md-nav__link">
     <span class="md-ellipsis">
       sol
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4
     </span>
   </a>
   
@@ -19459,9 +19510,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#key" class="md-nav__link">
+    <span class="md-ellipsis">
+      key
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sol" class="md-nav__link">
     <span class="md-ellipsis">
       sol
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="sol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4
     </span>
   </a>
   
@@ -19483,39 +19585,65 @@
 
 
 <h1 id="e48-tang3-p120">e4.8-tang3-p120</h1>
-<p><img alt="" src="../e4.8-tang3-p120.png" /></p>
+<p><img alt="" src="../assets/e4.8-tang3-p120.png" /></p>
+<h2 id="key">key</h2>
+<p><img alt="" src="../assets/e4.8-tang3-p120-key.png" /></p>
 <h2 id="sol">sol</h2>
-<p>1 word = 32 bits = 4 bytes
-1w = 32b = 4B</p>
-<p>1 cache line = 1 block</p>
-<p>1 block = 16w = 64B = 2^{6}B</p>
-<p>(1)
-cache size = 4KB = 2^{12}B -&gt; cache address = <strong>12b</strong>
-cache blocks = cache size / block = 2^{12}B / 2^{6}B = 2^{6} = <strong>64 blocks</strong></p>
-<p>(2)
-MM size = 512KB = 2^{19}B -&gt; MM address = <strong>19b</strong>
-MM blocks = MM size / block = 2^{19}B / 2^{6}B = 2^{13} = <strong>8192 blocks</strong></p>
-<p>(3)
-5, 2^{6}+5, 2^{7}+5, ..., 2^{13}-64+5</p>
-<p>(4)
-MM size = 2^{19}B -&gt; tag + index + offset = 19</p>
+<p>mem = 512KB = <span class="arithmatex">\(2^{19}B\)</span></p>
+<p>cache = 4KB = <span class="arithmatex">\(2^{12}\)</span>B -&gt; Cache地址位数 = 12</p>
+<p>cache line = block</p>
+<p>1w = 32b = 4B</p>
+<p>block = 16w = 16 * 4B = 64B = <span class="arithmatex">\(2^6\)</span>B</p>
+<h3 id="1">1</h3>
+<p><strong>12位，64块。</strong></p>
+<div class="arithmatex">\[
+2^{\text{Cache地址位数}}=\text{Cache容量}=2^{12}\text{B}
+\]</div>
+<p>block = 16w = 16 * 4B = 64B = <span class="arithmatex">\(2^6\)</span>B</p>
+<div class="arithmatex">\[
+\text{Cache blocks}=\frac{\text{Cache size}}{\text{block size}}=\frac{2^{12}}{2^{6}}=2^{6}=64
+\]</div>
+<h3 id="2">2</h3>
+<p><strong>19位，8192块。</strong></p>
+<div class="arithmatex">\[
+2^{\text{Mem地址位数}}=\text{Mem容量}=2^{19}\text{B}
+\]</div>
+<p>block = 16w = 16 * 4B = 64B = <span class="arithmatex">\(2^6\)</span>B</p>
+<div class="arithmatex">\[
+\text{Mem块数}=\frac{\text{Mem容量}}{\text{块容量}}=\frac{2^{19}}{2^{6}}=2^{13}=8192
+\]</div>
+<h3 id="3">3</h3>
+<p><img alt="" src="../../../assets/direct1.png" /></p>
+<p><span class="arithmatex">\(5, 64+5,2\times 64+5,\cdots, 2^{13}-64+5\)</span></p>
+<h2 id="4">4</h2>
+<ul>
+<li>主存地址<ol>
+<li>主存字块标记</li>
+<li>Cache地址<ol>
+<li>Cache字块地址</li>
+<li>字块内地址</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th>tag</th>
-<th>index</th>
-<th>offset</th>
+<th>tag (mem)</th>
+<th>index (cache)</th>
+<th>offset (cache)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>MM size</td>
-<td>cache blocks = 2^{6}</td>
-<td>block size = 2^{6}</td>
+<td>mem = <span class="arithmatex">\(2^{19}B\)</span></td>
+<td>cache blocks = <span class="arithmatex">\(2^{6}\)</span></td>
+<td>block size = <span class="arithmatex">\(2^{6}\)</span>B</td>
 </tr>
 <tr>
 <td>主存字块标记</td>
-<td>缓存字块标记</td>
+<td>Cache字块地址</td>
 <td>字块内地址</td>
 </tr>
 <tr>
