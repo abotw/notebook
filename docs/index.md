@@ -5,8 +5,14 @@ comments: "true"
 
 # 日拱一卒
 
+> 如果某个人不会选你，那么你选他就毫无意义。 ([src](https://xuan-insr.github.io/%E7%94%9F%E6%B4%BB/%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB/#2-%E5%8F%AF%E4%BE%9D%E8%B5%96)) (Fri Jun  6 15:56:32 CST 2025)
+
+---
+
 > 休息是“停止工作，安静地恢复体力”，暂时忘记责任。([src](https://www.bilibili.com/video/BV1cij9zjE77/)) (Tue Jun  3 14:54:26 CST 2025)
 > —— 《西班牙语大辞典》
+
+---
 
 > Work smarter, not harder. (Sun Jun  1 19:10:46 CST 2025)
 

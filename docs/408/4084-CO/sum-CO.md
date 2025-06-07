@@ -3,7 +3,7 @@
 
 ## 宿宁 | 25Sp | Final
 
-1. **(30') 分析 / 简答 / 问答**
+1. **(30') 分析 / 简答 / 问答** \[[宿宁25-分析题](Misc/宿宁25-分析题/宿宁25-分析题-LaTex.pdf)\] \[[sol](Misc/宿宁25-分析题/宿宁25-分析题-sol.pdf)\]
 	1. 什么是计算机系统、计算机硬件和计算机软件？硬件和软件哪个更重要？
 	   \[[p1.1-tang3-p19](1-Intro/psets/p1.1-tang3-p19-计算机系统/p1.1-tang3-p19-计算机系统.md)\]
 	2. 画图说明异步通信中请求与回答有哪几种互锁关系。(p61-p62)
@@ -20,17 +20,19 @@
 	   \[[p8.3-tang3-p370](4-ISA/指令周期/psets/p8.3-tang3-p370-指令周期/p8.3-tang3-p370-指令周期.md)\]
 	   \[[InstructionCycle-tang3.pdf](4-ISA/指令周期/assets/InstructionCycle-tang3.pdf)\]
 2. **(30') 计算**
-	1. 6.2.3 数的定点表示和浮点表示
+	1. 6.2.3 **数的定点表示和浮点表示** *
 	   \[[FixFloatNum-tang3.pdf](../../Courses/ICS/3-NumSys/2-定浮表示/assets/FixFloatNum-tang3.pdf)\]
 	   \[[worksheet](../../Courses/ICS/3-NumSys/2-定浮表示/psets/assets/float-worksheet.pdf)\]
 		1. [e6.3-tang3-p231](../../Courses/ICS/3-NumSys/2-定浮表示/psets/e6.3-tang3-p231/e6.3-tang3-p231.md)
 		2. [e6.4-tang3-p232](../../Courses/ICS/3-NumSys/2-定浮表示/psets/e6.4-tang3-p232/e6.4-tang3-p232.md)
 		3. [e6.5-tang3-p232](../../Courses/ICS/3-NumSys/2-定浮表示/psets/e6.5-tang3-p232/e6.5-tang3-p232.md)
-	2. 6.3.4 定点除法运算 / 原码一位除（加减交替法）
+	2. 6.3.4 **定点除法运算 / 原码一位除（加减交替法）**
 	   \[[Div-tang3.pdf](2-Num/1-定点运算/定点除法/assets/Div-tang3.pdf)\]
+	   \[[worksheet](2-Num/1-定点运算/定点除法/assets/定点除法-worksheet.pdf)\]
 		1. [e6.25-tang3-p261](2-Num/1-定点运算/定点除法/psets/e6.25-tang3-p261-加减交替法/e6.25-tang3-p261-加减交替法.md)
-	3. 6.4.1 浮点加减运算
+	3. 6.4.1 **浮点加减运算**
 	   \[[FloatAddSub-tang3](2-Num/2-浮点运算/浮点加减/assets/FloatAddSub-tang3.pdf)\]
+	   \[[worksheet](2-Num/2-浮点运算/浮点加减/assets/浮点加减-worksheet.pdf)\]
 		1. [e6.29-tang3-p271](2-Num/2-浮点运算/浮点加减/psets/e6.29-tang3-p271/e6.29-tang3-p271.md)
 		2. [e6.30-tang3-p272](2-Num/2-浮点运算/浮点加减/psets/e6.30-tang3-p272/e6.30-tang3-p272.md)
 		3. [e6.31-tang3-p274](2-Num/2-浮点运算/浮点加减/psets/e6.31-tang3-p274/e6.31-tang3-p274.md)
