@@ -136,6 +136,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/mem2cpu/</loc>
+         <lastmod>2025-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/1-Mem/1-Mem2CPU/psets/e4.1-tang3-p94/e4.1-tang3-p94/</loc>
          <lastmod>2025-06-07</lastmod>
          <changefreq>daily</changefreq>
@@ -161,6 +166,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/cache/</loc>
+         <lastmod>2025-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/1-CacheMatrics/cache-metrics/</loc>
+         <lastmod>2025-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/1-CacheMatrics/psets/e4.10-tang3-p121/e4.10-tang3-p121/</loc>
+         <lastmod>2025-06-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/1-CacheMatrics/psets/e4.12-tang2psets-p54/e4.12-tang2psets-p54/</loc>
          <lastmod>2025-06-07</lastmod>
          <changefreq>daily</changefreq>
@@ -182,11 +202,6 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Cache2Mem/cache2mem/</loc>
-         <lastmod>2025-06-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/3-Storage/2-Cache/2-Cache2Mem/psets/e4.10-tang3-p121/e4.10-tang3-p121/</loc>
          <lastmod>2025-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
