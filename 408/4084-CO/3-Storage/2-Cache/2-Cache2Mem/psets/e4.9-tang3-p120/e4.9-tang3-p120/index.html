@@ -19906,6 +19906,12 @@
 <h1 id="e49-tang3-p120">e4.9-tang3-p120</h1>
 <p><img alt="" src="../assets/e4.9-tang3-p120.png" /></p>
 <h2 id="key">key</h2>
+<ol>
+<li>根据Cache容量为<span class="arithmatex">\(4096=2^{12}\)</span>字，得Cache字地址为12位。根据块长位4，且访存地址为字地址，得字块内地址为2位，即b=2，切Cache共有<span class="arithmatex">\(4096/4=1024=2^{10}\)</span>块，即c=10.根据主存容量为<span class="arithmatex">\(512K=2^{19}\)</span>字，得主存字地址为19位。在直接映射方式下，主存字块标记为19-12=7。主存的地址格式如图所示。</li>
+<li>在全相联映射方式下，主存字块标记为19-b=19-2=17位，其地址格式如图所示。</li>
+<li>根据二路组相联的条件，一组内有2块，得Cache共分1024/2=512=<span class="arithmatex">\(2^q\)</span>组，即q=9，主存字块标记为19-q-b=19-9-2=8位，其地址格式如图所示。</li>
+<li>若主存容量改为<span class="arithmatex">\(512K\times32\)</span>位，即双字宽存储器，块长仍为4个16位的字，访存地址仍为字地址，则主存容量可写为<span class="arithmatex">\(1024K\times16\)</span>位，得主存地址位20位。由四路组相联，得Cache共分<span class="arithmatex">\(1024/4=256=2^q\)</span>组，即q=8。对应该条件下，主存字块标记为20-8-2=10位，其地址格式如图所示。</li>
+</ol>
 <p><img alt="" src="../assets/e4.9-tang3-p120-key1.png" />
 <img alt="" src="../assets/e4.9-tang3-p120-key2.png" />
 <img alt="" src="../assets/e4.9-tang3-p120-key3.png" />

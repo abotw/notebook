@@ -3600,17 +3600,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       4
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -19874,17 +19874,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       4
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -19907,6 +19907,12 @@
 <p><img alt="" src="../assets/e4.8-tang3-p120.png" /></p>
 <h2 id="key">key</h2>
 <p><img alt="" src="../assets/e4.8-tang3-p120-key.png" /></p>
+<ol>
+<li>根据Cache容量为4KB（<span class="arithmatex">\(2^{12}=4\)</span>K），故Cache地址为12位。由于每字32位，则Cache一共有4KB/4B=1K字。因每个字块16个字，故Cache中有1K/16=64块。</li>
+<li>根据主存容量为512KB（<span class="arithmatex">\(2^{19}=512\)</span>K），主存地址为19位。由于每字32位，则主存共有512KB/4B=128K字。因每个字块16个字，故主存中共128K/16=8192块。</li>
+<li>在直接映射方式下，由于Cache共有64块，主存共有8192块，因此主存的5，64+5，<span class="arithmatex">\(2\times64+4,\cdots,2^{13}-64+5\)</span>块能映射到Cache的第5块中。</li>
+<li>在直接映射方式下，主存地址字段的各段位数分配如图所示，其中字块内地址为6位（4位表示16个字，2位表示每字32位），缓存共64块，故缓存字块地址为6位，主存字块标记为主存地址长度与Cache地址长度之差，即19-12=7位。</li>
+</ol>
 <h2 id="sol">sol</h2>
 <p>mem = 512KB = <span class="arithmatex">\(2^{19}B\)</span></p>
 <p>cache = 4KB = <span class="arithmatex">\(2^{12}\)</span>B -&gt; Cache地址位数 = 12</p>
@@ -19934,7 +19940,7 @@
 <h3 id="3">3</h3>
 <p><img alt="" src="../../../assets/direct1.png" /></p>
 <p><span class="arithmatex">\(5, 64+5,2\times 64+5,\cdots, 2^{13}-64+5\)</span></p>
-<h2 id="4">4</h2>
+<h3 id="4">4</h3>
 <ul>
 <li>主存地址<ol>
 <li>主存字块标记</li>

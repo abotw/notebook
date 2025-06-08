@@ -19805,9 +19805,18 @@
 <p><img alt="" src="../assets/e4.1-tang3-p94-1.png" /></p>
 <p><img alt="" src="../assets/e4.1-tang3-p94-2.png" /></p>
 <h2 id="key">key</h2>
+<p>第一步，先将十六进制地址范围写成二进制地址码，并确定其总容量。</p>
+<p>第二步，根据地址范围的容量以及该范围在计算机系统中的作用，选择存储芯片。</p>
+<p>根据6000H～67FFH为系统程序区的范围，应选择1片<span class="arithmatex">\(2K\times8\)</span>位的ROM，若选择<span class="arithmatex">\(4K\times8\)</span>或<span class="arithmatex">\(8K\times8\)</span>位的ROM，都超出了<span class="arithmatex">\(2K\times8\)</span>位的系统程序区范围。</p>
+<p>根据6800H～68FFH为用户程序区的范围，选2片<span class="arithmatex">\(1K\times4\)</span>位的RAM芯片正好满足<span class="arithmatex">\(1K\times8\)</span>位的用户程序区要求。</p>
+<p>第三步，分配CPU的地址线。</p>
+<p>将CPU的低11位地址<span class="arithmatex">\(A_{10}~A_0\)</span>与<span class="arithmatex">\(2K\times8\)</span>位的ROM地址线相连；将CPU的低10位地址<span class="arithmatex">\(A_9~A_0\)</span>与2片<span class="arithmatex">\(1K\times4\)</span>位的RAM地址线相连。剩下的高位地址与访存控制信号<span class="arithmatex">\(\overline{\text{MREQ}}\)</span>共同产生存储芯片的片选信号。</p>
 <p><img alt="" src="../assets/e4.1-tang3-p94-key1.png" />
 <img alt="" src="../assets/e4.1-tang3-p94-key2.png" />
 <img alt="" src="../assets/p4.37-tang3-p96.png" /></p>
+<p>第四步，片选信号的形成。</p>
+<p>由图给出的74138译码器输入逻辑关系可知，必须保证控制端<span class="arithmatex">\(G_1\)</span>为高电平，<span class="arithmatex">\(\overline{G_{2A}}\)</span>与<span class="arithmatex">\(\overline{G_{2B}}\)</span>为低电平，才能使译码器正常工作。根据第一步写出的存储器地址范围得出，<span class="arithmatex">\(A_{15}\)</span>始终为低电平，<span class="arithmatex">\(A_{14}\)</span>始终为高电平，它们正好可分别与译码器的<span class="arithmatex">\(\overline{G_{2A}}\)</span>（低）和<span class="arithmatex">\(G_1\)</span>（高）对应。而访存控制信号<span class="arithmatex">\(\overline{\text{MREQ}}\)</span>（低电平有效）又正好可与<span class="arithmatex">\(\overline{G_{2B}}\)</span>（低）对应。剩下的<span class="arithmatex">\(A_{13},A_{12},A_{11}\)</span>可分别接到译码器的C、B、A输入端。其输出<span class="arithmatex">\(\overline{Y_4}\)</span>有效时，选中一片ROM；<span class="arithmatex">\(\overline{Y_5}\)</span>与<span class="arithmatex">\(A_{10}\)</span>同时有效且为低电平时，与门输出选中2片RAM，如图所示。图中的ROM芯片的<span class="arithmatex">\(\overline{\text{PD}}/Progr\)</span>端接地，以确保在读出时低电平有效。RAM芯片的读写控制端与CPU的读写命令端<span class="arithmatex">\(\overline{\text{WR}}\)</span>相连。ROM的8根数据线直接与CPU的8根数据线相连，2片RAM的数据线分别与CPU数据总线的高4位和低4位相连。</p>
+<hr />
 <p>地址线
 数据线
 访存控制信号（低电平有效）

@@ -19876,11 +19876,22 @@
 <ul>
 <li>算逻指令格式：Ri-Rj</li>
 </ul>
+<hr />
+<p>算逻指令格式为寄存器-寄存器型，取单字长16位。</p>
+<p>其中，OP为操作码，6位，可实现64种操作；M为寻址模式，2位，可反映寄存器寻址、直接寻址、相对寻址；<span class="arithmatex">\(R_i\)</span>和<span class="arithmatex">\(R_j\)</span>各取4位，指出源操作数和目的操作数的寄存器（共16个）编号。</p>
 <h3 id="2">2</h3>
 <p><img alt="" src="../assets/e7.6-tang3-p324-key2.png" /></p>
+<ul>
+<li>取数/存数指令格式：Ri-M</li>
+</ul>
+<hr />
+<p>取数/存数指令格式为寄存器-存储器型，取双字长32位，格式如下：</p>
+<p>其中，OP为操作码，6位不变；M为寻址模式，2位不变；<span class="arithmatex">\(R_i\)</span>为4位，源操作数地址（存数指令）或目的操作数地址（取数指令）；<span class="arithmatex">\(A_1\)</span>和<span class="arithmatex">\(A_2\)</span>共20位，为存储器地址，可直接访问按字节编址的1MB存储器。</p>
 <h3 id="3">3</h3>
 <p><img alt="" src="../assets/e7.6-tang3-p324-key3-1.png" />
 <img alt="" src="../assets/e7.6-tang3-p324-key3-2.png" /></p>
+<p>相对转移指令为一地址格式，取单字长16位，格式如下：</p>
+<p>其中，OP位操作码，6位不变，M为寻址模式，2位不变；A为位移量8位，对应位移量为-128～+127。</p>
 
 
 

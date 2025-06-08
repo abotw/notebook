@@ -19858,6 +19858,9 @@
 </ul>
 <h2 id="key">key</h2>
 <h3 id="1">1</h3>
+<p>在单字长指令中，根据能完成105种操作，取操作码7位。因允许直接和间接寻址，且有基址寄存器和变址寄存器，故取2位寻址特征位，其指令格式如下：</p>
+<p>其中，OP为操作码，可完成105种操作；M为寻址特征，可反映四种寻址方式；AD为形式地址。</p>
+<p>这种指令格式可直接寻址<span class="arithmatex">\(2^7=128\)</span>，一次间接寻址的寻址范围是<span class="arithmatex">\(2^{16}=65536\)</span>。</p>
 <p><img alt="" src="../assets/e7.5-tang3-p323-key1-1.png" />
 <img alt="" src="../assets/e7.5-tang3-p323-key1-2.png" /></p>
 <ul>
@@ -19884,6 +19887,8 @@
 <li>一次间址空间 &lt;- 存储字长</li>
 </ul>
 <h3 id="2">2</h3>
+<p>容量为16MB（<span class="arithmatex">\(2^{24}\)</span>）的存储器，正好与存储字长为16位的8M存储器容量相等，即16MB=<span class="arithmatex">\(8M\times16\text{位}\)</span>。欲使指令直接访问16MB的主存，可采用双字长指令，其操作码和寻址特征位均不变，其格式如下：</p>
+<p>其中，形式地址位<span class="arithmatex">\(AD_1//AD_2\)</span>，共7+16=23位。<span class="arithmatex">\(2^{23}=8M\)</span>，即可直接访问主存的任一位置。</p>
 <p><img alt="" src="../assets/e7.5-tang3-p323-key2.png" /></p>
 <ul>
 <li>存储器容量 = 16MB + 存储字长 = 16b<ul>

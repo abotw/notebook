@@ -19869,6 +19869,7 @@
 <p><img alt="" src="../assets/e7.7-tang3-p325.png" /></p>
 <h2 id="key">key</h2>
 <h3 id="1">1</h3>
+<p>欲使指令可直接访问4M字存储器的任一单元，采用寄存器-存储器型指令，该机指令应包括22位的地址码、3位寄存器编码和7位操作码，即指令字长去22+3+7=32位，指令格式如下：</p>
 <p><img alt="" src="../assets/e7.7-tang3-p325-key1.png" /></p>
 <ul>
 <li>寄存器-存储器型指令</li>
@@ -19877,8 +19878,13 @@
 </ul>
 <h3 id="2">2</h3>
 <p><img alt="" src="../assets/e7.7-tang3-p325-key2.png" /></p>
+<p>在上述指令格式中增设一寻址特征位，且 X = 1 表示某个寄存器作基址寄存器 <span class="arithmatex">\(R_B\)</span> （BR）。其指令格式如下：</p>
+<p>由于通用寄存器仅16位，A形式地址18位，不足以覆盖4M（<span class="arithmatex">\(2^{22}\)</span>）地址空间，可将 <span class="arithmatex">\(R_B\)</span> 寄存器内容左移6位（16+6=22位），低位补0，形成22位<strong>基地址</strong>，然后与形式地址相加，所得的有效地址即可访问4M字存储器的任一单元。</p>
 <h3 id="3">3</h3>
 <p><img alt="" src="../assets/e7.7-tang3-p325-key3.png" /></p>
+<p>若主存容量扩大到4G字（mem = 4G = <span class="arithmatex">\(2^{32}\)</span>），其<strong>存储字长</strong>等于<strong>指令字长</strong>，则在不改变上述硬件结构的前提下，采用<strong>一次间接寻址</strong>即可访问存储器的任一单元，因为间接寻址后得到的有效地址（EA）为32位，<span class="arithmatex">\(2^{32}=4\text{G}\)</span>。</p>
+<hr />
+<p>总结：存储器一次间接寻址空间，取决于存储字长。或者说，一次间接寻址后得到的EA有效地址，等于存储字长。</p>
 
 
 

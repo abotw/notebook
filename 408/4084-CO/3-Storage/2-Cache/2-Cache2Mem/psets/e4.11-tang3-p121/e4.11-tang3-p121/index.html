@@ -19907,8 +19907,17 @@
 <p><img alt="" src="../assets/e4.11-tang3-p121-1.png" />
 <img alt="" src="../assets/e4.11-tang3-p121-2.png" /></p>
 <h2 id="key">key</h2>
+<p>根据每个字有8个字，每个字32位，得出主存地址字段中字块内地址字段位5位，其中3位为字地址，2位位字节地址。</p>
+<p>根据Cache容量为8KB=<span class="arithmatex">\(2^{13}\)</span>B，字块大小为<span class="arithmatex">\(2^5\)</span>B，得Cache共有<span class="arithmatex">\(2^8\)</span>块，故c=8。根据四路组相联映射<span class="arithmatex">\(2^r=4\)</span>，得r=2，则q=c-r=8-2=6块。</p>
+<p>根据主存容量为16MB=<span class="arithmatex">\(2^{24}\)</span>B，得出主存字段中主存字块标记为24-6-5=13位。</p>
+<p>主存地址字段各段格式如图所示。</p>
 <p><img alt="" src="../assets/e4.11-tang3-p121-key1.png" />
 <img alt="" src="../assets/e4.11-tang3-p121-key2.png" /></p>
+<ol>
+<li>由于每个字块中有8个字，而且初态Cache为空，因此CPU读第0号单元时，未命中，必须访问主存，同时将该字所在的主存块调入Cache第0组的任一块内，接着CPU读1～7号单元时均命中。同理，CPU读第<span class="arithmatex">\(8,16,\cdots,96\)</span>号单元时均未命中。可见CPU在连续读100个字中共有13次未命中，而后9次循环读100个字全部命中，命中率为</li>
+<li>根据题意，设主存存取周期为5t，Cache的存取周期为t，没有Cache的访问时间为<span class="arithmatex">\(5t\times1000\)</span>，有Cache的访问时间为<span class="arithmatex">\(t(1000-13)+5t\times13\)</span>，则有Cache和没有Cache相比，速度提高的倍数为</li>
+<li>根据2求得的命中率0.987，主存的存取周期为5t，Cache的存取周期为t，得系统的效率为</li>
+</ol>
 <h2 id="sol">sol</h2>
 <p>mem = 16MB = <span class="arithmatex">\(2^{24}\)</span>B</p>
 <p>cache = 8KB = <span class="arithmatex">\(2^{13}\)</span>B</p>
