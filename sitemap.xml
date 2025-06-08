@@ -106,7 +106,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/2-Num/2-%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/6.4.1-tang3-p269p274-%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/2-Num/2-%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/%E6%B5%AE%E7%82%B9%E5%8A%A0%E5%87%8F/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -241,22 +241,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F-AddressingModes/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/addressing-modes/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/4%40%E9%97%B4%E6%8E%A5%E5%AF%BB%E5%9D%80/indirect-addressing/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/indexed/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/5%E5%AF%84%E5%AD%98%E5%99%A8%E5%AF%BB%E5%9D%80/register-addressing/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/indirect/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/%E6%95%B0%E6%8D%AE%E5%AF%BB%E5%9D%8010/8%E5%8F%98%E5%9D%80%E5%AF%BB%E5%9D%80/indexed-addressing/</loc>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/register/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -267,6 +267,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/psets/p8.3-tang3-p370-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/p8.3-tang3-p370-%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/</loc>
+         <lastmod>2025-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/408/4084-CO/4-ISA/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1297,6 +1302,16 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Courses/ICS/3-NumSys/2-%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E5%AE%9A%E7%82%B9%E6%9C%BAvs%E6%B5%AE%E7%82%B9%E6%9C%BA/</loc>
+         <lastmod>2025-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/ICS/3-NumSys/2-%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/%E6%B5%AE%E7%82%B9%E6%95%B0/</loc>
+         <lastmod>2025-06-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/ICS/3-NumSys/2-%E5%AE%9A%E6%B5%AE%E8%A1%A8%E7%A4%BA/IEEE754/IEEE754/</loc>
          <lastmod>2025-06-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
