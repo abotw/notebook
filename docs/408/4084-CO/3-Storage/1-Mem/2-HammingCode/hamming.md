@@ -3,6 +3,11 @@
 
 \[[worksheet](assets/hamming-code-worksheet.pdf)\]
 
+- Hamming(3, 1) - 2
+- Hamming(7, 4) - 3
+- Hamming(15, 11) - 4
+- Hamming(31, 26) - 5
+
 ![](assets/Pasted%20image%2020250605172940.png)
 
 ![](assets/Pasted%20image%2020250605173457.png)
