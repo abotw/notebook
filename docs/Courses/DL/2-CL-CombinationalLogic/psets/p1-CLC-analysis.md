@@ -101,4 +101,32 @@ $G_0 = B_1\oplus B_0$
 
 经分析，电路功能为**将输入的二进制码转换成4位格雷码输出**。
 
+## 4.12
+
+![](assets/Pasted%20image%2020250609235551.png)
+
+```verilog
+module name(
+	input a, b, c, d;
+	output f1, f2, f3;
+);
+
+wire [2:0] w1;
+
+assign w1 = a+b+c+d;
+assign f1 = (w1 == 0) ? 1 : 0;
+assign f2 = (w1 == 2) ? 1 : 0;
+assign f3 = ^{a, b, c, d};
+
+endmodule
+```
+
+## 4.13
+
+![](assets/Pasted%20image%2020250609235416.png)
+
+## 4.14
+
+![](assets/Pasted%20image%2020250610000052.png)
+
 
