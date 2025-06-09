@@ -4,6 +4,8 @@
 
 ## Ex. 1 
 
+![](assets/Pasted%20image%2020250609194442.png)
+
 > **请分析下图所示的组合逻辑电路，并完成以下任务：**
 > 
 > 1. 写出电路对应的函数表达式，并进行化简；
@@ -13,6 +15,9 @@
 ![](attachments/Pasted%20image%2020250521095151.png)
 
 ![](attachments/psets-cjn-05.png)
+![](assets/Pasted%20image%2020250609194452.png)
+![](assets/Pasted%20image%2020250609194502.png)
+
 
 ![](attachments/Pasted%20image%2020250520172650.png)
 
