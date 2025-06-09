@@ -1236,12 +1236,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/SSLC-Design/Untitled/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p1-FFs-TimingDiagram/p1-FFs-TimingDiagram/</loc>
          <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/2/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/SSLC-Design/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p2-SSLC-Analysis/p2-SSLC-Analysis/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/3-SL-SequentialLogic/psets/p3-%E5%8E%9F%E5%A7%8B%E7%8A%B6%E6%80%81%E5%9B%BE/Untitled/</loc>
          <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1257,6 +1277,11 @@
     </url>
     <url>
          <loc>https://abotw.github.io/notebook/Courses/DL/Refs/</loc>
+         <lastmod>2025-06-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://abotw.github.io/notebook/Courses/DL/Summary/cjn25-final/cjn25-final/</loc>
          <lastmod>2025-06-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
