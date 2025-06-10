@@ -400,6 +400,20 @@ endmodule
 
 ![](assets/Pasted%20image%2020250609190345.png)
 
+指出下列 Verilog HDL 描述中的错误：
+
+```verilog
+module (a, b, c, f)
+input a, b, c;
+output f;
+wire w1;
+
+always @(a or b)
+	w1 <= ab
+	f <= w1 | (~bc)
+endmodule
+```
+
 #### 3.11
 
 ![](assets/Pasted%20image%2020250609191107.png)
