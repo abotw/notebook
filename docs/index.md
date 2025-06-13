@@ -13,7 +13,7 @@ comments: "true"
 
 > 休息是“停止工作，安静地恢复体力”，暂时忘记责任。
 > 
-> ——《西班牙语大辞典》 (Tue Jun  3 14:54:26 CST 2025) \[[SRC](https://www.bilibili.com/video/BV1cij9zjE77/))\]
+> ——《西班牙语大辞典》 (Tue Jun  3 14:54:26 CST 2025) \[[SRC](https://www.bilibili.com/video/BV1cij9zjE77/)\]
 
 ---
 
